@@ -1,0 +1,44 @@
+@function section-margin($margin) {
+  @return $margin * 20;
+}
+.main-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  @include palette-text-primary;
+  .theme--dark & {
+    background-color: $dark-background-default;
+  }
+  .theme--light & {
+    background-color: $light-background-paper;
+  }
+}
+.space-bottom {
+  margin-bottom: section-margin($spacing1);
+  @include breakpoints-down(md) {
+    margin-bottom: section-margin(6px);
+  }
+}
+.space-top {
+  margin-top: section-margin($spacing1);
+  @include breakpoints-down(md) {
+    margin-top: section-margin(6px);
+  }
+}
+.space-bottom-short {
+  margin-bottom: section-margin($spacing1 / 2);
+}
+.space-top-short-md-down {
+  @include breakpoints-between(md, lg) {
+    margin-top: section-margin($spacing1 / 2);
+  }
+}
+.space-top-short {
+  margin-top: section-margin($spacing1 / 2);
+}
+.container-wrap {
+  margin-top: -40px;
+  > section {
+    position: relative;
+  }
+}

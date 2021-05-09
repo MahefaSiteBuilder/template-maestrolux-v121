@@ -1,0 +1,66 @@
+// #### HEADER ####
+include mobile-menu.pug
+
+mixin header(invert)
+  header.app-bar.header#header
+    .container.fixed-width-lg-up
+      .header-content
+        nav.nav-logo.nav-menu(class=invert && "invert")
+          |
+          |
+          button#mobile_menu.mobile-menu.btn-icon.waves-effect.hamburger.hamburger--spin.show-md-down(
+            type="button"
+          )
+            |
+            |
+            span.hamburger-box
+              span.bar.hamburger-inner
+            |
+            |
+          .logo(class= !invert && "scrollnav")
+            |
+            |
+            a(href=invert ? link.mobile.home : "#banner")
+              img(
+                src=assets + brand.mobile.img
+                alt="logo"
+              )/
+              span #{brand.mobile.name}
+            |
+            |
+          div
+            .scrollactive-nav.show-lg-up(class= !invert && "scrollnav")
+              ul
+                li.d-none
+                  a(href="#banner")
+                each item in menu.mobile
+                  |
+                  |
+                  li
+                    a.btn.btn-flat.anchor-link.waves-effect(
+                      href=invert ? 'index.html#'+item.name : '#'+item.name
+                    ) #{$t.mobile_landing['header_'+item.name]}
+                |
+                |
+                li
+                  a.btn.btn-flat.anchor-link.waves-effect(
+                    href=link.mobile.contact
+                  ) #{$t.mobile_landing.header_contact}
+                |
+                |
+        nav.nav-menu(class=invert && "invert")
+          if !invert
+            .hidden-xs-down
+              .btn.btn-icon.social-btn.waves-effect
+                i.ion-social-twitter
+              .btn.btn-icon.social-btn.waves-effect
+                i.ion-social-facebook
+              .btn.btn-icon.social-btn.waves-effect
+                i.ion-social-instagram
+              .btn.btn-icon.social-btn.waves-effect
+                i.ion-social-linkedin
+          include ./settings
+          +settings(invert)
+  |
+  |
+// #### END HEADER ####

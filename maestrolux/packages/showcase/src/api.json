@@ -1,0 +1,664 @@
+{
+  "brand": {
+    "agency": {
+      "name": "Agency",
+      "desc": "Alexstrap Agency - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Agency - All Rights Reserved 2020",
+      "logoText": "Alexstrap Theme",
+      "projectName": "Agency Project",
+      "url": "alexstrap.ux-maestro.com/agency",
+      "img": "/images/agency-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    },
+     "architect": {
+      "name": "Architect",
+      "desc": "Alexstrap Architect - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Architect 2020",
+      "logoText": "Alexstrap Theme 2020",
+      "projectName": "Architect",
+      "url": "alexstrap.ux-maestro.com/architect",
+      "img": "/images/architect-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    },
+    "crypto": {
+      "name": "Crypto",
+      "desc": "Alexstrap Cryptocurrency - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Crypto 2020",
+      "logoText": "Alexstrap Theme",
+      "projectName": "coinz",
+      "url": "alexstrap.ux-maestro.com/cryptocurrency",
+      "img": "/images/crypto-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    },
+    "education": {
+      "name": "Education",
+      "desc": "Alexstrap Education - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Education 2020",
+      "logoText": "Alexstrap Theme 2020",
+      "projectName": "Education",
+      "url": "alexstrap.ux-maestro.com/education",
+      "img": "/images/education-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    },
+    "fashion": {
+      "name": "Fashion",
+      "desc": "Alexstrap Fashion - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Fashion 2020",
+      "logoText": "Alexstrap Theme 2020",
+      "projectName": "Fashion",
+      "url": "alexstrap.ux-maestro.com/fashion",
+      "img": "/images/fashion-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    },
+    "hosting": {
+      "name": "Hosting",
+      "desc": "Alexstrap Hosting - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Hosting 2020",
+      "logoText": "Alexstrap Theme",
+      "projectName": "hosting",
+      "url": "alexstrap.ux-maestro.com/hosting",
+      "img": "/images/cloud-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    },
+    "medical": {
+      "name": "Medical",
+      "desc": "Alexstrap Medical - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Medical - All Rights Reserved 2020",
+      "logoText": "Alexstrap Theme",
+      "projectName": "Medical",
+      "url": "alexstrap.ux-maestro.com/medical",
+      "img": "/images/medical-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    },
+    "mobile": {
+      "name": "Mobile",
+      "desc": "Alexstrap Mobile Apps - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Mobile Apps 2020",
+      "logoText": "Alexstrap Theme",
+      "projectName": "Mobile",
+      "url": "alexstrap.ux-maestro.com/mobile",
+      "img": "/images/mobile-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    },
+    "movie": {
+      "name": "Movie",
+      "desc": "Alexstrap Movie - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Movie 2020",
+      "logoText": "Alexstrap Theme 2020",
+      "projectName": "Movie",
+      "url": "alexstrap.ux-maestro.com/movie",
+      "img": "/images/movie-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    },
+    "profile": {
+      "name": "Jena Doe",
+      "title": "UI designer",
+      "desc": "Alexstrap Profile - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Profile 2020",
+      "logoText": "Alexstrap Theme",
+      "projectName": "Profile",
+      "url": "alexstrap.ux-maestro.com/profile",
+      "img": "/images/profile-logo.png",
+      "avatar": "https://res.cloudinary.com/imajin/image/upload/v1583593607/profile/profile_tz0izw.jpg",
+      "cover": "https://res.cloudinary.com/imajin/image/upload/v1583588473/profile/banner_cylvs2.jpg",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    },
+    "saas": {
+      "name": "Software",
+      "desc": "Alexstrap Saas - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Saas 2020",
+      "logoText": "Alexstrap Theme",
+      "projectName": "Software",
+      "url": "alexstrap.ux-maestro.com/saas",
+      "img": "/images/saas-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    },
+    "showcase": {
+      "name": "Maestrolux",
+      "desc": "Maestrolux - React Vue HTML Landing Page Template Collection",
+      "prefix": "maestrolux",
+      "footerText": "Maestrolux Theme - All Rights Reserved 2020",
+      "logoText": "Maestrolux",
+      "projectName": "Maestrolux Theme",
+      "url": "maestrolux.ux-maestro.com",
+      "img": "/assets/images/maestrolux-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    }
+  },
+  "link": {
+    "agency": {
+      "home": "index.html",
+      "contact": "contact.html"
+    },
+    "architect": {
+      "home": "index.html",
+      "contact": "contact.html"
+    },
+    "crypto": {
+      "home": "index.html",
+      "contact": "contact.html",
+      "login": "login.html",
+      "register": "register.html"
+    },
+    "education": {
+      "home": "index.html",
+      "contact": "contact.html",
+      "login": "login.html",
+      "register": "register.html"
+    },
+    "fashion": {
+      "home": "index.html",
+      "detail": "detail-product.html"
+    },
+    "hosting": {
+      "home": "index.html",
+      "contact": "contact.html",
+      "login": "login.html",
+      "register": "register.html"
+    },
+    "medical": {
+      "home": "index.html",
+      "contact": "contact.html"
+    },
+    "mobile": {
+      "home": "index.html",
+      "contact": "contact.html"
+    },
+    "movie": {
+      "home": "index.html",
+      "detail": "detail-movie.html",
+      "login": "login.html",
+      "register": "register.html"
+    },
+    "profile": {
+      "home": "index.html"
+    },
+    "saas": {
+      "home": "index.html",
+      "contact": "contact.html",
+      "login": "login.html",
+      "register": "register.html"
+    }
+  },
+  "imgAPI": {
+    "avatar": [
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg"
+    ],
+    "photo": [
+      "https://via.placeholder.com/675x900/e1ad92/fff",
+      "https://via.placeholder.com/967x725/ea6d6d/fff",
+      "https://via.placeholder.com/1280x849/ea6db7/fff",
+      "https://via.placeholder.com/967x725/bb6dea/fff",
+      "https://via.placeholder.com/1048x701/6d6fea/fff",
+      "https://via.placeholder.com/1050x700/6dc0ea/fff",
+      "https://via.placeholder.com/970x725/6deaa6/fff",
+      "https://via.placeholder.com/1051x700/b8de27/fff",
+      "https://via.placeholder.com/1051x701/de9f27/fff",
+      "https://via.placeholder.com/1050x700/ef4545/fff",
+      "https://via.placeholder.com/1050x700/ffc4c4/757575",
+      "https://via.placeholder.com/640x447/fdffc4/757575",
+      "https://via.placeholder.com/1280x851/c4ffd7/757575",
+      "https://via.placeholder.com/640x425/c4cdff/757575"
+    ],
+    "agency": [
+      "https://via.placeholder.com/964x723/1071ef/FFFFFF",
+      "https://via.placeholder.com/1280x825/99d8ff/FFFFFF",
+      "https://via.placeholder.com/490x327/ffc999/FFFFFF",
+      "https://via.placeholder.com/490x327/ffc999/FFFFFF",
+      "https://via.placeholder.com/490x327/ffc999/FFFFFF",
+      "https://via.placeholder.com/331x690/fdcc0c/FFFFFF",
+      "https://via.placeholder.com/521x309/4a0cfd/FFFFFF",
+      "https://via.placeholder.com/521x309/ffe55b/FFFFFF",
+      "https://via.placeholder.com/713x309/79c0ff/FFFFFF",
+      "https://via.placeholder.com/711x693/52596b/FFFFFF"
+    ],
+    "architect": [
+      "https://via.placeholder.com/1200x705/0fad41/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/700x462/8e8e8e/FFFFFF",
+      "https://via.placeholder.com/700x462/52596b/FFFFFF",
+      "https://via.placeholder.com/700x463/8e8e8e/FFFFFF",
+      "https://via.placeholder.com/700x463/52596b/FFFFFF",
+      "https://i.ibb.co/NpTx0KV/home.png",
+      "https://i.ibb.co/zrBfxhz/architect-team.png",
+      "https://i.ibb.co/zrBfxhz/architect-team.png",
+      "https://i.ibb.co/zrBfxhz/architect-team.png",
+      "https://i.ibb.co/zrBfxhz/architect-team.png",
+      "https://i.ibb.co/zrBfxhz/architect-team.png",
+      "https://i.ibb.co/zrBfxhz/architect-team.png",
+      "https://i.ibb.co/FmLNd8z/parallax-hgey7l.jpg"
+    ],
+    "crypto": [
+      "https://i.ibb.co/jrvyrTQ/hexa-orange.png",
+      "https://i.ibb.co/n0gWSSD/hexa-green.png",
+      "https://i.ibb.co/jrvyrTQ/hexa-orange.png",
+      "https://i.ibb.co/n0gWSSD/hexa-green.png",
+      "https://via.placeholder.com/600x341/cac142/FFFFFF",
+      "https://i.ibb.co/9pL5dC3/parallax-r8cohw.jpg",
+      "https://i.ibb.co/sRR8MW0/crypto-laptop.png"
+    ],
+    "education": [
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/364x258/189a96/FFFFFF",
+      "https://via.placeholder.com/456x304/36a2c9/FFFFFF",
+      "https://via.placeholder.com/237x158/98ad25/FFFFFF",
+      "https://via.placeholder.com/317x211/d03c3c/FFFFFF",
+      "https://via.placeholder.com/700x462/8e8e8e/FFFFFF",
+      "https://via.placeholder.com/700x462/52596b/FFFFFF",
+      "https://via.placeholder.com/700x463/8e8e8e/FFFFFF",
+      "https://via.placeholder.com/700x463/52596b/FFFFFF",
+      "https://i.ibb.co/rc0Z1Gp/parallax-ss05zc.jpg"
+    ],
+    "fashion": [
+      "https://via.placeholder.com/1280x854/000000/FFFFFF",
+      "https://via.placeholder.com/700x522/9fa5ad/FFFFFF",
+      "https://via.placeholder.com/700x522/ada29f/FFFFFF",
+      "https://via.placeholder.com/700x522/9fa5ad/FFFFFF",
+      "https://via.placeholder.com/700x522/ada29f/FFFFFF",
+      "https://via.placeholder.com/300x372/fdffa4/757575",
+      "https://via.placeholder.com/300x372/fdffa4/757575",
+      "https://via.placeholder.com/300x372/fdffa4/757575",
+      "https://via.placeholder.com/320x370/ffa4a4/FFFFFF",
+      "https://via.placeholder.com/700x360/ffd7a4/757575",
+      "https://via.placeholder.com/320x370/d0d4e6/757575",
+      "https://i.ibb.co/80Q0T7H/shoes.png",
+      "https://i.ibb.co/80Q0T7H/shoes.png",
+      "https://i.ibb.co/CH5gQ02/man.png",
+      "https://i.ibb.co/80Q0T7H/shoes.png",
+      "https://i.ibb.co/80Q0T7H/shoes.png",
+      "https://i.ibb.co/7z9WN0t/woman.png",
+      "https://i.ibb.co/931mPdz/bag.png",
+      "https://i.ibb.co/931mPdz/bag.png",
+      "https://i.ibb.co/931mPdz/bag.png",
+      "https://i.ibb.co/931mPdz/bag.png",
+      "https://i.ibb.co/931mPdz/bag.png",
+      "https://i.ibb.co/931mPdz/bag.png",
+      "https://i.ibb.co/931mPdz/bag.png",
+      "https://i.ibb.co/931mPdz/bag.png",
+      "https://i.ibb.co/931mPdz/bag.png",
+      "https://via.placeholder.com/640x427/ffd7a4/757575",
+      "https://via.placeholder.com/640x427/f54209/FFFFFF",
+      "https://via.placeholder.com/640x427/bbe5ff/757575",
+      "https://via.placeholder.com/640x427/bbffbe/757575",
+      "https://via.placeholder.com/640x427/f8bbff/757575",
+      "https://via.placeholder.com/640x427/ac59b5/FFFFFF",
+      "https://via.placeholder.com/640x427/35282d/757575",
+      "https://via.placeholder.com/640x427/2d803f/FFFFFF",
+      "https://via.placeholder.com/640x427/1d3350/FFFFFF",
+      "https://via.placeholder.com/516x462/b4c532/757575"
+    ],
+    "hosting": [
+      "https://i.ibb.co/XX7nFzy/wp.png",
+      "https://i.ibb.co/XX7nFzy/wp.png",
+      "https://i.ibb.co/XX7nFzy/wp.png",
+      "https://via.placeholder.com/1280x868/204473/757575",
+      "https://i.ibb.co/MhVxjdx/monitor.png"
+    ],
+    "medical": [
+      "https://via.placeholder.com/570x562/1071ef/FFFFFF",
+      "https://via.placeholder.com/1280x825/99d8ff/FFFFFF",
+      "https://via.placeholder.com/490x327/ffc999/FFFFFF",
+      "https://via.placeholder.com/490x327/ffc999/FFFFFF",
+      "https://via.placeholder.com/490x327/ffc999/FFFFFF",
+      "https://via.placeholder.com/490x327/ffc999/FFFFFF",
+      "https://via.placeholder.com/490x327/ffc999/FFFFFF",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://i.ibb.co/1dcL4P5/doctor-big-vnuayx.jpg"
+    ],
+    "mobile": [
+      "https://i.ibb.co/B48d7Yg/mobile-banner.png",
+      "https://i.ibb.co/tKhLKbD/widget-top.png",
+      "https://i.ibb.co/zr6gzfS/widget-left.png",
+      "https://i.ibb.co/1Mm5pDw/widget-right.png",
+      "https://i.ibb.co/f9Kcbp0/mobile-feature.png",
+      "https://i.ibb.co/XfQ43j5/mobile-feature2.png",
+      "https://via.placeholder.com/536x302/fbd2ff/757575",
+      "https://via.placeholder.com/518x1120/fbd2ff/757575",
+      "https://via.placeholder.com/518x1120/d2ffff/757575",
+      "https://via.placeholder.com/518x1120/fbd2ff/757575",
+      "https://via.placeholder.com/518x1120/d2ffff/757575",
+      "https://via.placeholder.com/518x1120/fbd2ff/757575",
+      "https://via.placeholder.com/518x1120/d2ffff/757575",
+      "https://via.placeholder.com/518x1120/fbd2ff/757575",
+      "https://i.ibb.co/sbB6M9K/widget-screen1.png",
+      "https://i.ibb.co/NFfX7K7/widget-screen2.png",
+      "https://i.ibb.co/2gXRC0V/widget-screen3.png",
+      "https://i.ibb.co/w4skGgp/widget-screen4.png",
+      "https://i.ibb.co/8ryg5Ks/widget-screen5.png",
+      "https://i.ibb.co/pjzgjcK/widget-screen6.png",
+      "https://i.ibb.co/PwfWjkS/widget-screen7.png"
+    ],
+    "movie": [
+      "https://via.placeholder.com/1280x854/8d815b/FFFFFF",
+      "https://via.placeholder.com/300x440/ffa4a4/757575",
+      "https://via.placeholder.com/300x440/74b7fa/757575",
+      "https://via.placeholder.com/300x440/ffa4a4/757575",
+      "https://via.placeholder.com/300x440/74b7fa/757575",
+      "https://via.placeholder.com/300x440/ffa4a4/757575",
+      "https://via.placeholder.com/320x370/ffa4a4/FFFFFF",
+      "https://via.placeholder.com/700x360/ffd7a4/757575",
+      "https://via.placeholder.com/320x370/d0d4e6/757575",
+      "https://i.ibb.co/jbmqN1J/bag.png",
+      "https://i.ibb.co/jbmqN1J/bag.png",
+      "https://i.ibb.co/CH5gQ02/man.png",
+      "https://i.ibb.co/jbmqN1J/bag.png",
+      "https://i.ibb.co/jbmqN1J/bag.png",
+      "https://i.ibb.co/7z9WN0t/woman.png",
+      "https://via.placeholder.com/533x799/fdffa4/757575"
+    ],
+    "profile": [
+      "https://via.placeholder.com/1080x497/ffb2ad/757575",
+      "https://via.placeholder.com/270x345/dedede/757575",
+      "https://i.ibb.co/Nxk5246/bg-Desk-akf1es.jpg",
+      "https://via.placeholder.com/400x400/4e5467/FFFFFF",
+      "https://via.placeholder.com/400x266/2f5ef3/FFFFFF",
+      "https://via.placeholder.com/400x266/dedafd/757575",
+      "https://via.placeholder.com/400x400/ea6f23/FFFFFF",
+      "https://via.placeholder.com/400x400/b79136/FFFFFF",
+      "https://via.placeholder.com/400x266/94fbf7/757575",
+      "https://i.ibb.co/98hxrqw/desk-Dark-pof62n.jpg"
+    ],
+    "saas": [
+      "https://via.placeholder.com/1000x625/f2c9ff/757575",
+      "https://via.placeholder.com/1472x637/5abce4/FFFFFF",
+      "https://via.placeholder.com/1000x625/e6f8ff/757575",
+      "https://i.ibb.co/TvqpjZf/app-counter.png",
+      "https://via.placeholder.com/1000x680/b44fd4/FFFFFF",
+      "https://via.placeholder.com/1000x680/00a7e8/FFFFFF",
+      "https://via.placeholder.com/1000x680/e91e63/FFFFFF",
+      "https://i.ibb.co/KFHPTh2/desktop-illustration.png"
+    ],
+    "showcase": [
+      "assets/images/showcase/banner.jpg",
+      "https://via.placeholder.com/476x638/2196F3/FFFFFF",
+      "https://via.placeholder.com/476x638/4CAF50/FFFFFF",
+      "https://via.placeholder.com/476x638/FFA000/FFFFFF",
+      "https://via.placeholder.com/476x638/546E7A/FFFFFF",
+      "https://via.placeholder.com/476x638/03A9F4/FFFFFF",
+      "https://via.placeholder.com/476x638/673AB7/FFFFFF",
+      "https://via.placeholder.com/476x638/EC407A/FFFFFF",
+      "https://via.placeholder.com/476x638/9C27B0/FFFFFF",
+      "https://via.placeholder.com/476x638/27b05c/FFFFFF",
+      "https://via.placeholder.com/476x638/f54242/FFFFFF",
+      "https://via.placeholder.com/476x638/30c1e3/FFFFFF",
+      "https://via.placeholder.com/476x638/eae219/FFFFFF",
+      "https://via.placeholder.com/476x638/4426eb/FFFFFF",
+      "https://via.placeholder.com/476x638/fd1818/FFFFFF",
+      "https://via.placeholder.com/476x638/61b027/FFFFFF",
+      "https://via.placeholder.com/476x638/e823f0/FFFFFF",
+      "https://via.placeholder.com/476x638/6a3c06/FFFFFF"
+    ]
+  },
+  "menu": {
+    "agency": [
+      {
+        "name": "about",
+        "offset": 0
+      },
+      {
+        "name": "services",
+        "offset": 0
+      },
+      {
+        "name": "our-expertise",
+        "offset": 0
+      },
+      {
+        "name": "case-studies",
+        "offset": -40
+      }
+    ],
+    "architect": [
+      {
+        "name": "home",
+        "offset": 0
+      },
+      {
+        "name": "services",
+        "offset": 0
+      },
+      {
+        "name": "project",
+        "offset": 0
+      },
+      {
+        "name": "about",
+        "offset": 0
+      },
+      {
+        "name": "blog",
+        "offset": 0
+      }
+    ],
+    "crypto": [
+      {
+        "name": "promotions",
+        "offset": 100
+      },
+      {
+        "name": "feature",
+        "offset": 0
+      },
+      {
+        "name": "benefit",
+        "offset": 0
+      },
+      {
+        "name": "testimonials",
+        "offset": 0
+      }
+    ],
+    "education": [
+      {
+        "name": "feature",
+        "offset": 0
+      },
+      {
+        "name": "popular",
+        "offset": 0
+      },
+      {
+        "name": "explore",
+        "offset": 0
+      },
+      {
+        "name": "blog",
+        "offset": 0
+      }
+    ],
+    "fashion": [
+      {
+        "name": "all-new",
+        "offset": 0
+      },
+      {
+        "name": "trending",
+        "offset": 0
+      },
+      {
+        "name": "categories",
+        "offset": 0
+      },
+      {
+        "name": "featured",
+        "offset": 0
+      },
+      {
+        "name": "testimonials",
+        "offset": 0
+      },
+      {
+        "name": "blog",
+        "offset": 0
+      }
+    ],
+    "hosting": [
+      {
+        "name": "promotion",
+        "offset": 0
+      },
+      {
+        "name": "feature",
+        "offset": 0
+      },
+      {
+        "name": "benefit",
+        "offset": 0
+      },
+      {
+        "name": "pricing",
+        "offset": -40
+      },
+      {
+        "name": "testimonials",
+        "offset": -40
+      }
+    ],
+    "medical": [
+      {
+        "name": "about",
+        "offset": 0
+      },
+      {
+        "name": "facility",
+        "offset": 0
+      },
+      {
+        "name": "ask-doctors",
+        "offset": 0
+      },
+      {
+        "name": "clinics",
+        "offset": 0
+      }
+    ],
+    "mobile": [
+      {
+        "name": "feature",
+        "offset": 0
+      },
+      {
+        "name": "showcase",
+        "offset": 0
+      },
+      {
+        "name": "testimonials",
+        "offset": 0
+      },
+      {
+        "name": "faq",
+        "offset": -40
+      }
+    ],
+    "movie": [
+      {
+        "name": "promotions",
+        "offset": 0
+      },
+      {
+        "name": "featured",
+        "offset": 0
+      },
+      {
+        "name": "top",
+        "offset": 0
+      },
+      {
+        "name": "all",
+        "offset": 0
+      },
+      {
+        "name": "pricing",
+        "offset": 0
+      }
+    ],
+    "profile": [
+      {
+        "name": "home",
+        "offset": 0
+      },
+      {
+        "name": "about",
+        "offset": -100
+      },
+      {
+        "name": "services",
+        "offset": 0
+      },
+      {
+        "name": "my-work",
+        "offset": -40
+      },
+      {
+        "name": "testimonials",
+        "offset": 0
+      },
+      {
+        "name": "blog",
+        "offset": 0
+      },
+      {
+        "name": "contact",
+        "offset": 0
+      }
+    ],
+    "saas": [
+      {
+        "name": "feature",
+        "offset": 0
+      },
+      {
+        "name": "testimonials",
+        "offset": 0
+      },
+      {
+        "name": "pricing",
+        "offset": 0
+      },
+      {
+        "name": "faq",
+        "offset": -40
+      }
+    ]
+  },
+  "youtube": {
+    "use": true
+  }
+}

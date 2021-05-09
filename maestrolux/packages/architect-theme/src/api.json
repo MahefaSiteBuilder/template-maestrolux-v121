@@ -1,0 +1,97 @@
+{
+  "brand": {
+    "architect": {
+      "name": "Architect",
+      "desc": "Alexstrap Architect - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Architect 2020",
+      "logoText": "Alexstrap Theme 2020",
+      "projectName": "Architect",
+      "url": "alexstrap.ux-maestro.com/architect",
+      "img": "/images/architect-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    }
+  },
+  "link": {
+    "architect": {
+      "home": "index.html",
+      "contact": "contact.html"
+    }
+  },
+  "imgAPI": {
+    "avatar": [
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg"
+    ],
+    "photo": [
+      "https://via.placeholder.com/675x900/e1ad92/fff",
+      "https://via.placeholder.com/967x725/ea6d6d/fff",
+      "https://via.placeholder.com/1280x849/ea6db7/fff",
+      "https://via.placeholder.com/967x725/bb6dea/fff",
+      "https://via.placeholder.com/1048x701/6d6fea/fff",
+      "https://via.placeholder.com/1050x700/6dc0ea/fff",
+      "https://via.placeholder.com/970x725/6deaa6/fff",
+      "https://via.placeholder.com/1051x700/b8de27/fff",
+      "https://via.placeholder.com/1051x701/de9f27/fff",
+      "https://via.placeholder.com/1050x700/ef4545/fff",
+      "https://via.placeholder.com/1050x700/ffc4c4/757575",
+      "https://via.placeholder.com/640x447/fdffc4/757575",
+      "https://via.placeholder.com/1280x851/c4ffd7/757575",
+      "https://via.placeholder.com/640x425/c4cdff/757575"
+    ],
+    "architect": [
+      "https://via.placeholder.com/1200x705/0fad41/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/270x320/189a96/FFFFFF",
+      "https://via.placeholder.com/700x462/8e8e8e/FFFFFF",
+      "https://via.placeholder.com/700x462/52596b/FFFFFF",
+      "https://via.placeholder.com/700x463/8e8e8e/FFFFFF",
+      "https://via.placeholder.com/700x463/52596b/FFFFFF",
+      "https://i.ibb.co/NpTx0KV/home.png",
+      "https://i.ibb.co/zrBfxhz/architect-team.png",
+      "https://i.ibb.co/zrBfxhz/architect-team.png",
+      "https://i.ibb.co/zrBfxhz/architect-team.png",
+      "https://i.ibb.co/zrBfxhz/architect-team.png",
+      "https://i.ibb.co/zrBfxhz/architect-team.png",
+      "https://i.ibb.co/zrBfxhz/architect-team.png",
+      "https://i.ibb.co/FmLNd8z/parallax-hgey7l.jpg"
+    ]
+  },
+  "menu": {
+    "architect": [
+      {
+        "name": "home",
+        "offset": 0
+      },
+      {
+        "name": "services",
+        "offset": 0
+      },
+      {
+        "name": "project",
+        "offset": 0
+      },
+      {
+        "name": "about",
+        "offset": 0
+      },
+      {
+        "name": "blog",
+        "offset": 0
+      }
+    ]
+  },
+  "youtube": {
+    "use": true
+  }
+}

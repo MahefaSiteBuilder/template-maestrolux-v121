@@ -1,0 +1,101 @@
+{
+  "brand": {
+    "profile": {
+      "name": "Jena Doe",
+      "title": "UI designer",
+      "desc": "Alexstrap Profile - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Profile 2020",
+      "logoText": "Alexstrap Theme",
+      "projectName": "Profile",
+      "url": "alexstrap.ux-maestro.com/profile",
+      "img": "/images/profile-logo.png",
+      "avatar": "https://via.placeholder.com/270x345/dedede/757575",
+      "cover": "https://via.placeholder.com/1080x497/ffb2ad/757575",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    }
+  },
+  "link": {
+    "profile": {
+      "home": "index.html"
+    }
+  },
+  "imgAPI": {
+    "avatar": [
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg"
+    ],
+    "photo": [
+      "https://via.placeholder.com/675x900/e1ad92/fff",
+      "https://via.placeholder.com/967x725/ea6d6d/fff",
+      "https://via.placeholder.com/1280x849/ea6db7/fff",
+      "https://via.placeholder.com/967x725/bb6dea/fff",
+      "https://via.placeholder.com/1048x701/6d6fea/fff",
+      "https://via.placeholder.com/1050x700/6dc0ea/fff",
+      "https://via.placeholder.com/970x725/6deaa6/fff",
+      "https://via.placeholder.com/1051x700/b8de27/fff",
+      "https://via.placeholder.com/1051x701/de9f27/fff",
+      "https://via.placeholder.com/1050x700/ef4545/fff",
+      "https://via.placeholder.com/1050x700/ffc4c4/757575",
+      "https://via.placeholder.com/640x447/fdffc4/757575",
+      "https://via.placeholder.com/1280x851/c4ffd7/757575",
+      "https://via.placeholder.com/640x425/c4cdff/757575"
+    ],
+    "profile": [
+      "https://via.placeholder.com/1080x497/ffb2ad/757575",
+      "https://via.placeholder.com/270x345/dedede/757575",
+      "https://i.ibb.co/Nxk5246/bg-Desk-akf1es.jpg",
+      "https://via.placeholder.com/400x400/4e5467/FFFFFF",
+      "https://via.placeholder.com/400x266/2f5ef3/FFFFFF",
+      "https://via.placeholder.com/400x266/dedafd/757575",
+      "https://via.placeholder.com/400x400/ea6f23/FFFFFF",
+      "https://via.placeholder.com/400x400/b79136/FFFFFF",
+      "https://via.placeholder.com/400x266/94fbf7/757575",
+      "https://i.ibb.co/98hxrqw/desk-Dark-pof62n.jpg"
+    ]
+  },
+  "menu": {
+    "profile": [
+      {
+        "name": "home",
+        "offset": 0
+      },
+      {
+        "name": "about",
+        "offset": -100
+      },
+      {
+        "name": "services",
+        "offset": 0
+      },
+      {
+        "name": "my-work",
+        "offset": -40
+      },
+      {
+        "name": "testimonials",
+        "offset": 0
+      },
+      {
+        "name": "blog",
+        "offset": 0
+      },
+      {
+        "name": "contact",
+        "offset": 0
+      }
+    ]
+  },
+  "youtube": {
+    "use": false
+  }
+}

@@ -1,0 +1,65 @@
+.root
+  .container.max-lg.mq-sm-down(data-class="max-sm")
+    .row
+      .col-lg-2.pa-0
+      .col-lg-9.pa-0
+        .about
+          .reward
+            .item
+              figure
+                |
+                |
+                img(src=assets+'/images/profile/reward1.svg' alt='badge')/
+                |
+                |
+              p.use-text-paragraph Special Mention
+              h5.use-text-subtitle Awards
+            .item
+              figure
+                |
+                |
+                img(src=assets+'/images/profile/reward2.svg' alt='badge')/
+                |
+                |
+              p.use-text-paragraph 100k videos
+              h5.use-text-subtitle Subscriber
+            .item
+              figure
+                |
+                |
+                img(src=assets+'/images/profile/reward3.svg' alt='badge')/
+                |
+                |
+              p.use-text-paragraph Best Filmography
+              h5.use-text-subtitle Footage
+          .hidden-md-up
+            .socmed
+              |
+              |
+              a.btn-icon.margin.waves-effect(href="#")
+                i.ion-social-facebook
+              |
+              |
+              a.btn-icon.margin.waves-effect(href="#")
+                i.ion-social-twitter
+              |
+              |
+              a.btn-icon.margin.waves-effect(href="#")
+                i.ion-social-instagram
+              |
+              |
+              a.btn-icon.margin.waves-effect(href="#")
+                i.ion-social-linkedin
+              |
+              |
+          .hidden-md-up
+            h5 #{$t.profile_landing.banner_desc}
+          .card.photo
+            figure
+              |
+              |
+              img(src=brand.profile.avatar alt='avatar')/
+              |
+              |
+            span.frame
+        .line

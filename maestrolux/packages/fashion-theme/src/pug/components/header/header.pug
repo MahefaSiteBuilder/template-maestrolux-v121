@@ -1,0 +1,33 @@
+include mobile-menu.pug
+
+mixin header(invert)
+  header.app-bar.header#header
+    .container.fixed-width-md-up
+      .header-content
+        nav.nav-menu(class=invert && "invert")
+          button#mobile_menu.mobile-menu.btn-icon.waves-effect.hamburger.hamburger--spin.show-sm-down
+            |
+            |
+            span.hamburger-box
+              span.bar.hamburger-inner
+            |
+            |
+          .logo(class= !invert && "scrollnav")
+            |
+            |
+            a(href=invert ? link.fashion.home : "#banner")
+              img(src=assets + brand.fashion.img alt="logo")
+            |
+            |
+          .scrollactive-nav.show-md-up(class= !invert && "scrollnav")
+            ul
+              each item in menu.fashion
+                |
+                |
+                li
+                  a.btn.btn-flat.anchor-link.waves-effect(
+                    href=invert ? 'index.html#'+item.name : '#'+item.name
+                  ) #{$t.fashion_landing['header_'+item.name]}
+        nav
+          include ./settings
+          +settings(invert)

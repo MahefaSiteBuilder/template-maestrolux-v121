@@ -1,0 +1,60 @@
+extends ../layouts/app.pug
+
+block variables
+  - var pageTitle = " Home Page"
+block content
+  div
+    .main-wrap
+      include ../components/header/header.pug
+      // ##### HEADER #####
+      +header(false)
+      // ##### END HEADER #####
+      main.container-wrap
+        // ##### VIDEO BANNER #####
+        section#home
+          include ../components/video-banner.pug
+        // ##### END VIDEO BANNER #####
+        // ##### SERVICES #####
+        section#services.space-top-short
+          include ../components/services.pug
+        // ##### END SERVICES #####
+        // ##### PROJECT #####
+        section#project.space-top-mobile
+          include ../components/project.pug
+        // ##### END PROJECT #####
+        // ##### FEATURED #####
+        section#featured.space-top-mobile
+          include ../components/featured.pug
+        // ##### END FEATURED #####
+        section
+          // ##### ABOUT #####
+          #about.space-top-tablet
+            include ../components/about.pug
+          // ##### END ABOUT #####
+          // ##### TEAM #####
+          #team.space-top-short
+            include ../components/team.pug
+          // ##### END TEAM #####
+          // ##### COUNTER #####
+          div
+            include ../components/counter.pug
+          // ##### END COUNTER #####
+        // ##### BLOG #####
+        section#blog.space-top-short
+          include ../components/blog.pug
+        // ##### END BLOG #####
+        // ##### SUBSCRIBE #####
+        section#subscribe.space-top-short
+          include ../components/subscribe-form.pug
+        // ##### END SUBSCRIBE #####
+        // ##### FOOTER #####
+        include ../components/footer.pug
+        // ##### END FOOTER #####
+      // ##### PAGE NAVE #####
+      .hidden-md-down
+        include ../components/page-nav.pug
+      // ##### END PAGE NAVE #####
+      // ##### NOTIFICATION #####
+      .hidden-md-down
+        include ../components/notification.pug
+      // ##### END NOTIFICATION #####

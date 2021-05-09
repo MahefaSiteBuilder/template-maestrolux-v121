@@ -1,0 +1,42 @@
+.root
+  .video
+    .overlay
+    |
+    |
+    img.show-md-down(src=imgAPI.fashion[0] alt='cover')/
+    |
+    |
+    img#banner_cover(src=imgAPI.fashion[0] alt='cover')/
+    |
+    |
+    if youtube.use
+      #youtube.show-lg-up
+    .caption
+      .container.max-md
+        .hidden-sm-down
+          |
+          |
+          button#btn_play.btn-icon.btn-play.waves-effect.hide
+            |
+            |
+            i.ion-ios-pause-outline.pause
+            |
+            |
+            i.ion-ios-play-outline.play
+            |
+            |
+          |
+          |
+        h6.use-text-subtitle #{$t.fashion_landing.banner_title}
+        h2.use-text-title #BEanICON
+        .scrollactive-nav.scrollnav
+          |
+          |
+          a.btn-icon.arrow.anchor-link.waves-effect(href='#promotions')
+            |
+            |
+            i.material-icons arrow_downward
+            |
+            |
+          |
+          |

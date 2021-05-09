@@ -1,0 +1,73 @@
+extends ../layouts/movie-wrap/app.pug
+
+block variables
+  - var pageTitle = " - Home Page"
+block content
+  div
+    #home
+    .main-wrap
+      include ../../../../movie-theme/src/pug/components/header/header.pug
+      // ##### HEADER #####
+      +header(false)
+      // ##### END HEADER #####
+      
+      main.container-wrap
+        // ##### BANNER #####
+        section#banner
+          include ../../../../movie-theme/src/pug/components/video-banner.pug
+        // ##### END BANNER #####
+        
+        // ##### PROMOTION #####
+        section#promotions
+          include ../../../../movie-theme/src/pug/components/promotions.pug
+        // ##### END PROMOTION #####
+        
+        // ##### FEATURED #####
+        section#featured.space-top
+          include ../../../../movie-theme/src/pug/components/featured.pug
+        // ##### END FEATURED #####
+        
+        // ##### TRENDING #####
+        section#trending.space-top
+          include ../../../../movie-theme/src/pug/components/trending.pug
+        // ##### END TRENDING #####
+        
+        // ##### CATEGORIES #####
+        section#top.space-top
+          include ../../../../movie-theme/src/pug/components/categories.pug
+        // ##### END CATEGORIES #####
+        
+        // ##### ALL CATEGORIES #####
+        section#all.space-top-short
+          include ../../../../movie-theme/src/pug/components/all-categories.pug
+        // ##### END ALL CATEGORIES #####
+        
+        // ##### PRICING #####
+        section#pricing.space-top
+          include ../../../../movie-theme/src/pug/components/pricing-plan.pug
+        // ##### END PRICING #####
+        
+        // ##### FAQ #####
+        section#faq.space-top
+          include ../../../../movie-theme/src/pug/components/faq.pug
+        // ##### END FAQ #####
+        
+        // ##### NEWS EVENT #####
+        section#news.space-top-short
+          include ../../../../movie-theme/src/pug/components/news-event.pug
+        // ##### NEWS EVENT #####
+      
+      // ##### fOOTER #####
+      #footer
+        include ../../../../movie-theme/src/pug/components/footer/footer-with-deco.pug
+      // ##### END fOOTER #####
+      
+      // ##### PAGE-NAV #####
+      .hidden-sm-down
+        include ../../../../movie-theme/src/pug/components/page-nav.pug
+      // ##### END PAGE-NAV #####
+      
+      // ##### NOTIFICATION #####
+      .hidden-sm-down
+        include ../../../../movie-theme/src/pug/components/notification.pug
+      // ##### END NOTIFICATION #####

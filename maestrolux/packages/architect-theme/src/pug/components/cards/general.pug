@@ -1,0 +1,16 @@
+mixin general-card(img, title, desc)
+  .card.general-card
+    figure
+      |
+      |
+      img(src=img alt='title')/
+      |
+      |
+    .card.desc
+      h6.title #{title}
+      p.use-text-paragraph #{desc}
+      |
+      |
+      a.btn.secondary.button.waves-effect.waves-light(href="#") See Detail
+      |
+      |

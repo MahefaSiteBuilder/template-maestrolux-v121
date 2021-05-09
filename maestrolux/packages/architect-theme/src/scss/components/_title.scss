@@ -1,0 +1,24 @@
+.title-main {
+  display: inline-block;
+  @include padding-right($spacing2);
+  @include padding-left($spacing4);
+  @include border-left(12px solid $palette-primary-main);
+  margin-bottom: $spacing3;
+  h4 {
+    @include palette-text-primary;
+    margin-bottom: $spacing1;
+  }
+  &.dark {
+    border-color: $palette-common-white;
+    h4 {
+      color: $palette-common-white
+    }
+    .desc {
+      color: $palette-common-white
+    }
+  }
+  .desc {
+    margin-bottom: 0;
+    @include palette-text-secondary
+  }
+}

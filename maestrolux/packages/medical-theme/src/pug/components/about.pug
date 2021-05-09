@@ -1,0 +1,11 @@
+include ./titles/with-decoration.pug
+.root
+  .container.fixed-width
+    .row
+      .col-md-5.py-md-6.px-sm-6.px-0
+        div.text-center
+          +title-deco($t.medical_landing.about_title, imgAPI.medical[1])
+      .col-md-7.pa-6
+        h4.title-default.use-text-subtitle #{$t.medical_landing.about_subtitle}
+        include counter.pug
+        blockquote #{$t.medical_landing.about_quote}

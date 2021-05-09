@@ -1,0 +1,88 @@
+extends ../layouts/app.pug
+
+block variables
+  - var pageTitle = " Detail Movie"
+
+block content
+  #detail-movie.main-wrap
+    include ../components/header/header.pug
+    +header(true)
+    .bg-movie
+      img(src=imgAPI.movie[15] alt='poster')/
+    main.container-wrap
+      .row.justify-content-center
+        .col-sm-5.pa-6.order-sm-last
+          .image
+            a.waves-effect
+              i.ion-arrow-right-b.play
+              figure
+                |
+                |
+                img(src=imgAPI.movie[15] alt='movie')/
+                |
+                |
+            |
+            |
+        .col-lg-5.col-sm-7.pa-6.order-sm-first
+          .text
+            span.use-text-subtitle2 Vivamus sit amet
+            h4.use-text-title2 
+              | The Lorem Ipsum Dolor Sit
+            .property
+              .star
+                - var n = 1;
+                while n <= 5
+                  |
+                  |
+                  i.material-icons.star-icon(title=n++) star
+                  |
+                  |
+              | 5.0
+              span.divider
+              | 2h 13m
+            article.desc
+              h6.use-text-paragraph Drama, Action and Adventure
+            .btn-area
+              |
+              |
+              a.btn-flat.secondary.waves-effect(href="#") #{$t.movie_landing.promo_btn1}
+              |
+              |
+              a.btn.primary.waves-effect(href="#") #{$t.movie_landing.promo_btn2}
+              |
+              |
+      .row.justify-content-center
+        .col-lg-10.col-md-12
+          .card.about
+            .row
+              .col-md-7
+                h4.use-text-subtitle.mb-3 #{$t.movie_landing.detail_storyline}
+                p.use-text-paragraph Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                .btn-area-detail.mt-10
+                  |
+                  |
+                  a.btn-flat.secondary.waves-effect
+                    i.ion-android-share-alt 
+                    | #{$t.movie_landing.detail_share}
+                  |
+                  |
+                  a.btn-flat.secondary.waves-effect
+                    i.ion-film-marker 
+                    | #{$t.movie_landing.detail_trivia}
+                  |
+                  |
+                  a.btn-flat.secondary.waves-effect
+                    i.ion-ios-star 
+                    | #{$t.movie_landing.detail_rate}
+                  |
+                  |
+              .col-md-5
+                .person
+                  h6.title-person #{$t.movie_landing.detail_director}
+                  p John Doe
+                  h6.title-person #{$t.movie_landing.detail_writers}
+                  p John Doe, Jim Doe, Jane Doe
+                  h6.title-person #{$t.movie_landing.detail_stars}
+                  p Jena Doe, James Doe, Jack Doe, Jimmy Doe
+    include ../components/footer/footer.pug
+    +footer(true)

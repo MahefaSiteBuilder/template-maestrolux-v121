@@ -1,0 +1,222 @@
+@mixin arrow-nav {
+  width: 74px;
+  height: 74px;
+  top: calc(50% - 37px);
+  position: absolute;
+  display: block;
+  @include use-theme(background, #EBEBEB, $palette-common-black);
+  border-radius: 50%;
+  text-align: center;
+  @include breakpoints-down(md) {
+    visibility: hidden
+  }
+};
+
+$height: 450px;
+$height-mobile: 600px;
+
+#promotions {
+  .root {
+    position: relative;
+    margin-top: -130px;
+    z-index: 90;
+    max-width: 1000px;
+    @include breakpoints-up(md) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    > div {
+      @include breakpoints-down(md) {
+        padding: 0 !important
+      }
+    }
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include breakpoints-up(sm) {
+      top: -70%;
+      opacity: 0.2;
+    }
+    figure {
+      @include breakpoints-up(sm) {
+        filter: blur(20px);
+      }
+      margin: 0;
+      img {
+        width: 100%
+      }
+    }
+  }
+
+  .desc {
+    max-height: 130px;
+    min-height: 100px;
+    overflow: hidden;
+    padding: spacing(1, 0);
+    margin-bottom: $spacing2;
+    @include breakpoints-down(xs) {
+      display: none;
+    }
+  }
+
+  .inner-bg {
+    overflow: hidden;
+    width: 100%;
+    @include palette-background-paper;
+    padding: $spacing6;
+    @include breakpoints-down(xs) {
+      padding: 0
+    }
+  }
+
+  .slider-wrap {
+    display: block;
+    position: relative;
+    z-index: 1;
+    .anim-dots {
+      display: none
+    }
+    .slider-content {
+      overflow: hidden;
+      z-index: 1;
+      @include breakpoints-up(md) {
+        @include use-theme(box-shadow, 0 1.5px 12px 2px rgba(0, 0, 0, 0.06), (0px 1px 3px 0px rgba(64, 64, 64, 1), 0px 1px 1px 0px rgba(42, 42, 42, 1), 0px 2px 1px -1px rgba(20, 20, 20, 1)));
+        border-radius: 32px;
+      }
+      &.anim-slide-this {
+        z-index: 1000
+      }
+    }
+    > div {
+      height: $height;
+      @include breakpoints-down(xs) {
+        height: $height-mobile  
+      }
+      overflow: visible;
+    }
+  }
+  .arrow-icon {
+    @include use-theme(color, $light-text-primary, $palette-common-white);
+    display: block;
+    font-size: 50px;
+    [dir="rtl"] & {
+      transform: rotate(180deg)
+    }
+  }
+  a.prev {
+    @include left(-60px);
+    @include padding-right(12px);
+    @include breakpoints-up(lg) {
+      @include left(-40px);
+    }
+    @include arrow-nav;
+  }
+  a.next {
+    @include right(-60px);
+    @include padding-left(12px);
+    @include breakpoints-up(lg) {
+      @include right(-40px);
+    }
+    @include arrow-nav;
+  }
+  .item {
+    display: flex;
+    padding: 0;
+    height: $height;
+    @include breakpoints-down(xs) {
+      height: $height-mobile  
+    }
+    &:before {
+      display: none
+    }
+  }
+
+  .text {
+    flex: 1;
+    @include text-align(left);
+    padding: spacing(2, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: $height;
+    @include breakpoints-down(xs) {
+      height: $height-mobile  
+    }
+    @include breakpoints-down(xs) {
+      margin-top: 120px;
+      padding: 200px 16px 16px 16px;
+      @include use-theme(background-image, linear-gradient(0deg, rgba(255,255,255,1) 65%, rgba(255,255,255,0) 100%), linear-gradient(0deg, rgba(48,48,48,1) 65%, rgba(48,48,48,0) 100%))
+    }
+    h4 {
+      font-weight: $font-bold;
+      margin-bottom: $spacing1;
+      width: 100%;
+      @include breakpoints-down(xs) {
+        font-size: 24px;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+  
+  .property {
+    width: 100%;
+    display: flex;
+    margin-bottom: $spacing2;
+    .star {
+      color: #FF9500;
+      @include margin-right($spacing2);
+    }
+    .divider {
+      background: none;
+      border-left: 1px solid;
+      @include use-theme(border-color, $light-text-primary, $dark-text-primary);
+      height: 12px;
+      margin: 6px $spacing2;
+      display: inline-block;
+    }
+  }
+  
+  .btn-area {
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    @include breakpoints-down(xs) {
+      justify-content: center;
+      flex-direction: column;
+      & > * {
+        margin: spacing(0, 0, 2)
+      }
+    }
+    @include breakpoints-up(sm) {
+      & > * {
+        @include margin-right($spacing2)
+      }
+    }
+  }
+
+  .image {
+    text-align: center;
+    line-height: 360px;
+    vertical-align: middle;
+    figure {
+      @include shadow3;
+      width: 250px;
+      height: 360px;
+      overflow: hidden;
+      border-radius: $rounded-big;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

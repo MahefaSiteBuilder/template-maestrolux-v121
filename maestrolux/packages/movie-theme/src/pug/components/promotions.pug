@@ -1,0 +1,109 @@
+-
+  var sliderData = [
+    {
+      image: imgAPI.movie[1],
+      subtitle: 'Vivamus sit amet',
+      title: 'The Lorem Ipsum Dolor Sit',
+      rating: 5,
+      duration: '2h 15m',
+      desc: 'Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci.',
+    },
+    {
+      image: imgAPI.movie[2],
+      subtitle: 'Vivamus sit amet',
+      title: 'The Lorem Ipsum Dolor Sit',
+      rating: 5,
+      duration: '2h 15m',
+      desc: 'Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci.',
+    },
+    {
+      image: imgAPI.movie[3],
+      subtitle: 'Vivamus sit amet',
+      title: 'The Lorem Ipsum Dolor Sit',
+      rating: 5,
+      duration: '2h 15m',
+      desc: 'Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci.',
+    },
+    {
+      image: imgAPI.movie[5],
+      subtitle: 'Vivamus sit amet',
+      title: 'The Lorem Ipsum Dolor Sit',
+      rating: 5,
+      duration: '2h 15m',
+      desc: 'Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci.',
+    }
+  ]
+
+.root
+  .slider-wrap
+    .anim-slider
+      each item, index in sliderData
+        .slide.slider-content.anim-slide
+          section.inner.item
+            .inner-bg
+              .background
+                figure
+                  |
+                  |
+                  img(src=item.image alt='promotion')/
+                  |
+                  |
+              .row
+                .col-sm-7.pa-0
+                  .text
+                    h4
+                      span.use-text-subtitle2 #{item.subtitle}
+                      | #{item.title}
+                    .property
+                      .star
+                        - var n = 1;
+                        while n <= item.rating
+                          |
+                          |
+                          i.material-icons.star-icon(title=n++) star
+                          |
+                          |
+                      |
+                      |
+                      | 5.0
+                      span.divider
+                      | #{item.duration}
+                    article.desc
+                      h6.use-text-paragraph #{item.desc}
+                    .btn-area
+                      |
+                      |
+                      a.btn-flat.secondary.waves-effect(href="#") #{$t.movie_landing.promo_btn1}
+                      |
+                      |
+                      a.btn.primary.waves-effect(href="#") #{$t.movie_landing.promo_btn2}
+                      |
+                      |
+                .col-sm-5.pa-0
+                  .hidden-xs-down
+                    .image
+                      figure
+                        |
+                        |
+                        img(src=item.image alt='promotion')/
+                        |
+                        |
+      .anim-arrows
+        |
+        |
+        a.anim-arrows-prev.prev(href='#')
+          |
+          |
+          i.ion-ios-arrow-thin-left.arrow-icon
+          |
+          |
+        |
+        |
+        a.anim-arrows-next.next(href='#')
+          |
+          |
+          i.ion-ios-arrow-thin-right.arrow-icon
+          |
+          |
+        |
+        |

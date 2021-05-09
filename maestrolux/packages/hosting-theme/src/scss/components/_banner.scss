@@ -1,0 +1,243 @@
+$cloud-bottom-light: '../images/hosting/cloud_bottom_light.svg';
+$cloud-bottom-dark:  '../images/hosting/cloud_bottom_dark.svg';
+
+#banner {
+  .root {
+    @include use-theme(background, $palette-primary-light, $palette-primary-dark);
+  }
+  .deco-wrap {
+    position: absolute;
+    width: 100%;
+    height: 760px;
+    clip: rect(0, auto, auto, 0);
+    overflow: hidden;
+    @include use-theme(background, $palette-primary-light, $palette-primary-dark);
+    @include breakpoints-down(md) {
+      display: none
+    }
+  }
+
+  .cloud-deco {
+    @include use-theme(background-image, url($cloud-bottom-light), url($cloud-bottom-dark));
+    background-repeat: repeat-x;
+    background-position: center 80px;
+    width: 100%;
+    height: 360px;
+    position: absolute;
+    opacity: 0.25;
+    bottom: -300px;
+  }
+
+  .parallax-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @include left(0);
+    top: 0;
+    z-index: 0;
+    @include breakpoints-down(md) {
+      display: none
+    }
+  }
+
+  .inner-parallax {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    display: block;
+    figure {
+      height: 500px;
+      margin: 0px;
+      width: 100%;
+      display: block;
+      position: absolute
+    }
+    figure > div {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      svg {
+        position: absolute
+      }
+    }
+  }
+
+  .illustration {
+    position: fixed;
+    width: 100%;
+    height: 650px;
+    bottom: -120px;
+    @include left(0);
+    @include use-theme(opacity, 1, 0.5);
+    img {
+      width: 100%
+    }
+  }
+
+  .banner-wrap {
+    position: relative;
+    padding: spacing(25, 0, 20);
+    @include breakpoints-up(md) {
+      padding: spacing(32, 0, 20)
+    }
+  }
+
+  .text {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    h4 {
+      font-weight: $font-bold;
+      @include use-theme(color, $palette-primary-dark, $palette-primary-light);
+      margin-bottom: $spacing3
+    }
+    p {
+      font-weight: $font-medium
+    }
+  }
+  
+  .search-domain {
+    position: relative;
+    margin-top: $spacing3;
+    font-size: 18px;
+    overflow: visible;
+    .input-field.filled {
+      background: none !important;
+      min-height: 0;
+      padding: 0 !important;
+      .select {
+        padding: spacing(1, 0, 1);
+        @include padding-left($spacing3);
+        margin: 0;
+        max-width: none
+      }
+      &:before, &:after {
+        display: none;
+      }
+    }
+    .selections {
+      input[type="text"] {
+        display: none
+      }
+    }
+    @include breakpoints-up(md) {
+      margin: spacing(6, 10, 0)
+    }
+    @include breakpoints-down(xs) {
+      margin-top: $spacing4
+    }
+    label {
+      text-transform: capitalize
+    }
+    .input-field.filled label.active, .input-field.full-width .label.active {
+      transform: translateY(-24px) scale(0.75);
+      transform-origin: top left;
+    }
+    .input-field {
+      margin: 0;
+      input {
+        box-sizing: border-box;
+        margin: 0;
+        border-radius: 10px;
+        padding: $spacing2;
+        max-height: none;
+        height: 75px;
+        border: none;
+        @include breakpoints-up(md) {
+          padding: spacing(4, 30, 3, 3)
+        }
+        &:focus {
+          @include use-theme(box-shadow, $palette-primary-light 0 0 0 0.4rem, $palette-primary-dark 0 0 0 0.4rem)
+        }
+      }
+    }
+    label {
+      top: 16px;
+      @include left($spacing3 !important);
+      font-weight: $font-bold
+    }
+
+  }
+
+  .action {
+    max-width: 320px;
+    position: absolute;
+    @include right(0);
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: $spacing2;
+    .form-control {
+      border: none;
+      padding: 0;
+      position: relative;
+      width: 140px;
+      .select-wrapper {
+        @include padding-left($spacing3)
+      }
+    }
+    .select-wrapper input {
+      border: none;
+      margin-bottom: 0;
+      height: 100%;
+      line-height: normal;
+      font-size: 18px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      padding: 2px 28px;
+      box-sizing: content-box;
+      @include breakpoints-down(xs) {
+        padding: 2px;
+        background: none; box-shadow: none;
+        color: $palette-primary-main;
+      }
+      i {
+        line-height: normal;
+        font-size: 22px;
+        @include margin-right(3px)
+      }
+    }
+  }
+
+  .select-domain {
+    height: 100%;
+    display: flex;
+    margin: spacing(0, 2);
+    @include border-left(1px solid);
+    @include palette-divider;
+    border-radius: 0;
+    &:hover {
+      @include palette-divider;
+    }
+    &:before, &:after {
+      display: none
+    }
+  }
+
+  .button {
+    .btn {
+      padding: spacing(1, 3);
+      height: auto;
+      @include breakpoints-down(sm) {
+        padding: 0;
+        min-width: 0;
+        width: auto;
+        background: none !important;
+        box-shadow: none;
+        color: $palette-primary-main
+      }
+    }
+  }
+
+  .deco-inner {
+    position: absolute;
+    top: 0;
+    @include left(0);
+    width: 100%;
+    height: 100%
+  }
+}

@@ -1,0 +1,28 @@
+#feature {
+  .root {
+    text-align: center;
+    @include palette-text-secondary;
+    h5 {
+      margin-bottom: $spacing3
+    }
+    p {
+      padding: spacing(0, 4);
+      margin-bottom: 0;
+    }
+    }
+    .icon {
+      width: 80px;
+      height: 80px;
+      font-size: 80px;
+      margin: 0 auto;
+      color: $palette-primary-light
+    }
+    .divider {
+      max-height: none;
+      margin: $spacing3 auto;
+      width: 80px;
+      height: 5px;
+      background: $palette-primary-light
+    }
+
+}

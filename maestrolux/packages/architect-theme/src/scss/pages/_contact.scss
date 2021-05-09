@@ -1,0 +1,13 @@
+.main-wrap-contact {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .title-main {
+    margin: 0 -8px;
+  }
+  @include use-theme(
+    background,
+    $light-background-paper,
+    $dark-background-default
+  );
+}

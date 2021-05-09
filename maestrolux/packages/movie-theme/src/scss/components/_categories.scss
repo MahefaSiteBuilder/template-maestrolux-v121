@@ -1,0 +1,7 @@
+#categories {
+  .root {
+    @include breakpoints-down(xs) {
+      text-align: center
+    }
+  }
+}

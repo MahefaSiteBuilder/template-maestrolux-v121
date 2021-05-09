@@ -1,0 +1,106 @@
+#banner {
+  .root {
+    display: block;
+    position: relative;
+    background: $palette-common-black;
+    height: 720px;
+    @include breakpoints-down(xs) {
+      height: 640px
+    }
+  }
+
+  .video {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+      min-height: 100%;
+      position: absolute;
+      top: 0;
+      z-index: 9;
+      @include left(0);
+      @include breakpoints-down(md) {
+        min-width: 100%;
+        width: auto;
+        height: 100%;
+      }
+      @include breakpoints-down(xs) {
+        @include left(-320px)
+      }
+    }
+    iframe {
+      width: 100%
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    @include left(0);
+    background: $palette-common-black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: 10
+  }
+
+  .caption {
+    position: absolute;
+    width: 100%;
+    z-index: 90;
+    text-align: center;
+    color: $palette-common-white;
+    top: 40%;
+    @include breakpoints-down(xs) {
+      top: 30%
+    }
+    h2 {
+      font-family: 'Roboto Condensed';
+    }
+    &:hover {
+      .btn-play {
+        opacity: 0.5
+      }
+    }
+  }
+
+  .arrow {
+    margin-top: $spacing5;
+    border: 1px dashed #fff;
+    width: 54px;
+    height: 54px;
+    padding: $spacing1;
+    text-align: center;
+    i.material-icons {
+      color: $palette-common-white;
+    }
+  }
+
+  .btn-play {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border: 1px dashed #fff;
+    i {
+      position: relative;
+      color: $palette-common-white;
+      font-size: 40px;
+      width: 40px;
+      height: 40px;
+      top: -2px;
+      line-height: 84px;
+      &.ion-ios-play-outline {
+        left: 3px
+      }
+      &.play {
+        display: none;
+      }
+    }
+  }
+}

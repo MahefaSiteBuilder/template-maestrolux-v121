@@ -1,0 +1,170 @@
+include ./titles/title.pug
+.root
+  |
+  |
+  svg.deco-top.back
+    include ./svg/deco-wave-top.pug
+  |
+  |
+  svg.deco-top.cover
+    include ./svg/deco-wave-top.pug
+  +title-main("center", true)
+    | #{$t.mobile_landing.showcase_title}
+  .carousel-wrap
+    .invert-parallax
+      include ./parallax/large.pug
+    .carousel-side
+      .slick-carousel.slider-side#slider_side
+        .item
+          .card.frame
+            |
+            |
+            img(src=imgAPI.mobile[7] alt='app')/
+            |
+            |
+        .item
+          .card.frame
+            |
+            |
+            img(src=imgAPI.mobile[8] alt='app')/
+            |
+            |
+        .item
+          .card.frame
+            |
+            |
+            img(src=imgAPI.mobile[9] alt='app')/
+            |
+            |
+        .item
+          .card.frame
+            |
+            |
+            img(src=imgAPI.mobile[10] alt='app')/
+            |
+            |
+        .item
+          .card.frame
+            |
+            |
+            img(src=imgAPI.mobile[11] alt='app')/
+            |
+            |
+        .item
+          .card.frame
+            |
+            |
+            img(src=imgAPI.mobile[12] alt='app')/
+            |
+            |
+        .item
+          .card.frame
+            |
+            |
+            img(src=imgAPI.mobile[13] alt='app')/
+            |
+            |
+    .carousel-center
+      .card.frame
+        .slick-carousel.slider-center#slider_center
+          .item
+            |
+            |
+            img(src=imgAPI.mobile[7] alt='app')/
+            |
+            |
+            .widget
+              |
+              |
+              img(src=imgAPI.mobile[14] alt='app')/
+              |
+              |
+          .item
+            |
+            |
+            img(src=imgAPI.mobile[8] alt='app')/
+            |
+            |
+            .widget
+              |
+              |
+              img(src=imgAPI.mobile[15] alt='app')/
+              |
+              |
+          .item
+            |
+            |
+            img(src=imgAPI.mobile[9] alt='app')/
+            |
+            |
+            .widget
+              |
+              |
+              img(src=imgAPI.mobile[16] alt='app')/
+              |
+              |
+          .item
+            |
+            |
+            img(src=imgAPI.mobile[10] alt='app')/
+            |
+            |
+            .widget
+              |
+              |
+              img(src=imgAPI.mobile[17] alt='app')/
+              |
+              |
+          .item
+            |
+            |
+            img(src=imgAPI.mobile[11] alt='app')/
+            |
+            |
+            .widget
+              |
+              |
+              img(src=imgAPI.mobile[18] alt='app')/
+              |
+              |
+          .item
+            |
+            |
+            img(src=imgAPI.mobile[12] alt='app')/
+            |
+            |
+            .widget
+              |
+              |
+              img(src=imgAPI.mobile[19] alt='app')/
+              |
+              |
+          .item
+            |
+            |
+            img(src=imgAPI.mobile[13] alt='app')/
+            |
+            |
+            .widget
+              |
+              |
+              img(src=imgAPI.mobile[20] alt='app')/
+              |
+              |
+  |
+  |
+  svg.deco-bottom.back
+    include ./svg/deco-wave-bottom.pug
+  |
+  |
+  svg.deco-bottom.cover
+    include ./svg/deco-wave-bottom.pug
+  |
+  |
+  .deco-bottom-mobile
+  .pagination#showcase_mobile_nav
+    ul
+      - var i = 1
+      while i <= 7
+        li(class=i==1 ? "active" : "")
+          button(data-index=i++)

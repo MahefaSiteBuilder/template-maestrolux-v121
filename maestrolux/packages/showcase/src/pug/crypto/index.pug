@@ -1,0 +1,52 @@
+extends ../layouts/crypto-wrap/app.pug
+
+block variables
+  - var pageTitle = " - Home Page"
+block content
+  div
+    #home
+    .main-wrap
+      include ../../../../crypto-theme/src/pug/components/header/header.pug
+      // ##### HEADER #####
+      +header(false)
+      // ##### END HEADER #####
+
+      main.container-wrap
+        // ##### BANNER #####
+        section#banner
+          include ../../../../crypto-theme/src/pug/components/banner.pug
+        // ##### END BANNER #####
+        // ##### PROMOTIONS #####
+        section#promotions
+          include ../../../../crypto-theme/src/pug/components/promotions.pug
+        // ##### END PROMOTIONS #####
+        // ##### FEATURE #####
+        section#feature.space-top-short-md-down
+          include ../../../../crypto-theme/src/pug/components/feature/feature.pug
+        // ##### END FEATURE #####
+        // ##### BENEFIT #####
+        section#benefit.space-top-short
+          include ../../../../crypto-theme/src/pug/components/benefit.pug
+        // ##### END BENEFIT #####
+        // ##### TESTIMONIALS #####
+        section#testimonials.space-top
+          include ../../../../crypto-theme/src/pug/components/testimonials.pug
+        // ##### END TESTIMONIALS #####
+        // ##### FAQ #####
+        section#faq.space-top
+          include ../../../../crypto-theme/src/pug/components/faq.pug
+        // ##### END FAQ #####
+      // ##### FOOTER #####
+      #footer
+        include ../../../../crypto-theme/src/pug/components/footer/footer-with-counter.pug
+      // ##### END FOOTER #####
+    // ##### PAGE NAV #####
+    .hidden-md-down
+      include ../../../../crypto-theme/src/pug/components/page-nav.pug
+    // ##### END PAGE NAV #####
+    // ##### NOTIFICATION #####
+    .hidden-md-down
+      include ../../../../crypto-theme/src/pug/components/notification.pug
+    // ##### END NOTIFICATION #####
+  script(src=assets + "/js/vendors/particles/particles.min.js")
+  script(src=assets + "/js/vendors/particles/stats.min.js")

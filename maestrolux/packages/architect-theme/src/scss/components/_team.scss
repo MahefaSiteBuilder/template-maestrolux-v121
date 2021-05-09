@@ -1,0 +1,43 @@
+#team {
+  .root {
+    position: relative;
+    > * {
+      position: relative
+    }
+  }
+
+  .deco {
+    position: absolute;
+    top: $spacing10 * -1;
+    @include left(0);
+    height: 560px;
+    width: 70%;
+    [dir="rtl"] .theme--dark & {
+      background-image: linear-gradient(-160deg, $palette-primary-dark 50%, $dark-background-default 50%)
+    }
+    [dir="ltr"] .theme--dark & {
+      background-image: linear-gradient(160deg, $palette-primary-dark 50%, $dark-background-default 50%)
+    }
+    [dir="rtl"] .theme--light & {
+      background-image: linear-gradient(-160deg, $palette-primary-light 50%, $light-background-paper 50%)
+    }
+    [dir="ltr"] .theme--light & {
+      background-image: linear-gradient(160deg, $palette-primary-light 50%, $light-background-paper 50%)
+    }
+    @include breakpoints-down(sm) {
+      background: $palette-secondary-main
+    }
+    @include breakpoints-down(md) {
+      height: 720px
+    }
+    @include breakpoints-down(sm) {
+      width: 100%
+    }
+  }
+
+  .team-wrap {
+    @include breakpoints-up(sm){
+      margin-top: $spacing10
+    }
+  }
+}

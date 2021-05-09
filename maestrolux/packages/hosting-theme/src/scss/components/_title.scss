@@ -1,0 +1,92 @@
+@mixin align {
+  &.align-left {
+    @include text-align(left);
+    &:after {
+      @include left(0)
+    }
+  }
+
+  &.align-right {
+    @include text-align(right);
+    &:after {
+      @include right(0)
+    }
+  }
+
+  &.align-center {
+    text-align: center;
+    &:after {
+      @include left(50%);
+      @include margin-left(-35px)
+    }
+  }
+}
+
+p.caption-title {
+  text-transform: uppercase;
+  @include use-theme(color, $palette-primary-dark, $palette-primary-light);
+  font-weight: $font-bold;
+  font-size: 16px;
+  margin-bottom: $spacing1;
+  @include breakpoints-down(sm) {
+    font-size: 14px;
+    text-align: center !important;
+  }
+}
+
+.main-title {
+  @include align;
+  display: block;
+  position: relative;
+  margin-bottom: $spacing3;
+  @include breakpoints-down(sm) {
+    text-align: center !important;
+  }
+  h4 {
+    @include palette-text-primary;
+    font-weight: $font-bold;
+    text-transform: capitalize;
+    font-size: 36px;
+    line-height: 56px;
+    @include breakpoints-down(md) {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    @include breakpoints-down(xs) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+  &.dark {
+    .caption-title {
+      color: $palette-primary-light
+    }
+    h4 {
+      color: $palette-common-white
+    }
+  }
+}
+
+.title-secondary {
+  @include align;
+  display: block;
+  position: relative;
+  h4 {
+    @include palette-text-primary;
+    font-size: 36px;
+    line-height: 56px;
+    text-transform: capitalize;
+    font-weight: $font-bold;
+    @include breakpoints-down(md) {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    @include breakpoints-down(xs) {
+      font-size: 28px;
+      line-height: 44px;
+    }
+  }
+  strong {
+    @include palette-text-primary
+  }
+}

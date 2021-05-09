@@ -1,0 +1,15 @@
+include title.pug
+include cards/product-rating.pug
+
+.root
+  .container.fixed0width-md-up
+    .row.spacing3
+      .col-md-3
+        +title-main("left", "New", "Arrivals")
+        p.use-text-paragrpah #{$t.fashion_landing.new_desc}
+      .col-md-3.col-sm-4
+        +product-ratting(imgAPI.fashion[5], 4, 'It is a long established', '$90.00')
+      .col-md-3.col-sm-4
+        +product-ratting(imgAPI.fashion[6], 5, 'It is a long established', '$90.00')
+      .col-md-3.col-sm-4
+        +product-ratting(imgAPI.fashion[7], 5, 'It is a long established', '$90.00')

@@ -1,0 +1,105 @@
+include title.pug
+
+.page-wrap
+  .hidden-md-down
+    .bg-deco
+  .parallax
+    include parallax/cross.pug
+  .hidden-md-up
+    .logo.logo-header
+      a(href=link.architect.home)
+        img(src=assets + brand.architect.img alt="logo")/
+        span.use-text-title #{brand.architect.projectName}
+  .container.max-lg.inner-wrap
+    |
+    |
+    a.waves-effect.btn-icon.backtohome(href=link.architect.home)
+      |
+      |
+      span
+        i.ion-ios-home-outline
+        i.ion-ios-arrow-thin-left
+      |
+      |
+    |
+    |
+    .row
+      .col-lg-1.hidden-xs-only &nbsp;
+      .col-lg-5.wrap-deco
+        .hidden-md-down
+          .frm-deco
+        .card.form-box.fragment-fadeUp
+          .full-form-wrap
+            .form
+              +title-main("Contact Us", $t.common.contact_subtitle)
+              form#contact_form
+                .row.spacing6
+                  .col-sm-12
+                    .input-field.primary.filled
+                      |
+                      |
+                      input.validate#name(type='text' required)
+                      |
+                      |
+                      label(for='name') #{$t.common.form_name}
+                      |
+                      |
+                  .col-sm-12
+                    .input-field.primary.filled
+                      |
+                      |
+                      input.validate#email(type='email' required)
+                      |
+                      |
+                      label(for='email') #{$t.common.form_email}
+                      |
+                      |
+                  .col-sm-12
+                    .input-field.primary.filled
+                      |
+                      |
+                      input#phone(type='tel')
+                      |
+                      |
+                      label(for='phone') #{$t.common.form_phone}
+                      |
+                      |
+                  .col-sm-12
+                    .input-field.primary.filled
+                      |
+                      |
+                      input#company(type='text')
+                      |
+                      |
+                      label(for='company') #{$t.common.form_company}
+                      |
+                      |
+                  .col-sm-12
+                    .input-field.primary.filled
+                      |
+                      |
+                      textarea#message.materialize-textarea(rows="6")
+                      |
+                      |
+                      label(for='message') #{$t.common.form_message}
+                      |
+                      |
+                .form-control-label
+                  |
+                  |
+                  label
+                    input.filled-in.secondary(type='checkbox' required)
+                    span #{$t.common.form_terms} 
+                      a.link(href='#') #{$t.common.form_privacy}
+                  |
+                  |
+                .btn-area
+                  button.btn.primary.btn-large.waves-effect(type="submit") #{$t.common.form_send}
+                    i.material-icons.right-icon send
+      .col-lg-6
+        .hidden-md-down
+          .card.map
+            #map
+            
+            
+        

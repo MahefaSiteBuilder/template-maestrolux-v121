@@ -1,0 +1,98 @@
+{
+  "brand": {
+    "mobile": {
+      "name": "Mobile",
+      "desc": "Alexstrap Mobile Apps - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Mobile Apps 2020",
+      "logoText": "Alexstrap Theme",
+      "projectName": "Mobile",
+      "url": "alexstrap.ux-maestro.com/mobile",
+      "img": "/images/mobile-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    }
+  },
+  "link": {
+    "mobile": {
+      "home": "index.html",
+      "contact": "contact.html"
+    }
+  },
+  "imgAPI": {
+    "avatar": [
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg"
+    ],
+    "photo": [
+      "https://via.placeholder.com/675x900/e1ad92/fff",
+      "https://via.placeholder.com/967x725/ea6d6d/fff",
+      "https://via.placeholder.com/1280x849/ea6db7/fff",
+      "https://via.placeholder.com/967x725/bb6dea/fff",
+      "https://via.placeholder.com/1048x701/6d6fea/fff",
+      "https://via.placeholder.com/1050x700/6dc0ea/fff",
+      "https://via.placeholder.com/970x725/6deaa6/fff",
+      "https://via.placeholder.com/1051x700/b8de27/fff",
+      "https://via.placeholder.com/1051x701/de9f27/fff",
+      "https://via.placeholder.com/1050x700/ef4545/fff",
+      "https://via.placeholder.com/1050x700/ffc4c4/757575",
+      "https://via.placeholder.com/640x447/fdffc4/757575",
+      "https://via.placeholder.com/1280x851/c4ffd7/757575",
+      "https://via.placeholder.com/640x425/c4cdff/757575"
+    ],
+    "mobile": [
+      "https://i.ibb.co/B48d7Yg/mobile-banner.png",
+      "https://i.ibb.co/tKhLKbD/widget-top.png",
+      "https://i.ibb.co/zr6gzfS/widget-left.png",
+      "https://i.ibb.co/1Mm5pDw/widget-right.png",
+      "https://i.ibb.co/f9Kcbp0/mobile-feature.png",
+      "https://i.ibb.co/XfQ43j5/mobile-feature2.png",
+      "https://via.placeholder.com/536x302/fbd2ff/757575",
+      "https://via.placeholder.com/518x1120/fbd2ff/757575",
+      "https://via.placeholder.com/518x1120/d2ffff/757575",
+      "https://via.placeholder.com/518x1120/fbd2ff/757575",
+      "https://via.placeholder.com/518x1120/d2ffff/757575",
+      "https://via.placeholder.com/518x1120/fbd2ff/757575",
+      "https://via.placeholder.com/518x1120/d2ffff/757575",
+      "https://via.placeholder.com/518x1120/fbd2ff/757575",
+      "https://i.ibb.co/sbB6M9K/widget-screen1.png",
+      "https://i.ibb.co/NFfX7K7/widget-screen2.png",
+      "https://i.ibb.co/2gXRC0V/widget-screen3.png",
+      "https://i.ibb.co/w4skGgp/widget-screen4.png",
+      "https://i.ibb.co/8ryg5Ks/widget-screen5.png",
+      "https://i.ibb.co/pjzgjcK/widget-screen6.png",
+      "https://i.ibb.co/PwfWjkS/widget-screen7.png"
+    ]
+  },
+  "menu": {
+    "mobile": [
+      {
+        "name": "feature",
+        "offset": 0
+      },
+      {
+        "name": "showcase",
+        "offset": 0
+      },
+      {
+        "name": "testimonials",
+        "offset": 0
+      },
+      {
+        "name": "faq",
+        "offset": -40
+      }
+    ]
+  },
+  "youtube": {
+    "use": true
+  }
+}

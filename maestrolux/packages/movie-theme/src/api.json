@@ -1,0 +1,99 @@
+{
+  "brand": {
+    "movie": {
+      "name": "Movie",
+      "desc": "Alexstrap Movie - HTML5 Bootstrap Landing Page Template",
+      "prefix": "alexstrap",
+      "footerText": "Alexstrap Movie 2020",
+      "logoText": "Alexstrap Theme 2020",
+      "projectName": "Movie",
+      "url": "alexstrap.ux-maestro.com/movie",
+      "img": "/images/movie-logo.png",
+      "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
+    }
+  },
+  "link": {
+    "movie": {
+      "home": "index.html",
+      "detail": "detail-movie.html",
+      "login": "login.html",
+      "register": "register.html"
+    }
+  },
+  "imgAPI": {
+    "avatar": [
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/as.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg",
+      "https://avatars.dicebear.com/api/avataaars/qwert.svg"
+    ],
+    "photo": [
+      "https://via.placeholder.com/675x900/e1ad92/fff",
+      "https://via.placeholder.com/967x725/ea6d6d/fff",
+      "https://via.placeholder.com/1280x849/ea6db7/fff",
+      "https://via.placeholder.com/967x725/bb6dea/fff",
+      "https://via.placeholder.com/1048x701/6d6fea/fff",
+      "https://via.placeholder.com/1050x700/6dc0ea/fff",
+      "https://via.placeholder.com/970x725/6deaa6/fff",
+      "https://via.placeholder.com/1051x700/b8de27/fff",
+      "https://via.placeholder.com/1051x701/de9f27/fff",
+      "https://via.placeholder.com/1050x700/ef4545/fff",
+      "https://via.placeholder.com/1050x700/ffc4c4/757575",
+      "https://via.placeholder.com/640x447/fdffc4/757575",
+      "https://via.placeholder.com/1280x851/c4ffd7/757575",
+      "https://via.placeholder.com/640x425/c4cdff/757575"
+    ],
+    "movie": [
+      "https://via.placeholder.com/1280x854/8d815b/FFFFFF",
+      "https://via.placeholder.com/300x440/ffa4a4/757575",
+      "https://via.placeholder.com/300x440/74b7fa/757575",
+      "https://via.placeholder.com/300x440/ffa4a4/757575",
+      "https://via.placeholder.com/300x440/74b7fa/757575",
+      "https://via.placeholder.com/300x440/ffa4a4/757575",
+      "https://via.placeholder.com/320x370/ffa4a4/FFFFFF",
+      "https://via.placeholder.com/700x360/ffd7a4/757575",
+      "https://via.placeholder.com/320x370/d0d4e6/757575",
+      "https://i.ibb.co/jbmqN1J/bag.png",
+      "https://i.ibb.co/jbmqN1J/bag.png",
+      "https://i.ibb.co/CH5gQ02/man.png",
+      "https://i.ibb.co/jbmqN1J/bag.png",
+      "https://i.ibb.co/jbmqN1J/bag.png",
+      "https://i.ibb.co/7z9WN0t/woman.png",
+      "https://via.placeholder.com/533x799/fdffa4/757575"
+    ]
+  },
+  "menu": {
+    "movie": [
+      {
+        "name": "promotions",
+        "offset": 0
+      },
+      {
+        "name": "featured",
+        "offset": 0
+      },
+      {
+        "name": "top",
+        "offset": 0
+      },
+      {
+        "name": "all",
+        "offset": 0
+      },
+      {
+        "name": "pricing",
+        "offset": 0
+      }
+    ]
+  },
+  "youtube": {
+    "use": true
+  }
+}

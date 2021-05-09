@@ -1,0 +1,59 @@
+extends ../layouts/app.pug
+
+block variables
+  - var pageTitle = " Home Page"
+block content
+  div
+    #home
+    .main-wrap
+      // ##### HEADER #####
+      include ../components/header/header.pug
+      +header(false)
+      // ##### END HEADER #####
+
+      main.container-wrap
+        // ##### BANNER #####
+        section#banner
+          include ../components/banner.pug
+        // ##### END BANNER #####
+
+        // ##### PROMOTION #####
+        section#promotion
+          include ../components/promotion.pug
+        // ##### END PROMOTION #####
+
+        // ##### FEATURE #####
+        section#feature
+          include ../components/feature/feature.pug
+        // ##### END FEATURE #####
+
+        // ##### BENEFIT #####
+        section#benefit
+          include ../components/benefit.pug
+        // ##### END BENEFIT #####
+
+        // ##### PRICING #####
+        include ../components/particles-canvas.pug
+        section#pricing.space-top-short
+          include ../components/pricing-plan.pug
+        // ##### END PRICING #####
+
+        // ##### TESTIMONIAL #####
+        section#testimonials.space-top-short
+          include ../components/testimonials.pug
+        // ##### END TESTIMONIAL #####
+
+      // ##### FOOTER #####
+      footer#footer.space-top
+        include ../components/footer/footer-with-counter.pug
+      // ##### END FOOTER #####
+
+      // ##### PAGE NAV #####
+      .hidden-md-down
+        include ../components/page-nav.pug
+      // ##### END PAGE NAV #####
+
+      // ##### NOTIFICATION #####
+      .hidden-md-down
+        include ../components/notification.pug
+      // ##### END NOTIFICATION #####

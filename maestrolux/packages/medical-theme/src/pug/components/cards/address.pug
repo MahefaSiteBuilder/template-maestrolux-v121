@@ -1,0 +1,14 @@
+mixin address-card(name, phone, email, address)
+  .address-card
+    .paper
+      h6.title #{name}
+      .row
+        .col-md-6.pa-0
+          i.material-icons.icon phone
+          | #{phone}
+        .col-md-6.pa-0
+          i.material-icons.icon email
+          | #{email}
+        .col-sm-12.pa-0
+          i.material-icons.icon location_on
+          | #{address}

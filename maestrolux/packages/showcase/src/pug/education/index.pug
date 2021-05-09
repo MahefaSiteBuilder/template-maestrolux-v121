@@ -1,0 +1,55 @@
+extends ../layouts/education-wrap/app.pug
+
+block variables
+  - var pageTitle = " - Home Page"
+block content
+  div
+    .main-wrap
+      include ../../../../education-theme/src/pug/components/header/header.pug
+      // ##### HEADER #####
+      +header(false)
+      // ##### END HEADER #####
+      main.container-wrap
+        // ##### BANNER #####
+        section#home
+          include ../../../../education-theme/src/pug/components/banner.pug
+        // ##### END BANNER #####
+        // ##### FEATURE #####
+        section#feature.space-top
+          include ../../../../education-theme/src/pug/components/feature.pug
+        // ##### END FEATURE #####
+        // ##### POPULAR COURSE #####
+        section#popular.space-top-short
+          include ../../../../education-theme/src/pug/components/popular-course.pug
+        // ##### END POPULAR COURSE #####
+        // ##### EXPLORE #####
+        section#explore
+          include ../../../../education-theme/src/pug/components/explore.pug
+        // ##### END EXPLORE #####
+        // ##### ABOUT #####
+        #about
+          include ../../../../education-theme/src/pug/components/about.pug
+        // ##### END ABOUT #####
+        // ##### TESTIMONIALS #####
+        section#testimonials.space-top
+          include ../../../../education-theme/src/pug/components/testimonials.pug
+        // ##### END TESTIMONIALS #####
+        // ##### BLOG #####
+        section#blog.space-top-short
+          include ../../../../education-theme/src/pug/components/blog.pug
+        // ##### END BLOG #####
+        // ##### SUBSCRIBE #####
+        section#subscribe.space-top-short
+          include ../../../../education-theme/src/pug/components/subscribe-form.pug
+        // ##### END SUBSCRIBE #####
+        // ##### FOOTER #####
+        include ../../../../education-theme/src/pug/components/footer.pug
+        // ##### END FOOTER #####
+      // ##### PAGE NAVE #####
+      .hidden-md-down
+        include ../../../../education-theme/src/pug/components/page-nav.pug
+      // ##### END PAGE NAVE #####
+      // ##### NOTIFICATION #####
+      .hidden-md-down
+        include ../../../../education-theme/src/pug/components/notification.pug
+      // ##### END NOTIFICATION #####

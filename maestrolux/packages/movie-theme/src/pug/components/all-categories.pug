@@ -1,0 +1,67 @@
+-
+  var dataCategories = [
+    {
+      icon: 'ion-heart-broken',
+      title: 'Romantic'
+    },
+    {
+      icon: 'ion-planet',
+      title: 'sci-fi'
+    },
+    {
+      icon: 'ion-android-contact',
+      title: 'commedy'
+    },
+    {
+      icon: 'ion-ios-star',
+      title: 'super heroes'
+    },
+    {
+      icon: 'ion-ios-bolt',
+      title: 'actions'
+    },
+    {
+      icon: 'ion-ios-videocam',
+      title: 'hollywood'
+    },
+    {
+      icon: 'ion-heart-broken',
+      title: 'Romantic'
+    },
+    {
+      icon: 'ion-planet',
+      title: 'sci-fi'
+    },
+    {
+      icon: 'ion-android-contact',
+      title: 'commedy'
+    },
+    {
+      icon: 'ion-ios-star',
+      title: 'super heroes'
+    },
+    {
+      icon: 'ion-ios-bolt',
+      title: 'actions'
+    },
+    {
+      icon: 'ion-ios-videocam',
+      title: 'hollywood'
+    }
+  ];
+
+include titles/title.pug
+include cards/simple-thumb.pug
+
+.root
+  .container
+    +title-main("center", "All", "Categories")
+    .carousel-wrap
+      button#prev_product.btn.nav.prev.waves-effect
+        i.material-icons arrow_back
+      button#next_product.btn.nav.next.waves-effect
+        i.material-icons arrow_forward
+      .slick-carousel#product_carousel
+        each item in dataCategories
+          .item
+            +simple-thumb(item.icon, item.title)

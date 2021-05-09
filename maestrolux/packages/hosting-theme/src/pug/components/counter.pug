@@ -1,0 +1,21 @@
+.counter-wrap
+  .container.max-md
+    h3.use-text-title
+      span.numscroller(
+        data-min="0"
+        data-max="2"
+        data-increment="1"
+      )
+      | &nbsp;
+      span.numscroller(
+        data-min="0"
+        data-max="234"
+        data-increment="5"
+      )
+      | &nbsp;
+      span.numscroller(
+        data-min="0"
+        data-max="567"
+        data-increment="5"
+      )
+    p.use-text-subtitle2 #{$t.hosting_landing.footer_counter}

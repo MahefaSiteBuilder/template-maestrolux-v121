@@ -1,0 +1,26 @@
+mixin profile-card(avatar, name, title, rating, exp)
+  .card.profile
+    .person
+      .avatar-img.avatar
+        img(src=avatar alt=name)/
+      .name
+        h4 dr.#{name}
+        p #{title}
+    hr.divider/
+    .action
+      .property
+        |
+        |
+        span
+          i.ion-thumbsup
+          | &nbsp; #{rating}%
+        span
+          i.ion-briefcase
+          | &nbsp; #{exp} Years
+        |
+        |
+      |
+      |
+      a.btn.secondary.waves-effect(href="#") chat
+      |
+      |

@@ -1,0 +1,26 @@
+mixin movie-card(title, img)
+  .card.movie-thumb
+    |
+    |
+    a.btn-wrap.waves-effect(href=link.movie.detail)
+      |
+      |
+      span.figure
+        |
+        |
+        i.ion-arrow-right-b.play
+        |
+        |
+        img(src=img alt=title)/
+        |
+        |
+        span.figcaption #{$t.movie_landing.featured_caption}
+        |
+        |
+      |
+      |
+      span.text #{title}
+      |
+      |
+    |
+    |

@@ -1,0 +1,75 @@
+extends ../layouts/agency-wrap/app.pug
+
+block variables
+  - var pageTitle = " - Home Page"
+block content
+  div
+    #home
+    .main-wrap
+      // ##### HEADER #####
+      include ../../../../agency-theme/src/pug/components/header/header.pug
+      +header(false)
+      // ##### END HEADER #####
+      main.container-wrap
+        // ##### PARALLAX SQUARE #####
+        include ../../../../agency-theme/src/pug/components/parallax/square.pug
+        // ##### END PARALLAX SQUARE #####
+        
+        // ##### BANNER #####
+        section#banner
+          include ../../../../agency-theme/src/pug/components/video-banner.pug
+        // ##### END BANNER #####
+        
+        // ##### ABOUT #####
+        section#about.space-top.is-md
+          include ../../../../agency-theme/src/pug/components/about.pug
+        // ##### END ABOUT #####
+        
+        // ##### PARALLAX DOTS #####
+        include ../../../../agency-theme/src/pug/components/parallax/dots.pug
+        // ##### END PARALLAX DOTS #####
+        
+        // ##### SERVICES #####
+        section#services.space-top
+          include ../../../../agency-theme/src/pug/components/services.pug
+        // ##### END SERVICES #####
+        
+        // ##### EXPERTISE #####
+        section#our-expertise.space-top.is-md
+          include ../../../../agency-theme/src/pug/components/expertise.pug
+        // ##### END EXPERTISE #####
+        
+        // ##### TESTIMONIAL #####
+        section#testimonials.space-top.is-xs
+          include ../../../../agency-theme/src/pug/components/testimonials.pug
+        // ##### END TESTIMONIAL #####
+        
+        // ##### CASE STUDIES #####
+        section#case-studies
+          include ../../../../agency-theme/src/pug/components/case-studies.pug
+        // ##### END CASE STUDIES #####
+        
+        // ##### CALL ACTION #####
+        section#call-to-action.space-top-short
+          include ../../../../agency-theme/src/pug/components/call-action.pug
+        // ##### END CALL ACTION #####
+        
+        // ##### MAP ADDRESS #####
+        section#map-address.space-top-short
+          include ../../../../agency-theme/src/pug/components/map-address.pug
+        // ##### END MAP ADDRESS #####
+    
+    // ##### PAGE NAV #####
+    .hidden-md-down
+      include ../../../../agency-theme/src/pug/components/page-nav.pug
+    // ##### END PAGE NAV #####
+    
+    // ##### NOTIFIACTION #####
+    .hidden-md-down
+      include ../../../../agency-theme/src/pug/components/notification.pug
+    // ##### END NOTIFIACTION #####
+    
+    // ##### FOOTER #####
+    include ../../../../agency-theme/src/pug/components/footer.pug
+    // ##### END FOOTER #####
+

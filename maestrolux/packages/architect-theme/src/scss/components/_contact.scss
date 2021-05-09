@@ -1,0 +1,268 @@
+#contact {
+  .bg-deco {
+    position: absolute;
+    top: -80px;
+    @include right(0);
+    width: 60%;
+    height: 700px;
+    @include use-theme(background, $palette-primary-main, $palette-primary-dark);
+    transform: skew(0, 10deg)
+  }
+
+  .parallax {
+    position: absolute;
+    @include right(-150px);
+    top: 300px;
+  }
+
+  .page-wrap {
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    padding: spacing(6, 5);
+    @include breakpoints-up(md) {
+      display: flex
+    }
+    @include breakpoints-down(sm) {
+      padding: spacing(5, 1)
+    }
+    .title-main {
+      font-weight: $font-medium
+    }
+    a {
+      @include use-theme(color, $palette-primary-main, $palette-primary-light);
+      text-transform: none;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: $font-regular;
+      @include breakpoints-down(xs) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .inner-wrap {
+    @include text-align(left);
+    @include breakpoints-down(xs) {
+      padding: 0
+    }
+  }
+
+  .full-form-wrap {
+    @include breakpoints-up(md) {
+      padding: spacing(1, 0, 9);
+    }
+  }
+
+  .form-box.card {
+    position: relative;
+    z-index: 100;
+    background: none;
+    @include breakpoints-up(md) {
+      backdrop-filter: saturate(90%) blur(10px);
+      .theme--light & {
+        @include bg-color-fade($light-background-paper, 0.9)
+      }
+      .theme--dark & {
+        @include bg-color-fade($dark-background-paper, 0.9)
+      }
+    }
+    @include breakpoints-down(md) {
+      box-shadow: none
+    }
+    @include breakpoints-down(xs) {
+      box-shadow: none;
+      background: none;
+      margin-top: 0;
+    }
+  }
+
+  .wrap-deco {
+    position: relative
+  }
+
+  .frm-deco {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background: $palette-secondary-main;
+    bottom: -32px;
+    opacity: 0.5;
+    @include left(-30px)
+  }
+
+  .desc {
+    font-size: 20px;
+    @include palette-text-secondary
+  }
+
+  .input {
+    width: 100%
+  }
+
+  .form {
+    @include text-align(left);
+    position: relative;
+    margin-top: $spacing8;
+    padding: spacing(0, 6);
+    @include breakpoints-down(sm) {
+      padding: spacing(2, 0);
+      margin-top: 0
+    }
+  }
+
+  .right-icon {
+    @include margin-left($spacing1)
+  }
+
+  .btn-area {
+    margin-top: $spacing5;
+    justify-content: center;
+    @include breakpoints-up(sm) {
+      display: flex;
+    }
+    @include breakpoints-down(sm) {
+      button {
+        margin-top: $spacing4;
+        width: 100%
+      }
+    }
+    button.btn {
+      margin-top: $spacing2;
+      min-height: 48px;
+      font-size: 18px;
+      i {
+        line-height: normal;
+        position: relative;
+        top: 6px;
+        [dir="rtl"] & {
+          transform: scale(-1)
+        }
+      }
+    }
+    span {
+      a {
+        text-decoration: none !important;
+        color: $palette-secondary-main
+      }
+    }
+    &.flex {
+      display: flex;
+      justify-content: space-between;
+      @include breakpoints-down(sm) {
+        display: block;
+      }
+    }
+  }
+
+  .check-area {
+    margin-top: $spacing5;
+    @include palette-text-primary;
+  }
+
+  .backtohome {
+    top: 0;
+    @include left(0);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-top: -40px;
+    z-index: 4;
+    border-radius: 50%;
+    @include margin-left(-20px);
+    @include breakpoints-down(sm) {
+      @include left(calc(50% - 40px));
+      top: 40px;
+      margin: 0
+    }
+    @include breakpoints-down('sm') {
+      display: none
+    }
+    span {
+      display: block;
+      height: 100%;
+    }
+    i {
+      line-height: 80px;
+      font-size: 32px;
+      @include palette-text-secondary
+    }
+    > span i:first-child {
+      opacity: 1;
+      transition: opacity 0.3s ease
+    }
+    > span i:last-child {
+      position: absolute;
+      @include right(0);
+      opacity: 0;
+      transition: all 0.3s ease
+    }
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+      > span i:first-child {
+        opacity: 0;
+      }
+      > span i:last-child {
+        @include right(30px);
+        opacity: 1;
+      }
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.logo-header {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+      text-align: center;
+    }
+    img {
+      width: 64px;
+    }
+    p, span {
+      display: block;
+      text-transform: uppercase;
+      font-size: 24px;
+      padding-bottom: 4px;
+      font-weight: $font-bold
+    }
+  }
+
+
+  .form-wrap {
+    @include palette-background-paper;
+    position: relative;
+    padding: $spacing6;
+    @include breakpoints-up(sm) {
+      padding: $spacing8
+    }
+  }
+}
+
+.map {
+  height: 640px;
+  top: 120px;
+  position: relative;
+  z-index: 20;
+  color: $light-text-primary;
+  @include margin-left($spacing6 * -1);
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.4);
+  #map {
+    height: 100%;
+  }
+}
+
+.buble {
+  .material-icons {
+    color: #607D8B;
+    @include margin-right($spacing1);
+    font-size: 16px;
+    top: 3px;
+    position: relative;
+  }
+}

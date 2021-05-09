@@ -1,0 +1,46 @@
+.root
+  .background
+    .gradient
+      .deco-wave
+      .hidden-sm-down
+        .deco-line
+      .deco-inner
+        |
+        |
+        canvas#particle_art_mobile(width='500', height='700')
+        |
+        |
+  .container.fixed-width-lg-up
+    .row
+      .col-md-7.px-3
+        .text
+          h3.use-text-title #{$t.mobile_landing.banner_title}
+            strong  #{$t.mobile_landing.banner_titlestrong}
+          h5.use-text-subtitle #{$t.mobile_landing.banner_desc}
+          .btn-area
+            |
+            |
+            a(href='#')
+              img(src=assets+'/images/mobile/app-store.png' alt='app store')/
+            |
+            |
+            a(href='#')
+              img(src=assets+'/images/mobile/play-store.png' alt='play store')/
+            |
+            |
+      .col-md-5.px-3
+        .decoration
+          .phone-illustration
+            img.phone(src=imgAPI.mobile[0] alt='illustration')/
+            .hidden-md-down
+              |
+              |
+              img.widget-top.fragment-fadeUp(src=imgAPI.mobile[1] alt='illustration')/
+              |
+              |
+              img.widget-left.fragment-fadeUp(src=imgAPI.mobile[2] alt='illustration')/
+              |
+              |
+              img.widget-right.fragment-fadeUp(src=imgAPI.mobile[3] alt='illustration')/
+              |
+              |

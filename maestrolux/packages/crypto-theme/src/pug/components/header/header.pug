@@ -1,0 +1,67 @@
+include mobile-menu.pug
+
+mixin header(invert)
+  if !invert
+    .hidden-md-down
+      include market-price.pug
+  header.app-bar.header#header(class=invert ? "invert" : "")
+    .container.fixed-width-lg-up
+      .header-content
+        nav.nav-logo.nav-menu(class=invert && "invert")
+          |
+          |
+          button#mobile_menu.mobile-menu.btn-icon.waves-effect.hamburger.hamburger--spin.show-md-down(
+            type="button"
+          )
+            |
+            |
+            span.hamburger-box
+              span.bar.hamburger-inner
+            |
+            |
+          .logo(class= !invert && "scrollnav")
+            |
+            |
+            a(href=invert ? link.crypto.home : "#banner")
+              img(
+                src=assets + brand.crypto.img
+                alt="logo"
+              )/
+            |
+            |
+          div
+            .scrollactive-nav.show-lg-up(class= !invert && "scrollnav")
+              ul
+                li.d-none
+                  a(href="#banner")
+                each item in menu.crypto
+                  |
+                  |
+                  li
+                    a.btn.btn-flat.anchor-link.waves-effect(
+                      href=invert ? 'index.html#'+item.name : '#'+item.name
+                    ) #{$t.crypto_landing['header_'+item.name]}
+                |
+                |
+                li
+                  a.btn.btn-flat.anchor-link.waves-effect(
+                    href=link.crypto.contact
+                  ) #{$t.crypto_landing.header_contact}
+                |
+                |
+        .hidden-md-down
+          span.divider
+        nav.nav-menu.nav-auth(class=invert && "invert")
+          .hidden-xs-down
+            |
+            |
+            a.btn.btn-flat.text-btn.waves-effect(href=link.crypto.login) #{$t.crypto_landing.header_login}
+            |
+            |
+            a.btn.secondary.button.waves-effect(href=link.crypto.register) #{$t.crypto_landing.header_register}
+            |
+            |
+            include ./settings
+          +settings(invert)
+  |
+  |

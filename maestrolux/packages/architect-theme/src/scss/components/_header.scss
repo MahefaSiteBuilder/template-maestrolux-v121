@@ -1,0 +1,416 @@
+$flag: '../images/flag-logo.png';
+
+@mixin flag-icon{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  @include margin-right(5px);
+  top: 1px;
+  background: url($flag) no-repeat transparent;
+  background-size: 16px auto;
+  &.ar {
+    background-position: 0 3px;
+  }
+  &.zh {
+    background-position: 0 -12px
+  }
+  &.en {
+    background-position: 0 -28px
+  }
+  &.de {
+    background-position: 0 -44px
+  }
+  &.id {
+    background-position: 0 -62px
+  }
+  &.pt {
+    background-position: 0 -79px
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px)
+  }
+  to {
+    opacity: 1;
+    transform: none
+  }
+}
+
+.popover {
+  @include palette-background-paper;
+  width: 200px;
+}
+
+.switch-toggle {
+  margin-top: 0;
+}
+
+.header {
+  @include palette-text-primary;
+  z-index: 1101;
+  width: 100%;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  position: fixed;
+  padding: spacing(0, 1);
+  background-color: transparent;
+  .container {
+    #main-wrap & {
+      @include breakpoints-down(md) {
+        padding: 0
+      }
+    }
+    @include breakpoints-down(xs) {
+      .row {
+        display: flex;
+        justify-content: space-between;
+        > div {
+          width: auto
+        }
+      }
+    }
+  }
+  nav {
+    transition: all 0.5s ease-out;
+  }
+  .logo {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    @include breakpoints-down(sm) {
+      justify-content: flex-start
+    }
+    a {
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      color: $palette-common-white;
+      align-items: center;
+      transition: color 0.5s ease-out;
+      font-weight: $font-regular;
+    }
+    img {
+      display: block;
+      transition: all 0.3s ease-out;
+      margin-bottom: $spacing1;
+      width: 64px;
+      height: 64px;
+      @include breakpoints-down(sm) {
+        height: 48px;
+        width: 48px;
+        margin-bottom: 0;
+      }
+    }
+    &.invert{
+      a {
+        .theme--dark & {
+          color: $dark-text-primary
+        }
+        .theme--light & {
+          color: $light-text-primary
+        }
+      }
+      .bar {
+        @include palette-background-text-secondary;
+        &:after, &:before {
+          @include palette-background-text-secondary;
+        }
+      }
+    }
+  }
+  &.fixed {
+    @include bg-color-fade($palette-secondary-dark, 0.5);
+    backdrop-filter: saturate(180%) blur(20px);
+    top: 0;
+    height: auto !important;
+    position: fixed;
+    .bar {
+      background-color: $palette-common-white !important;
+      &:after, &:before {
+        background-color: $palette-common-white !important;
+      }
+    }
+    .nav-menu a.btn, {
+      color: $palette-common-white
+    }
+    .setting {
+      .icon {
+        &.invert {
+          color: $palette-common-white
+        }
+      }
+    }
+    .logo {
+      img {
+        height: 48px;
+        width: 48px;
+        margin-bottom: 0;
+      }
+      a {
+        color: transparent;
+        font-size: 0;
+      }
+    }
+    .header-content {
+      padding-top: 4px;
+      padding-bottom: 4px
+    }
+    .nav-menu .scrollactive-nav li:after {
+      top: -20px;
+    }
+  }
+  &.open-drawer {
+    box-shadow: none !important;
+    .logo {
+      a {
+        @include palette-text-primary
+      }
+    }
+    .bar {
+      background-color: $palette-common-white !important;
+      &:after, &:before {
+        background-color: $palette-common-white !important;
+      }
+    }
+    .setting {
+      .icon {
+        &.invert {
+          color: $palette-common-white
+        }
+      }
+    }
+  }
+}
+
+.header-content {
+  display: flex;
+  padding: spacing(1.5, 0);
+  @include breakpoints-down(sm) {
+    justify-content: flex-end;
+  }
+  .collection, .collection-item, .collection-header {
+    border: none !important;
+  }
+  & nav {
+    align-items: center;
+    padding: 0;
+    display: flex;
+    height: auto;
+    @include breakpoints-down(md) {
+      padding: spacing(0, 2)
+    }
+    @include breakpoints-down(sm) {
+      padding: 0
+    }
+  }
+}
+
+
+.nav-menu {
+  @include padding-right($spacing3);
+  @include breakpoints-up(md) {
+    justify-content: space-between;
+  }
+  @include breakpoints-up(lg) {
+    > * {
+      margin: spacing(0, 1)
+    }
+  }
+  .btn {
+    color: $palette-common-white;
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: $font-medium;
+    line-height: normal;
+    box-shadow: none;
+    position: relative;
+    margin: spacing(0, 1)
+  }
+  .scrollactive-nav {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    li {
+      margin: spacing(0, 2);
+      list-style: none;
+      position: relative;
+      display: inline-block;
+      float: none;
+      line-height: normal;
+      @include breakpoints-down(md) {
+        margin: spacing(0, 1.5);  
+      }
+      &.current {
+        .btn {
+          color: $palette-primary-light;
+        }
+        &:after {
+          display: block;
+        }
+      }
+      .btn  {
+        text-transform: uppercase;
+        min-width: 0;
+        padding: 6px;
+        margin: 0 4px;
+        line-height: 24px;
+        background: none !important;
+        transition: all 0.3s ease-out;
+        &:hover {
+          color: $palette-primary-light
+        }
+      }
+      &:after {
+        content: "";
+        display: none;
+        border-top: 10px solid;
+        border-color: $palette-primary-light;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        position: absolute;
+        top: -28px;
+        @include left(calc(50% - 15px))
+      }
+    }
+  }
+  &.invert {
+    a {
+      @include palette-text-primary
+    }
+  }
+}
+
+.lang-menu {
+  .flag {
+    margin: 0;
+    & i {
+      margin-left: $spacing2;
+      @include flag-icon;
+    }
+  }
+}
+
+.collection .collection-item.avatar :not(.circle-clipper) > .circle.flag {
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+.lang-opt {
+  display: block;
+  padding: 0 !important;
+  @include palette-text-primary;
+}
+
+.lang-list {
+  min-height: 0 !important;
+  &.collection-item {
+    padding: 0;
+  }
+}
+
+.setting {
+  position: relative;
+  .icon {
+    font-size: 24px;
+    transition: all 0.3s ease;
+    color: $palette-common-white;
+    &.invert {
+      @include palette-text-secondary
+    }
+  }
+  .active {
+    transform: rotate(30deg)
+  }
+  .menu-list {
+    text-transform: capitalize
+  }
+  .dropdown-content {
+    width: 200px !important;
+    border-radius: 12px;
+    li > a {
+      padding: spacing(1, 2);
+    }
+    [dir="ltr"] & {
+      right: $spacing1 !important;
+      left: auto !important
+    }
+    [dir="rtl"] & {
+      left: $spacing1 !important;
+      right: auto !important
+    }
+  }
+}
+
+.mode-menu, .lang-menu {
+  text-transform: capitalize
+}
+
+.flex-menu {
+  display: flex;
+  justify-content: flex-start;
+  label {
+    text-transform: capitalize;
+  }
+}
+
+.mobile-menu {
+  margin: spacing(0, 1);
+  height: 36px;
+  line-height: 52px;
+  .bar {
+    background-color: $palette-common-white;
+    &:after, &:before {
+      background-color: $palette-common-white;
+    }
+  }
+}
+
+.mobile-nav {
+  background: none;
+  backdrop-filter: saturate(180%) blur(20px);
+  @include bg-color-fade($palette-secondary-dark, 0.5);
+  position: fixed;
+  z-index: 1100;
+  min-width: 300px;
+  &.menu-open {
+    ul li {
+      animation-name: slideRight;
+      animation-timing-function: ease;
+    }
+  }
+  @include breakpoints-down(xs) {
+    width: 100% !important
+  }
+  ul.collection {
+    padding: spacing(0, 2);
+    overflow: auto;
+    top: spacing(10);
+    width: 100%;
+    position: absolute;
+    height: calc(100% - 80px);
+    li.collection-item {
+      border: none;
+      background: none;
+      padding: 0;
+      margin: spacing(3, 1);
+      a {
+        text-transform: capitalize;
+        font-size: 24px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        font-weight: $font-regular;
+        padding: spacing(1, 2);
+        height: auto;
+        line-height: normal;
+        color: $palette-common-white;
+      }
+    }
+  }
+}
+

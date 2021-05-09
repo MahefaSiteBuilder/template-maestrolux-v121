@@ -1,0 +1,53 @@
+.counter-root
+  .container.max-md
+    .counter-wrap
+      .card.paper
+        .row.spacing6.align-items-center.justify-content-center
+          .col-sm-4.pa-6
+            .counter-item
+              i.ion-ios-people-outline
+              .text
+                h4.use-text-title
+                  |
+                  |
+                  span.numscroller(
+                    data-min="0"
+                    data-max="20"
+                    data-delay="5"
+                    data-increment="4"
+                  ) &nbsp;
+                  |
+                  |
+                h6.use-text-subtitle2 #{$t.architect_landing.counter_expert}
+          .col-sm-4.pa-6
+            .counter-item
+              i.ion-ios-heart-outline
+              .text
+                h4.use-text-title
+                  |
+                  |
+                  span.numscroller(
+                    data-min="0"
+                    data-max="123"
+                    data-delay="5"
+                    data-increment="10"
+                  ) &nbsp;
+                  |
+                  |
+                h6.use-text-subtitle2 #{$t.architect_landing.counter_completed}
+          .col-sm-4.pa-6
+            .counter-item
+              i.ion-ios-heart-outline
+              .text
+                h4.use-text-title
+                  |
+                  |
+                  span.numscroller(
+                    data-min="0"
+                    data-max="90"
+                    data-delay="5"
+                    data-increment="5"
+                  ) &nbsp;
+                  |
+                  |
+                h6.use-text-subtitle2 #{$t.architect_landing.counter_happy}

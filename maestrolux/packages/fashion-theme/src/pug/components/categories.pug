@@ -1,0 +1,23 @@
+include title.pug
+include cards/category-full.pug
+include cards/category-half.pug
+
+.root
+  .container.fixed-width-lg-up
+    .row.spacing3
+      .col-md-6.pa-3
+        +title-main("left", "Top", "Categories")
+      .col-md-3.col-sm-6.pa-3
+        +category-full(imgAPI.fashion[11], "Woman Shoes", 24, "eddacf")
+      .col-md-3.col-sm-6.pa-3
+        +category-full(imgAPI.fashion[12], "Woman bag", 24, "eddacf")
+    .row.spacing3
+      .col-md-6.py-0.px-3
+        +category-half(imgAPI.fashion[13], "Men Casual", "24", "D9D8C9", "top-over")
+        .row.spacing3
+          .col-md-6.col-sm-6.py-3.px-0.ps-sm-0.pe-sm-3
+            +category-full(imgAPI.fashion[14], "Men Watch", 24, "e7ddd9")
+          .col-md-6.col-sm-6.py-3.px-0.ps-sm-3.pe-sm-0
+            +category-full(imgAPI.fashion[15], "Men Shoes", 24, "f2dede")
+      .col-md-6.py-0.px-3
+        +category-half(imgAPI.fashion[16], "Woman Sport", 24, "f3f7bc", "bottom-over")

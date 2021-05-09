@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Medical</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="23.2586214%" y1="4.22685323%" x2="89.5109029%" y2="96.0639539%" id="linearGradient-1">
+            <stop stop-color="#B3E5FC" offset="0%"></stop>
+            <stop stop-color="#C8E6C9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Medical" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(19.000000, 19.000000)">
+            <circle id="Oval" fill="url(#linearGradient-1)" cx="237.5" cy="237.5" r="237.5"></circle>
+            <circle id="Oval" fill="#B3E5FC" cx="237.5" cy="237.5" r="207.5"></circle>
+            <circle id="Oval" fill="#03A9F4" cx="237.5" cy="237.5" r="186.5"></circle>
+        </g>
+        <g id="logo" transform="translate(164.000000, 130.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M0,0 L0,210.906429 C0,234.706351 19.3627038,254 43.2478094,254 C48.4851631,254 53.6789645,253.052083 58.5763142,251.202406 L198.441412,198.376836 C220.478125,190.053802 231.57111,165.506075 223.218287,143.547953 C220.287769,135.844132 215.174226,129.154577 208.499351,124.292591 L137.040764,72.2420811 L113.219893,104.712194 L184.67848,156.762704 C185.039284,157.025514 185.315692,157.387112 185.474098,157.803535 C185.925602,158.99046 185.325981,160.317364 184.134807,160.767258 L44.2697097,213.592828 C43.9432197,213.71614 43.5969663,213.779334 43.2478094,213.779334 C41.655469,213.779334 40.3646221,212.493091 40.3646221,210.906429 L40.3646221,0 L0,0 Z" id="Path-4"></path>
+        </g>
+    </g>
+</svg>

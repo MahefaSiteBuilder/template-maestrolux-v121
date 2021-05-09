@@ -1,0 +1,76 @@
+extends ../layouts/medical-wrap/app.pug
+
+block variables
+  - var pageTitle = " - Home Page"
+block content
+  div
+    #home
+    .main-wrap
+      // ##### PARALLAX DOTS #####
+      div.parallax-dot-home
+        include ../../../../medical-theme/src/pug/components/parallax/dots.pug
+      // ##### END PARALLAX DOTS #####
+      
+      // ##### HEADER #####
+      include ../../../../medical-theme/src/pug/components/header/header.pug
+      +header(false)
+      // ##### END HEADER #####
+      
+      main.container-wrap
+        // ##### PARALLAX OVAL #####
+        include ../../../../medical-theme/src/pug/components/parallax/oval-top.pug
+        // ##### END PARALLAX OVAL #####
+        
+        // ##### BANNER #####
+        section#banner
+          include ../../../../medical-theme/src/pug/components/video-banner.pug
+        // ##### END BANNER #####
+        
+        // ##### ABOUT #####
+        section#about.space-top.is-md
+          include ../../../../medical-theme/src/pug/components/about.pug
+        // ##### END ABOUT #####
+        
+        // ##### FACILITIES #####
+        section#facility.space-top
+          include ../../../../medical-theme/src/pug/components/facilities.pug
+        // ##### END FACILITIES #####
+        
+        // ##### EXPERTISE #####
+        section#our-expertise.space-top-long.is-md
+          include ../../../../medical-theme/src/pug/components/expertise.pug
+        // ##### END EXPERTISE #####
+        
+        // ##### ASK DOCTORS #####
+        section#ask-doctors.space-top.is-xs
+          include ../../../../medical-theme/src/pug/components/ask-doctors.pug
+        // ##### END ASK DOCTORS #####
+        
+        // ##### TESTIMONIAL #####
+        section#testimonials.space-top-short
+          include ../../../../medical-theme/src/pug/components/testimonials.pug
+        // ##### END TESTIMONIAL #####
+        
+        // ##### CALL ACTION #####
+        section#call-to-action.space-top-short
+          include ../../../../medical-theme/src/pug/components/call-action.pug
+        // ##### END CALL ACTION #####
+        
+        // ##### CLINICS #####
+        section#clinics.space-top-short
+          include ../../../../medical-theme/src/pug/components/clinics.pug
+        // ##### END CLINICS #####
+      
+    // ##### PAGE NAV #####
+    .hidden-md-down
+      include ../../../../medical-theme/src/pug/components/page-nav.pug
+    // ##### END PAGE NAV #####
+    
+    // ##### NOTIFICATION #####
+    .hidden-md-down
+      include ../../../../medical-theme/src/pug/components/notification.pug
+    // ##### END NOTIFICATION #####
+    
+    // ##### FOOTER #####
+    include ../../../../medical-theme/src/pug/components/footer.pug
+    // ##### END FOOTER #####

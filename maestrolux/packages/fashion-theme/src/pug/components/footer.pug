@@ -1,0 +1,53 @@
+footer.footer
+  .root
+    .container.max-lg
+      .logo
+        |
+        |
+        img(src=assets+brand.fashion.img alt="logo")/
+        |
+        |
+      .subscribe
+        h5.use-text-subtitle #{$t.fashion_landing.subscribe_title}
+        .form
+          form
+            .input-field
+              |
+              |
+              input.full-width(
+                type='text'
+                placeholder=$t.fashion_landing.subscribe_email
+              )
+              |
+              |
+            |
+            |
+            button.btn-flat.button.waves-effect #{$t.fashion_landing.subscribe_button}
+            |
+            |
+      nav
+        ul
+          each item in menu.fashion
+            li
+              a(href="#" + item.name) #{$t.fashion_landing["header_"+item.name]}
+      .socmed
+        |
+        |
+        a.btn.icon.waves-effect.waves-light(href="#")
+          i.ion-social-twitter
+        |
+        |
+        a.btn.icon.waves-effect.waves-light(href="#")
+          i.ion-social-facebook
+        |
+        |
+        a.btn.icon.waves-effect.waves-light(href="#")
+          i.ion-social-instagram
+        |
+        |
+    .copyright
+      |
+      |
+      p.body-2.text-center
+        | &copy; #{brand.fashion.footerText}
+

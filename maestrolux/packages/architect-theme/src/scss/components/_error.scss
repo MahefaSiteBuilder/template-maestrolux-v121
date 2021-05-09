@@ -1,0 +1,80 @@
+.error-wrap {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  margin-top: $spacing10;
+  align-items: center;
+  padding: spacing(20, 0, 10);
+  @include breakpoints-down(xs) {
+    padding-top: $spacing5
+  }
+  > section {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .flex {
+    display: flex;
+    justify-content: center
+  }
+
+  .deco {
+    position: relative;
+    @include use-theme(background, $palette-primary-light, $palette-primary-dark);
+    width: 200px;
+    height: 200px;
+    @include left($spacing4 * -1);
+    top: $spacing8;
+    h3 {
+      color: $palette-common-white;
+      font-size: 106px;
+      text-transform: capitalize;
+      font-weight: 700;
+      padding-top: $spacing4;
+      @include padding-left($spacing11);
+      position: relative;
+      z-index: 1;
+    }
+    &:before {
+      content: "";
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      @include use-theme(background, $palette-secondary-main, $palette-secondary-dark);
+      top: $spacing8 * -1;
+      @include left($spacing10);
+    }
+    &:after {
+      content: "";
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      background: url($cross-deco) repeat 0px -30px;
+      background-size: 100%;
+      top: $spacing12 * -1;
+      @include left($spacing5)
+    }
+  }
+
+  .text {
+    @include breakpoints-up(md) {
+      @include border-left(1px solid);
+      @include palette-divider;
+      @include padding-left($spacing5);
+    }
+    @include breakpoints-down(sm) {
+      text-align: center;
+    }
+    h4 {
+      font-weight: $font-bold;
+      margin-bottom: $spacing3  
+    }
+  }
+
+  .button {
+    margin-top: $spacing4;
+    width: 205px;
+    @include use-theme(border-color, $palette-primary-dark, #FFF);
+    @include use-theme(color, $palette-primary-dark, #FFF);
+  }
+}

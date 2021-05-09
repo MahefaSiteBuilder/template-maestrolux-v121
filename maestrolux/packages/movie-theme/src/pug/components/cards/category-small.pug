@@ -1,0 +1,16 @@
+mixin category-small(img, title, total, background)
+  |
+  |
+  a.category.full.button-base.waves-effect(style="background-color: #" + background)
+    |
+    |
+    img(src=img alt=title)/
+    |
+    |
+    span.property
+      span.title-category #{title}
+      span.total.use-text-paragraph #{total} Films
+    |
+    |
+  |
+  |

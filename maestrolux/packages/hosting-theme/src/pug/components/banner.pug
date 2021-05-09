@@ -1,0 +1,48 @@
+- var items = ['.com', '.net', '.org', '.co', '.biz', '.gov', '.id', '.abc', '.xyz', '.news', '.cc', '.me']
+
+.root
+  .deco-wrap
+    .deco-inner
+      #net_art.illustration
+  .hidden-sm-down
+    .inner-parallax
+      .cloud-wrap
+        figure.cloud-parallax
+          .cloud-deco
+  .container.max-md
+    .banner-wrap
+      .text
+        h4.use-text-title2
+          | #{$t.hosting_landing.banner_title}
+        p.use-text-subtitle2
+          | #{$t.hosting_landing.banner_subtitle}
+        .card.search-domain
+          .input-field.primary.search
+            |
+            |
+            input#search(type="text" name="search")/
+            |
+            |
+            label(for="search") #{$t.hosting_landing.banner_label}
+            |
+            |
+          .action
+            .hidden-sm-down
+              .form-control
+                .select-domain
+                  |
+                  |
+                  select.select.filled(name="domain")
+                    each val in items
+                      option(value=val) #{val}
+                  |
+                  |
+            |
+            |
+            button.waves-effect.btn.primary.button
+              |
+              |
+              i.material-icons.icon search
+              span.show-md-up #{$t.hosting_landing.banner_button}
+              |
+              |

@@ -1,0 +1,56 @@
+#subscribe {
+  .root {
+    position: relative;
+    text-align: center;
+    p {
+      color: $palette-common-white
+    }
+  }
+
+  .form {
+    position: relative;
+    margin-top: $spacing2
+  }
+
+  .field {
+    .input-field {
+      color: #fff;
+      width: 100%;
+      @include padding-right(120px);
+      @include padding-left(12px);
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 10px 15px -5px rgba(62, 57, 107, .07);
+      border-radius: 10px;
+      input {
+        border: none;
+        margin-bottom: 0;
+        height: 3.5rem
+      }
+      input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: rgba(255,255,255,0.5)
+      }
+      input::-moz-placeholder { /* Firefox 19+ */
+        color: rgba(255,255,255,0.5)
+      }
+      input:-ms-input-placeholder { /* IE 10+ */
+        color: rgba(255,255,255,0.5)
+      }
+      input:-moz-placeholder { /* Firefox 18- */
+        color: rgba(255,255,255,0.5)
+      }
+    }
+  }
+
+  .button {
+    position: absolute;
+    @include right($spacing1);
+    top: 10px;
+    @include breakpoints-down(sm) {
+      min-width: 0;
+      width:auto;
+    }
+    i {
+      color: $palette-common-white
+    }
+  }
+}

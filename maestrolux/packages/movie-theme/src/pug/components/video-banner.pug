@@ -1,0 +1,40 @@
+.root
+  .video
+    .overlay
+    |
+    |
+    img.show-md-down(src=imgAPI.movie[0] alt='cover')/
+    |
+    |
+    img#banner_cover(src=imgAPI.movie[0] alt='cover')/
+    |
+    |
+    if youtube.use
+      #youtube.show-lg-up
+    .caption
+      .container
+        .hidden-sm-down
+          |
+          |
+          button#btn_play.btn-icon.btn-play.waves-effect.hide
+            |
+            |
+            span.hidden watch
+            |
+            |
+            span.hidden trailer
+            |
+            |
+            i.ion-ios-pause-outline.pause
+            |
+            |
+            i.ion-arrow-right-b.play
+            |
+            |
+          |
+          |
+        .row
+          .col-md-12
+            p.use-text-subtitle2 Vivamus sit amet interdum elit
+            h2.use-text-title Mancing Mania The Movie
+            p.use-text-subtitle #{$t.movie_landing.banner_on_the} 01 . 11 . 20

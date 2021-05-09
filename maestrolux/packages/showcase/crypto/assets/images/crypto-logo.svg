@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Crypto</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="37.0791448%" y1="74.7265765%" x2="63.0642382%" y2="24.9990322%" id="linearGradient-1">
+            <stop stop-color="#4CAF50" offset="0%"></stop>
+            <stop stop-color="#9FB72E" offset="22.77%"></stop>
+            <stop stop-color="#FFC107" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.83945563%" y1="50%" x2="101.839456%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#FFC107" offset="18.11%"></stop>
+            <stop stop-color="#9FB72E" offset="77.23%"></stop>
+            <stop stop-color="#4CAF50" offset="81.54%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Crypto" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="crypto-logo" transform="translate(37.000000, 14.000000)" fill-rule="nonzero">
+            <path d="M0,156.225 L0,326.825 C0,352.125 13.5,375.525 35.5,388.225 L183.1,473.525 C205,486.225 232.1,486.225 254,473.525 L401.7,388.225 C423.6,375.525 437.2,352.125 437.2,326.825 L437.2,156.225 C437.2,130.925 423.7,107.525 401.7,94.825 L254.1,9.525 C232.2,-3.175 205.1,-3.175 183.2,9.525 L35.4,94.825 C13.5,107.525 0,130.925 0,156.225 Z" id="Path" stroke="url(#linearGradient-2)" stroke-width="16" fill="url(#linearGradient-1)"></path>
+            <path d="M113,101 L113,335.155957 C113,361.579492 134.41892,383 160.840497,383 C166.63403,383 172.379386,381.947588 177.796808,379.89401 L332.514836,321.245149 C356.891732,312.004615 369.162733,284.750839 359.922884,260.372137 C356.681161,251.819076 351.024586,244.39209 343.640875,238.994137 L264.593766,181.205775 L238.243245,217.255271 L317.290354,275.043632 C317.689473,275.335413 317.995234,275.736872 318.170462,276.1992 C318.669914,277.516967 318.006616,278.990144 316.688946,279.489633 L161.970918,338.138494 C161.609756,338.275399 161.226733,338.34556 160.840497,338.34556 C159.079059,338.34556 157.651131,336.917526 157.651131,335.155957 L157.651131,101 L113,101 Z" id="Path-4" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

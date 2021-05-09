@@ -1,0 +1,17 @@
+mixin category-half(img, title, total, background, type)
+  .category(
+    class=type === "top-over" ? "top-over" : "bottom-over"
+    style="background-color: #" + background
+  )
+    img(src=img alt=title)/
+    |
+    |
+    span.property
+      |
+      |
+      span.title-category.use-text-title2 #{title}
+      span.total.use-text-paragraph #{total} Items
+      span.hidden-xs-down
+        a.btn.btn-outlined.secondary-text.button.block.waves-effect See Detail
+      |
+      |

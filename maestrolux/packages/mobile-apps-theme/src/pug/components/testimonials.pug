@@ -1,0 +1,86 @@
+include ./titles/title.pug
+-
+  var testiData = [
+    {
+      text: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.',
+      avatar: imgAPI.avatar[10],
+      name: 'John Doe',
+      title: 'Chief Digital Officer'
+    },
+    {
+      text: 'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
+      avatar: imgAPI.avatar[1],
+      name: 'Jean Doe',
+      title: 'Chief Digital Officer'
+    },
+    {
+      text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      avatar: imgAPI.avatar[2],
+      name: 'Jena Doe',
+      title: 'Graphic Designer'
+    },
+    {
+      text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
+      avatar: imgAPI.avatar[3],
+      name: 'Jovelin Doe',
+      title: 'Senior Graphic Designer'
+    },
+    {
+      text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      avatar: imgAPI.avatar[4],
+      name: 'Jihan Doe'
+    },
+    {
+      text: 'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
+      avatar: imgAPI.avatar[6],
+      name: 'Jovelin Doe',
+      title: 'Senior Graphic Designer'
+    },
+    {
+      text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      avatar: imgAPI.avatar[7],
+      name: 'John Doe',
+      title: 'Senior Graphic Designer'
+    },
+    {
+      text: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.',
+      avatar: imgAPI.avatar[9],
+      name: 'John Doe',
+      title: 'Chief Digital Officer'
+    },
+    {
+      text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      avatar: imgAPI.avatar[8],
+      name: 'Jean Doe',
+      title: 'Chief Digital Officer'
+    }
+  ]
+
+.root
+  .wow.fadeInUpShort(data-wow-offset="-50" data-wow-delay="0.3s" data-wow-duration="0.5s")
+    div
+      +title-main("center")
+        | #{$t.mobile_landing.testimonial_title}
+  .carousel-wrap
+    .wow.fadeInUpShort(data-wow-offset="-150" data-wow-delay="0.4s" data-wow-duration="0.5s")
+      div
+        .container.max-sm
+          .carousel-text
+            .slick-carousel.slider-text#slider_text
+              each item in testiData
+                .item
+                  p.content #{item.text}
+                  p.name
+                    strong #{item.name}
+                    | &nbsp; - #{item.title}
+        .carousel-avatar
+          .slick-carousel.slider-avatar#slider_avatar
+            each item in testiData
+              .item
+                .avatar-img.avatar
+                  |
+                  |
+                  img(alt=item.name src=item.avatar)/
+                  |
+                  |
+  .deco-bg-bottom

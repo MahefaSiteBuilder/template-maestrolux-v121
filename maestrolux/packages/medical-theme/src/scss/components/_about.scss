@@ -1,0 +1,30 @@
+#about {
+  .root {
+    blockquote {
+      margin: spacing(5, 4, 0);
+      font-size: 20px;
+      font-style: italic;
+      @include palette-text-secondary;
+      [dir="ltr"] & {
+        border-left: 4px solid;
+      }
+      [dir="rtl"] & {
+        border-right: 4px solid;
+      }
+      @include palette-divider;
+      @include padding-left($spacing2);
+      @include breakpoints-down(xs) {
+        @include padding-left($spacing2);
+        margin: 0;
+        font-size: 20px;
+        line-height: 32px;
+      }
+    }
+    h4 {
+      @include breakpoints-down(sm) {
+        text-align: center;
+        margin-top: $spacing1 * -3;
+      }
+    }
+  }
+}

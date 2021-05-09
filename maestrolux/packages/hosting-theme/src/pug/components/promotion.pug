@@ -1,0 +1,74 @@
+-
+  var sliderData = [
+    {
+      image: imgAPI.hosting[0],
+      title: "Wordpress Hosting start from $2/mo",
+      desc: "Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.",
+      date: "12 Jul - 10 Aug"
+    },
+    {
+      image: imgAPI.hosting[1],
+      title: "Dedicated VPS start from $5/mo",
+      desc: "Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.",
+      date: "12 Jul - 10 Aug"
+    },
+    {
+      image: imgAPI.hosting[2],
+      title: ".COM + Hosting Only $15/mo",
+      desc: "Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.",
+      date: "12 Jul - 10 Aug"
+    }
+  ]
+
+.root
+  .slider-wrap
+    .anim-slider
+      each item in sliderData
+        .slide.slider-content.anim-slide
+          section.inner.item
+            .container.max-md
+              .row
+                .col-sm-4.promo-image
+                  figure.image
+                    img(src=item.image alt=item.title)/
+                .col-sm-8
+                  .text
+                    h2
+                      a.btn-flat #{item.title}
+                    p.use-text-subtitle2 #{item.desc}
+                    .time
+                      h6.use-text-caption
+                        |
+                        |
+                        span
+                          | #{$t.hosting_landing.promo_periode} : #{item.date}
+                        |
+                        |
+                      |
+                      |
+      .anim-arrows
+        .container.max-md
+          |
+          |
+          a.anim-arrows-prev(href='#')
+            i.material-icons.icon keyboard_arrow_left
+          |
+          |
+          a.anim-arrows-next(href='#')
+            i.material-icons.icon keyboard_arrow_right
+          |
+          |
+    .cloud-top
+      |
+      |
+      svg
+        include svg/cloud_top
+      |
+      |
+    .cloud-top-cover
+      |
+      |
+      svg
+        include svg/cloud_top
+      |
+      |

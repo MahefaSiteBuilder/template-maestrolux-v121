@@ -1,0 +1,16 @@
+mixin blog-post(img, title, desc)
+  .card.post
+    figure
+      |
+      |
+      img(src=img alt='thumb')/
+      |
+      |
+    .text
+      h5.use-text-subtitle2 #{title}
+      p.use-text-paragraph #{desc}
+    |
+    |
+    a.btn-flat.primary.readmore.waves-effect #{$t.profile_landing.read_more}
+    |
+    |

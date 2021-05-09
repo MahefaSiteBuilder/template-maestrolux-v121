@@ -1,0 +1,78 @@
+-
+  var dataProducts = [
+    {
+      title: 'Vivamus Sit Smet',
+      price: '$780.00',
+      img: imgAPI.fashion[17]
+    },
+    {
+      title: 'Vivamus Sit Smet',
+      price: '$780.00',
+      img: imgAPI.fashion[18]
+    },
+    {
+      title: 'Vivamus Sit Smet',
+      price: '$780.00',
+      img: imgAPI.fashion[19]
+    },
+    {
+      title: 'Vivamus Sit Smet',
+      price: '$780.00',
+      img: imgAPI.fashion[20]
+    },
+    {
+      title: 'Vivamus Sit Smet',
+      price: '$780.00',
+      img: imgAPI.fashion[21]
+    },
+    {
+      title: 'Vivamus Sit Smet',
+      price: '$780.00',
+      img: imgAPI.fashion[22]
+    },
+    {
+      title: 'Vivamus Sit Smet',
+      price: '$780.00',
+      img: imgAPI.fashion[23],
+    },
+    {
+      title: 'Vivamus Sit Smet',
+      price: '$780.00',
+      img: imgAPI.fashion[24]
+    },
+    {
+      title: 'Vivamus Sit Smet',
+      price: '$780.00',
+      img: imgAPI.fashion[25]
+    },
+    {
+      title: 'Vivamus Sit Smet',
+      price: '$780.00',
+      img: imgAPI.fashion[20]
+    },
+    {
+      title: 'Vivamus Sit Smet',
+      price: '$780.00',
+      img: imgAPI.fashion[22]
+    },
+    {
+      title: 'Vivamus Sit Smet',
+      price: '$780.00',
+      img: imgAPI.fashion[23]
+    },
+  ];
+
+include title.pug
+include cards/simple-thumb.pug
+
+.root
+  +title-main("center", "Featured", "Products")
+  .carousel-wrap
+    button#prev_product.btn.nav.prev.waves-effect
+      i.material-icons arrow_back
+    button#next_product.btn.nav.next.waves-effect
+      i.material-icons arrow_forward
+    .slick-carousel#product_carousel
+      each item in dataProducts
+        .item
+          +simple-thumb(item.img, item.title, item.price)

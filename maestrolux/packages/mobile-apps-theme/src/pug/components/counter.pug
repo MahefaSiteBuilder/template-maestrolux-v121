@@ -1,0 +1,60 @@
+.counter-wrap
+  .container.max-md
+    .row.counter-inner.spacing6.justify-content-center.align-items-center
+      .col.pa-6
+        .counter-item
+          .text
+            h3.use-text-title
+              |
+              |
+              | +
+              span.numscroller(
+                data-min="0"
+                data-max="200"
+                data-delay="10"
+                data-increment="8"
+              )
+              | M
+              |
+              |
+            p.use-text-subtitle
+              i.ion-ios-cloud-download-outline
+              | #{$t.mobile_landing.counter_downloads}
+      .col.pa-6
+        .counter-item
+          .text
+            h3.use-text-title
+              |
+              |
+              | +
+              span.numscroller(
+                data-min="0"
+                data-max="480"
+                data-delay="10"
+                data-increment="8"
+              )
+              | M
+              |
+              |
+            p.use-text-subtitle
+              i.ion-ios-checkmark-outline
+              | #{$t.mobile_landing.counter_transaction}
+      .col.pa-6
+        .counter-item
+          .text
+            h3.use-text-title
+              |
+              |
+              | +
+              span.numscroller(
+                data-min="0"
+                data-max="180"
+                data-delay="5"
+                data-increment="10"
+              )
+              | K
+              |
+              |
+            p.use-text-subtitle
+              i.ion-ios-star-outline
+              | #{$t.mobile_landing.counter_ratting}

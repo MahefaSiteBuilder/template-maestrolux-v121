@@ -1,0 +1,20 @@
+include cards/news.pug
+include titles/title.pug
+
+.root
+  .deco-bg-top
+  .parallax-event
+    include ./parallax/large.pug
+  +title-main("center")
+    | #{$t.mobile_landing.news_title}
+  p.use-text-subtitle2.text-center
+    | #{$t.mobile_landing.news_desc}
+  .blog-wrap
+    .container.fixed-width
+      .row.spacing6.list-news
+        .col-md-6.pa-6
+          +news-card(imgAPI.photo[11], "potrait", "headline", "Sed imperdiet enim ligula, vitae viverra justo.", false)
+        .col-md-6.pa-6
+          +news-card(imgAPI.photo[1], "landscape", "news", "Sed imperdiet enim ligula, vitae viverra justo.", true)
+          +news-card(imgAPI.photo[2], "landscape", "news", "Sed imperdiet enim ligula, vitae viverra justo.", true)
+

@@ -1,0 +1,159 @@
+@mixin align {
+  &.align-left {
+    @include text-align(left);
+    &:after {
+      @include left(0);
+    }
+    @include breakpoints-down(sm) {
+      text-align: center !important;;
+      margin-bottom: $spacing6;
+      &:after {
+        @include left(50%);
+        @include margin-left(-35px);
+      }
+    }
+  }
+
+  &.align-right {
+    @include text-align(right);
+    &:after {
+      @include right(0);
+    }
+    @include breakpoints-down(sm) {
+      text-align: center !important;
+      &:after {
+        @include left(50%);
+        @include margin-left(-35px);
+      }
+    }
+  }
+
+  &.align-center {
+    text-align: center;
+    &:after {
+      @include left(50%);
+      @include margin-left(-35px);
+    }
+  }
+}
+
+@mixin align-secondary {
+  &.align-left {
+    @include breakpoints-up(md) {
+      @include padding-left($spacing4);
+      &:after {
+        @include left(0);
+        top: 16px
+      }
+    }
+    @include breakpoints-down(sm) {
+      text-align: center;
+      margin-bottom: $spacing6;
+      &:after {
+        @include left(50%);
+        @include margin-left(-8px);
+        bottom: -35px
+      }
+    }
+  }
+
+  &.align-right {
+    @include breakpoints-up(md) {
+      &:after {
+        @include right(0);
+        top: 16px
+      }
+    }
+    @include breakpoints-down(sm) {
+      text-align: center;
+      margin-bottom: $spacing6;
+      &:after {
+        @include left(50%);
+        @include margin-left(-8px);
+        top: auto;
+        bottom: -35px
+      }
+    }
+  }
+
+  &.align-center {
+    text-align: center;
+    margin-bottom: $spacing6;
+    &:after {
+      @include left(50%);
+      @include margin-left(-8px);
+      bottom: -35px
+    }
+  }
+}
+
+.title-main {
+  @include align;
+  display: block;
+  position: relative;
+  margin-bottom: $spacing10;
+  @include breakpoints-down(xs) {
+    padding: spacing(0, 3)
+  }
+  h3 {
+    @include palette-text-primary;
+    font-weight: $font-bold;
+    font-size: 46px;
+    text-transform: capitalize;
+    @include breakpoints-down(md) {
+      font-size: 38px;
+      line-height: 50px;
+    }
+    @include breakpoints-down(xs) {
+      font-size: 32px;
+      line-height: 42px;
+    }
+    span {
+      @include palette-text-secondary;
+    }
+  }
+  &:after {
+    content: "";
+    width: 70px;
+    height: 12px;
+    bottom: -32px;
+    border-radius: 12px;
+    background-image: linear-gradient(-20deg, $palette-primary-light, $palette-secondary-light);
+    position: absolute
+  }
+  strong {
+    @include palette-text-primary;
+  }
+  &.dark {
+    h3 {
+      color: $palette-common-white
+    }
+  }
+}
+
+.title-secondary {
+  @include align-secondary;
+  display: block;
+  position: relative;
+  margin: spacing(4, 0);
+  @include breakpoints-down(sm) {
+    margin: spacing(0, 0, 4)
+  }
+  h4 {
+    @include palette-text-primary;
+    font-size: 32px;
+    font-weight: $font-medium;
+    @include breakpoints-down(xs) {
+      font-size: 24px;
+      line-height: 36px
+    }
+  }
+  &:after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    @include use-theme(background, $palette-secondary-light, $palette-secondary-dark);
+    position: absolute;
+  }
+}

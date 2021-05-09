@@ -1,0 +1,60 @@
+.counter-wrap {
+  margin: spacing(3, 0);
+}
+
+.counter-item {
+  &.deco {
+    &:after {
+      content: '';
+      border-left: 1px solid;
+      @include use-theme(border-color, $palette-secondary-light, $palette-secondary-main);
+      width: 50px;
+      height: 100%;
+      position: absolute;
+      @include use-theme(background-color, $light-background-paper, $dark-background-default);
+      top: 0;
+      right: -20px;
+      transform: skew(-30deg, 0);
+    }
+    p {
+      @include use-theme(background-color, $palette-secondary-light, $palette-secondary-main);
+      @include use-theme(color, $palette-secondary-dark, $palette-secondary-light);
+    }
+  }
+  p {
+    font-size: 22px;
+    text-transform: capitalize;
+    border-radius: 40px 0 0 40px;
+    padding: spacing(0, 3);
+    min-width: 150px;
+    @include breakpoints-up(sm) {
+      text-align: left;
+    }
+    @include breakpoints-down(md) {
+      min-width: 110px;
+      font-size: 18px;
+      padding: spacing(0, 1)
+    }
+  }
+  @include breakpoints-up(md) {
+    display: flex;
+  }
+  align-items: center;
+  justify-content: center;
+  .text {
+    text-align: center;
+    h3 {
+      font-size: 36px
+    }
+    h2 {
+      font-size: 62px;
+    }
+    h3, h2 {
+      position: relative;
+      font-weight: bold;
+      @include breakpoints-down(md) {
+        font-size: 30px;
+      }
+    }
+  }
+}

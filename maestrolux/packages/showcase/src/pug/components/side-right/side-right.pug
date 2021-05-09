@@ -1,0 +1,27 @@
+div
+  .btn-float-opt
+    button#open_explore.btn.btn-icon.waves-effect
+      i.material-icons palette
+    button#open_palette.btn.btn-icon.waves-effect
+      i.material-icons library_books
+  #slidemenu.sidenav-opt.drawer-opt
+    .opt-wrap
+      nav.appbar
+        ul.tabs
+          .hidden-sm-up
+            #close_sideright.btn-icon.waves-effect
+              i.material-icons arrow_back
+          li.tab.tab-label
+            a.active(href="#palette")
+              i.material-icons library_books
+              | Explore
+          li.tab.tab-label
+            a(href="#explore")
+              i.material-icons palette
+              | Theme
+      #palette.tab-item
+        include explore.pug
+      #explore.tab-item
+        include palette.pug
+    
+    

@@ -1,0 +1,11 @@
+.navigation
+  .container.fixed-width
+    nav.nav-menu
+      .scrollactive-nav
+        a.logo.anchor-link(href='#banner')
+          img(src=assets+brand.profile.img alt='logo')/
+      .menu
+        ul.collection.scrollactive-nav.scrollnav
+          each item in menu.profile
+            li.collection-item.link.anchor-link
+              a.text.waves-effect(href='#'+item.name) #{$t.profile_landing['header_'+item.name]}

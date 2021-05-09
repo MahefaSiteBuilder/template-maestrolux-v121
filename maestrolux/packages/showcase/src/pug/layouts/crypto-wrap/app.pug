@@ -1,0 +1,10 @@
+extends document.pug
+
+block variables
+block layout
+  include ../../../../../crypto-theme/src/pug/components/gradient-deco.pug
+  #app.m-application.theme--light.transition-page
+    .loading
+    #main-wrap.m-content.money.money-var
+      include ../../components/side-right/side-right.pug
+      block content

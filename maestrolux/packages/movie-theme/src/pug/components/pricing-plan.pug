@@ -1,0 +1,53 @@
+include titles/title.pug
+include cards/pricing.pug
+
+-
+  var featureList = {
+    basic: [
+      'Nam sollicitudin dignissim',
+      'Cras convallis lacus',
+      'Quisque ut metus'
+    ],
+    best: [
+      'Nam sollicitudin dignissim',
+      'Cras convallis lacus',
+      'Quisque ut metus',
+      'Vivamus sit amet',
+      'Cras convallis lacus orci'
+    ],
+    pro: [
+      'Nam sollicitudin dignissim',
+      'Cras convallis lacus',
+      'Nulla lobortis nunc',
+      'Vitae scelerisque',
+      'Duis sed augue'
+    ],
+    enterprise: [
+      'Nam sollicitudin dignissim',
+      'Pellentesque ac bibendum ',
+      'Vestibulum consequat',
+      'Donec commodo',
+      'Duis tristique metus'
+    ]
+  }
+
+.root
+  .decoration
+    |
+    |
+    svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px")
+      include svg/deco-med-bg.pug
+    |
+    |
+  .container.fixed-width-lg-up
+    +title-main("center", "Flexible", "Pricing and Plan")
+    .pricing-wrap
+      section
+        .wow.fadeInUpShort.item(data-wow-offset="-10" data-wow-delay="0.4s" data-wow-duration="0.4s")
+          +pricing-card(0, featureList.basic, "Basic", "Interdum et malesuada fames ac ante ipsum primis in faucibus. ", "basic")
+        .wow.fadeInUpShort.item(data-wow-offset="-10" data-wow-delay="0.6s" data-wow-duration="0.4s")
+          +pricing-card(24, featureList.best, "Best Value", "Interdum et malesuada fames ac ante ipsum primis in faucibus. ", "value")
+        .wow.fadeInUpShort.item(data-wow-offset="-10" data-wow-delay="0.8s" data-wow-duration="0.4s")
+          +pricing-card(54, featureList.pro, "Pro", "Interdum et malesuada fames ac ante ipsum primis in faucibus. ")
+        .wow.fadeInUpShort.item(data-wow-offset="-10" data-wow-delay="1s" data-wow-duration="0.4s")
+          +pricing-card(99, featureList.enterprise, "Enterprise", "Interdum et malesuada fames ac ante ipsum primis in faucibus. ")

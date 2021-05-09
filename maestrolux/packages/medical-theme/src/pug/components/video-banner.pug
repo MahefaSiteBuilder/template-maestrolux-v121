@@ -1,0 +1,75 @@
+- var cover = imgAPI.medical[0]
+.hero-content
+  .hidden-sm-up
+    figure.mobile-cover
+      |
+      |
+      img(src=cover alt="cover")
+      |
+      |
+  .container.mq-lg-up(data-class="fixed-width")
+    .row
+      .col-md-6.px-0
+        .banner-text
+          .title
+            h3.text-helper.use-text-title #{$t.medical_landing.banner_title}
+          h5.subtitle.use-text-subtitle2 #{$t.medical_landing.banner_subtitle}
+          |
+          |
+          .card.search
+            .input-field.primary.search
+              |
+              |
+              input#search(type="text" name="search")/
+              |
+              |
+              label.show-sm-up(for="search") Search doctor, medicines or clinic...
+              label.show-xs-down(for="search") Search...
+              |
+              |
+            .action
+              |
+              |
+              button.waves-effect.btn.secondary.button
+                |
+                |
+                i.material-icons.icon.show-sm-down search
+                span.show-md-up #{$t.medical_landing.banner_search}
+                |
+                |
+              |
+              |
+      .col-md-6.pa-6.show-sm-up
+        .deco-banner
+          .menu-bg
+          .video-bg
+        .video-wrap
+          .video-figure
+            .inner-figure
+              .hidden-sm-down
+                |
+                |
+                button#btn_play.btn-play.btn-floating.waves-effect.hide
+                  |
+                  |
+                  i.material-icons.play play_arrow
+                  |
+                  |
+                  i.material-icons.pause pause
+                  |
+                  |
+                |
+                |
+              |
+              |
+              img.show-md-down(src=cover alt='cover')/
+              |
+              |
+              img#banner_cover.hidden-md-down(src=cover alt='cover')/
+              |
+              |
+              if youtube.use
+                .video
+                  #youtube.show-lg-up
+        .parallax-banner
+          include parallax/dots.pug

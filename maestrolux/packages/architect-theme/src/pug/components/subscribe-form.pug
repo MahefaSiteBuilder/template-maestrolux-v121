@@ -1,0 +1,23 @@
+.root
+  .parallax-form-wrap
+    div.parallax(data-enllax-ratio="0.4")
+  .container.fixed-width
+    .card.form
+      h4.use-text-title2 #{$t.architect_landing.subscribe_title}
+      p.use-text-subtitle2 #{$t.architect_landing.subscribe_subtitle}
+      form
+        .field
+          .input-field.field
+            |
+            |
+            input(type="email" name="email" id="email")
+            |
+            |
+            label(for='email') #{$t.architect_landing.subscribe_input}
+            |
+            |
+        |
+        |
+        button.btn.btn-large.secondary.button.waves-effect #{$t.architect_landing.subscribe_subscribe}
+        |
+        |

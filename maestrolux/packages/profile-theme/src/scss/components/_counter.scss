@@ -1,0 +1,31 @@
+.counter-wrap {
+  @include use-theme(background-image, linear-gradient(120deg, $palette-secondary-main, $palette-primary-main), linear-gradient(120deg, $palette-secondary-dark, $palette-primary-dark));
+  padding: spacing(10, 0);
+  .text {
+    display: flex;
+    align-items: center;
+    @include breakpoints-down(sm) {
+      justify-content: center
+    }
+  }
+
+  .counter-item {
+    color: $palette-common-white;
+    h6 {
+      white-space: nowrap
+    }
+    @include breakpoints-up(sm) {
+      @include padding-left($spacing5)
+    }
+    @include breakpoints-down(sm) {
+      text-align: center
+    }
+    i {
+      @include margin-right($spacing2);
+      color: $palette-common-white;
+      font-size: 40px;
+      line-height: 40px
+    }
+  }
+}
+

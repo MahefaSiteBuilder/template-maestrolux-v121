@@ -1,0 +1,48 @@
+include title.pug
+.root
+  .container
+    +title-main($t.architect_landing.services_title, $t.architect_landing.services_desc)
+  .container.fixed-width
+    .row.spacing8.grid
+      .col-md-4
+        .figure
+          |
+          |
+          svg.fill
+            include svg/services-fill-1.pug
+          |
+          |
+          svg.outline
+            include svg/services-outline-1.pug
+          |
+          |
+        h5.use-text-subtitle2 #{$t.architect_landing.services_item1}
+        p.use-text-paragraph #{$t.architect_landing.services_itemdesc1}
+      .col-md-4
+        .figure
+          |
+          |
+          svg.fill
+            include svg/services-fill-2.pug
+          |
+          |
+          svg.outline
+            include svg/services-outline-2.pug
+          |
+          |
+        h5.use-text-subtitle2 #{$t.architect_landing.services_item2}
+        p.use-text-paragraph #{$t.architect_landing.services_itemdesc2}
+      .col-md-4
+        .figure
+          |
+          |
+          svg.fill
+            include svg/services-fill-3.pug
+          |
+          |
+          svg.outline
+            include svg/services-outline-3.pug
+          |
+          |
+        h5.use-text-subtitle2 #{$t.architect_landing.services_item3}
+        p.use-text-paragraph #{$t.architect_landing.services_itemdesc3}

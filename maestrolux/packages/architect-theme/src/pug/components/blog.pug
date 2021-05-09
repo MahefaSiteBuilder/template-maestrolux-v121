@@ -1,0 +1,54 @@
+-
+  var blogContent = [
+    {
+      title: 'Sed imperdiet enim ligula eget suscipit orc',
+      desc:
+        'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante. Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non, gravida est.'
+    },
+    {
+      title: 'Donec commodo convallis ligula eget suscipit orc',
+      desc:
+        'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante. Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non, gravida est.'
+    },
+    {
+      title: 'Vivamus sit amet interdum elit',
+      desc:
+        'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante. Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non, gravida est.'
+    },
+    {
+      title:
+        'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor.',
+      desc:
+        'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante. Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non, gravida est.'
+    },
+    {
+      title: 'Aliquam nec ex aliquet, aliquam neque non, gravida est.',
+      desc:
+        'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante. Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non, gravida est.'
+    }
+  ]
+
+.root
+  .container.fixed-width
+    .row.spacing10
+      .col-md-3.order-md-last
+        .hidden-sm-down
+          h5.use-text-title2
+            span 03
+          p.use-text-paragraph #{blogContent[0].title}
+      .col-md-6
+        .blog-wrap
+          article.px-2
+            h3.use-text-title2 #{blogContent[1].title}
+            p.use-text-paragraph #{blogContent[1].desc}
+          .btn-flat.read-more.waves-effect Read More
+      .col-md-3.order-md-first
+        .hidden-sm-down
+          h5.use-text-title2
+            span 01
+          p.use-text-paragraph #{blogContent[3].title}
+        nav
+          .btn.secondary.next.waves-effect
+            i.material-icons chevron_right
+          .btn.secondary.prev.waves-effect
+            i.material-icons chevron_left      

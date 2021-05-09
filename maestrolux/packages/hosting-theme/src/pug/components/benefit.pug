@@ -1,0 +1,26 @@
+include titles/title.pug
+
+.root
+  .parallax-img
+    .hidden-sm-down
+      div.parallax(data-enllax-ratio="0.2")
+  .container.fixed-width
+    .wrapper
+      .row
+        .col-md-5.pa-0.justify-content-center
+          .desc
+            +title-main("left", $t.hosting_landing.benefit_headtitle, $t.hosting_landing.benefit_title, true)
+            ul.list
+              li Vestibulum faucibus
+              li Vivamus sit amet interdum elit
+              li Donec dignissim
+              li Quisque lacinia purus
+              li Fusce placerat enim et odio molestie
+              li Pellentesque ac bibendum tortor
+              li Lorem ipsum dolor sit amet
+              li And more&mldr;
+            a.btn.secondary.waves-effect(href="#") #{$t.hosting_landing.getstarted}
+        .col-md-7.pa-0.d-flex
+          .hidden-sm-down
+            figure.img
+              img(src=imgAPI.hosting[4] alt="benefit")/

@@ -1,0 +1,94 @@
+-
+  var marketList = [
+    {
+      logo: '/images/crypto/btc.png',
+      name: 'BTC',
+      price: 1020,
+      status: 'up',
+      percent: 8
+    },
+    {
+      logo: '/images/crypto/xrp.png',
+      name: 'XRP',
+      price: 0.003,
+      status: 'down',
+      percent: 3
+    },
+    {
+      logo: '/images/crypto/nem.png',
+      name: 'NEM',
+      price: 0.03,
+      status: 'up',
+      percent: 8
+    },
+    {
+      logo: '/images/crypto/iot.png',
+      name: 'IOTA',
+      price: 0.01,
+      status: 'down',
+      percent: 3
+    },
+    {
+      logo: '/images/crypto/mnr.png',
+      name: 'MNR',
+      price: 1.45,
+      status: 'up',
+      percent: 8
+    },
+    {
+      logo: '/images/crypto/byc.png',
+      name: 'BYC',
+      price: 22.34,
+      status: 'down',
+      percent: 3
+    },
+    {
+      logo: '/images/crypto/iot.png',
+      name: 'IOTA',
+      price: 0.01,
+      status: 'down',
+      percent: 3
+    },
+    {
+      logo: '/images/crypto/mnr.png',
+      name: 'MNR',
+      price: 1.45,
+      status: 'up',
+      percent: 8
+    },
+    {
+      logo: '/images/crypto/byc.png',
+      name: 'BYC',
+      price: 22.34,
+      status: 'down',
+      percent: 3
+    }
+  ]
+
+.market
+  .slick-carousel#market_carousel
+    each item in marketList
+      .item
+        .coin
+          .avatar-img.logo
+            |
+            |
+            img(src=assets+item.logo alt=item.name)/
+            |
+            |
+          | #{item.name}
+          | #{item.price}
+          | (
+          if item.status === 'down'
+            span.down
+              i &#x25BC;
+              | #{item.percent}%
+          if item.status === 'up'
+            span.up
+              i &#x25B2;
+              | #{item.percent}%
+          if item.status === 'stay'
+            span.stay
+              i -
+              | #{item.percent}%
+          | )

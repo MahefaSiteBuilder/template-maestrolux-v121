@@ -1,0 +1,63 @@
+#blog {
+  .root {
+    @include breakpoints-down(sm) {
+      margin-top: $spacing15 * -1
+    }
+    @include breakpoints-down(xs) {
+      text-align: center;
+    }
+    h3 {
+      margin-bottom: $spacing3
+    }
+    h5 {
+      margin-bottom: $spacing2
+    }
+    nav {
+      width: 80px;
+      margin-top: $spacing4;
+      @include breakpoints-down(sm) {
+        margin-top: $spacing5 * -1;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .btn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 0;
+        padding: 0;
+        box-shadow: none;
+        [dir="rtl"] & {
+          transform: scale(-1)
+        }
+        i.material-icons {
+          font-size: 40px;
+          vertical-align: middle;
+          color: $palette-common-white
+        }
+        &:hover {
+          background: $palette-secondary-main
+        }
+      }
+    }
+  }
+
+  .blog-wrap {
+    @include breakpoints-down(sm) {
+      margin: spacing(8, 0)
+    }
+  }
+
+  .next {
+    position: relative;
+    @include margin-left($spacing5)
+  }
+  .read-more {
+    margin-top: $spacing3;
+    @include breakpoints-up(sm) {
+      @include margin-left($spacing1 * -1)
+    }
+  }
+}

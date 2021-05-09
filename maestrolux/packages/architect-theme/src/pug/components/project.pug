@@ -1,0 +1,71 @@
+include title.pug
+include cards/general.pug
+
+-
+  var projectData = [
+    {
+      img: imgAPI.architect[1],
+      title: 'Vivamus sit amet',
+      desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    },
+    {
+      img: imgAPI.architect[2],
+      title: 'Vivamus sit amet',
+      desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    },
+    {
+      img: imgAPI.architect[3],
+      title: 'Vivamus sit amet',
+      desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    },
+    {
+      img: imgAPI.architect[1],
+      title: 'Vivamus sit amet',
+      desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    },
+    {
+      img: imgAPI.architect[2],
+      title: 'Vivamus sit amet',
+      desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    },
+    {
+      img: imgAPI.architect[3],
+      title: 'Vivamus sit amet',
+      desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    }
+  ]
+
+.root
+  .parallax-wrap
+    include parallax/dot.pug
+  .container
+    .floating-title
+      +title-main($t.architect_landing.project_title, $t.architect_landing.project_desc)
+  .slider-wrap
+    .carousel
+      .slick-carousel#project_carousel(data-length=projectData.length)
+        .props.item-props-first.show-md-up
+          div
+        each item in projectData
+          .item
+            +general-card(item.img, item.title, item.desc)
+        .props.item-props-last.show-md-up
+          div
+      |
+      |
+      button.btn-floating.nav.prev.waves-effect#prev_project
+        |
+        |
+        i.ion-ios-arrow-left
+        |
+        |
+      |
+      |
+      button.btn-floating.nav.next.waves-effect#next_project
+        |
+        |
+        i.ion-ios-arrow-right
+        |
+        |
+      |
+      |

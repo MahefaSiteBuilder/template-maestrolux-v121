@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="492px" height="369px" viewBox="0 0 492 369" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>profile-logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Logo-Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="profile" transform="translate(-10.000000, -72.000000)" fill-rule="nonzero">
+            <g id="profile-logo" transform="translate(10.000000, 72.000000)">
+                <g id="Group">
+                    <polygon id="Path" fill="#FFA000" points="213.1 0.5 0.5 368.6 425.6 368.6"></polygon>
+                    <polygon id="Path" fill="#EC407A" points="341.5 108.8 191.5 368.6 491.5 368.6"></polygon>
+                </g>
+                <path d="M164,163 L164,317.443291 C164,334.87158 178.050812,349 195.383366,349 C199.183924,349 202.952877,348.305856 206.506706,346.951368 L308.001733,308.268077 C323.992976,302.173257 332.042753,284.197362 325.981412,268.117792 C323.854842,262.476412 320.144129,257.577761 315.300414,254.017409 L263.44551,215.901681 L246.159568,239.679008 L298.014472,277.794736 C298.276294,277.987188 298.476874,278.251979 298.591823,278.556919 C298.919463,279.426085 298.48434,280.397755 297.619949,280.727205 L196.124922,319.410496 C195.888,319.500795 195.636737,319.547071 195.383366,319.547071 C194.227862,319.547071 193.291142,318.605177 193.291142,317.443291 L193.291142,163 L164,163 Z" id="Path-4" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

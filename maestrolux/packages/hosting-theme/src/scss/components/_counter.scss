@@ -1,0 +1,16 @@
+.counter-wrap {
+  position: relative;
+  margin: spacing(10, 0);
+  text-align: center;
+  h3 {
+    color: $palette-primary-light;
+    font-weight: $font-bold;
+    margin-bottom: $spacing2;
+    @include breakpoints-down(xs) {
+      font-size: 36px;
+    }
+  }
+  p {
+    color: $palette-common-white
+  }
+}

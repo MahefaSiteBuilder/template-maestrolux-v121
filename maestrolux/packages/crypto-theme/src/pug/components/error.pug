@@ -1,0 +1,25 @@
+mixin error(errCode, text)
+  .error-wrap
+    section.container.max-md.pa-0
+      .row
+        .col-sm-4
+          .flex
+            .deco
+              |
+              |
+              svg
+                include svg/deco-hexa.pug
+              |
+              |
+              h3 #{errCode}
+        .col-sm-8
+          .text
+            h4.display-1 #{text}
+            p #{$t.common["404_subtitle"]}
+            |
+            |
+            a.btn.btn-outlined.primary.waves-effect.btn-large.button(
+              href=link.crypto.home
+            ) #{$t.common.back}
+            |
+            |

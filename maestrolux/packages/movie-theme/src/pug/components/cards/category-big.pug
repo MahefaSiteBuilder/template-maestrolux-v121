@@ -1,0 +1,26 @@
+mixin category-big(img, title, total, background, type)
+  .category(
+    class=type === "top-over" ? "half-char" : "full-char"
+    style="background-color: #" + background
+  )
+    |
+    |
+    img.shadow(src=img alt=title)/
+    |
+    |
+    img(src=img alt=title)/
+    |
+    |
+    span.property
+      |
+      |
+      span.title-category.use-text-title2 #{title}
+      span.total.use-text-subtitle2 #{total} Films
+      span.hidden-xs-down
+        a.btn.btn-outlined.white.secondary-text.button.block.waves-effect Explore
+      |
+      |
+    |
+    |
+  |
+  |

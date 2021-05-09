@@ -1,0 +1,75 @@
+include titles/title.pug
+include cards/testimonial.pug
+
+-
+  var testiContent = [
+    {
+      text: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.',
+      name: 'John Doe',
+      avatar: imgAPI.avatar[6],
+      title: 'Chief Digital Officer'
+    },
+    {
+      text: 'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
+      name: 'Jean Doe',
+      avatar: imgAPI.avatar[7],
+      title: 'Chief Digital Officer'
+    },
+    {
+      text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      name: 'Jena Doe',
+      avatar: imgAPI.avatar[1],
+      title: 'Graphic Designer'
+    },
+    {
+      text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
+      name: 'Jovelin Doe',
+      avatar: imgAPI.avatar[2],
+      title: 'Senior Graphic Designer'
+    },
+    {
+      text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      name: 'Jihan Doe',
+      avatar: imgAPI.avatar[3],
+      title: 'CEO Software House'
+    },
+    {
+      text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      name: 'John Doe',
+      avatar: imgAPI.avatar[9],
+      title: 'Senior Graphic Designer'
+    }
+  ]
+
+.root
+  .container.fixed-width-lg-up
+    +title-main("center", $t.crypto_landing.testi_title)
+    p.use-text-subtitle2.text-center #{$t.crypto_landing.testi_subtitle}
+    .row.spacing6.justify-content-center
+      .col-md-10.my-6
+        .slider-wrap
+          .carousel
+            |
+            |
+            button.btn-icon.nav.prev.waves-effect#prev_testi
+              i.ion-ios-arrow-back
+            |
+            |
+            .slick-carousel#testimonial_carousel
+              each item in testiContent
+                .item
+                  .test-content
+                    +testi-card(item.text, item.name, item.title, item.avatar)
+            |
+            |
+            button.btn-icon.nav.next.waves-effect#next_testi
+              i.ion-ios-arrow-forward
+            |
+            |
+          .pagination#testi_mobile_nav
+            ul
+              - var i = 1
+              while i <= testiContent.length
+                li(class=i==1 ? "active" : "")
+                  button(data-index=i++)
+

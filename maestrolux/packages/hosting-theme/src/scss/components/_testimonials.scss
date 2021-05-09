@@ -1,0 +1,46 @@
+#testimonials {
+  .root {
+    position: relative;
+  }
+
+  .carousel {
+    position: relative;
+    @include breakpoints-up(sm) {
+      padding: spacing(0, 8)
+    }
+  }
+
+  .item {
+    padding: spacing(0, 1);
+    @include breakpoints-up(sm) {
+      padding: spacing(7, 1, 0)
+    }
+    &:focus {
+      outline: none
+    }
+  }
+
+  .nav.btn.btn-small {
+    position: absolute;
+    top: 48%;
+    width: 36px;
+    height: 36px;
+    padding: 0px;
+    min-width: 0px;
+    @include breakpoints-down(xs) {
+      display: none
+    }
+    i {
+      font-size: 22px;
+      color: $palette-common-white;
+    }
+  }
+
+  .prev {
+    @include left(6px);
+  }
+
+  .next {
+    @include right(6px)
+  }
+}

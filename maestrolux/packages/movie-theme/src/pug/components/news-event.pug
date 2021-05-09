@@ -1,0 +1,43 @@
+include cards/news.pug
+
+-
+  var newsContent = [
+    {
+      text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.',
+      img: imgAPI.photo[1],
+      type: 'caption_news'
+    },
+    {
+      text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.',
+      img: imgAPI.photo[2],
+      type: 'caption_news'
+    },
+    {
+      text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.',
+      img: imgAPI.photo[3],
+      type: 'caption_event'
+    },
+    {
+      text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.',
+      img: imgAPI.photo[4],
+      type: 'caption_news'
+    },
+    {
+      text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.',
+      img: imgAPI.photo[5],
+      type: 'caption_event'
+    },
+    {
+      text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.',
+      img: imgAPI.photo[6],
+      type: 'caption_news'
+    }
+  ]
+
+.root
+  .carousel
+    .slick-carousel#news_carousel
+      each item in newsContent
+        div
+          .item
+            +news-card(item.img, item.type, item.text)

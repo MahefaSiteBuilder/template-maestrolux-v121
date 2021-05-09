@@ -1,0 +1,62 @@
+block variables
+  
+.page-wrap
+  include decoration.pug
+  .parallax.parallax-left
+    include ../parallax/hexagonal.pug
+  .hidden-md-up
+    .logo.logo-header
+      |
+      |
+      a(href=link.crypto.home)
+        |
+        |
+        img(src=assets+"/images/crypto-logo.svg" alt="logo")
+      |
+      |
+  .container.max-lg.inner-wrap
+    .card.form-box.fragment-fadeUp
+      .hidden-sm-down
+        |
+        |
+        a.waves-effect.btn-icon.backtohome(href=link.crypto.home)
+          |
+          |
+          span
+            i.ion-ios-home-outline
+            i.ion-ios-arrow-thin-left
+          |
+          |
+        |
+        |
+      .deco-inner
+        include decoration.pug
+      .auth-frame
+        .row
+          .col-md-5
+            .hidden-sm-down
+              .greeting
+                .logo
+                  |
+                  |
+                  img(src=assets+"/images/crypto-logo.svg" alt="logo")/
+                  |
+                  |
+                  p.use-text-subtitle2 #{brand.crypto.projectName}
+                h4.use-text-title2.pb-2 #{title}
+                h6.use-text-subtitle2 #{subtitle}
+                .deco-sm
+                  |
+                  |
+                  svg(width='55px', height='49px', viewbox='0 0 55 49', version='1.1')
+                    defs
+                      lineargradient#linearGradient-sm(x1='34.4430017%', y1='14.3140713%', x2='131.062329%', y2='100%')
+                        stop(stop-color='#FFA000', offset='0%')
+                        stop(stop-color='#FFECB3', offset='100%')
+                    g#Auth-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      path#AuthFill-1(d='M3.56921938,35.4705736 C3.56921938,37.4675408 4.62878153,39.3129133 6.34885575,40.3113968 L24.789583,51.0165091 C26.5096572,52.0149927 28.6287815,52.0149927 30.3488557,51.0165091 L48.789583,40.3113968 C50.5096572,39.3129133 51.5692194,37.4675408 51.5692194,35.4705736 L51.5692194,14.0602595 C51.5692194,12.0632028 50.5096572,10.2179199 48.789583,9.21934677 L30.3488557,-1.4857655 C28.6287815,-2.48424909 26.5096572,-2.48424909 24.789583,-1.4857655 L6.34885575,9.21934677 C4.62878153,10.2179199 3.56921938,12.0632028 3.56921938,14.0602595 L3.56921938,35.4705736 Z', fill='url(#linearGradient-sm)', transform='translate(27.569219, 24.765372) rotate(-330.000000) translate(-27.569219, -24.765372) ')
+                  |
+                  |
+          .col-md-7
+            .form-wrap
+              block auth_content

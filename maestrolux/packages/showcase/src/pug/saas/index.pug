@@ -1,0 +1,70 @@
+extends ../layouts/saas-wrap/app.pug
+
+block variables
+  - var pageTitle = " - Home Page"
+block content
+  div
+    #home
+    .main-wrap
+      include ../../../../saas-theme/src/pug/components/header/header.pug
+      // ##### HEADER #####
+      +header(false)
+      // ##### END HEADER #####
+
+      main.container-wrap
+        // ##### BANNER #####
+        section#banner
+          include ../../../../saas-theme/src/pug/components/banner.pug
+        // ##### END BANNER #####
+
+        // ##### LOGO LIST #####
+        section#logo_list
+          include ../../../../saas-theme/src/pug/components/company-logo.pug
+        // ##### END LOGO LIST #####
+        
+        // ##### COUNTER #####
+        section.space-top-short
+          include ../../../../saas-theme/src/pug/components/counter.pug
+        // ##### END COUNTER #####
+
+        // ##### FEATURE #####
+        section#feature.space-top-feature
+          include ../../../../saas-theme/src/pug/components/feature.pug
+        // ##### END FEATURE #####
+
+        // ##### TESTIMONIAL #####
+        section#testimonials.space-bottom-testi
+          include ../../../../saas-theme/src/pug/components/testimonials.pug
+        // ##### END TESTIMONIAL #####
+
+        // ##### PRICING PLANN #####
+        section#pricing.space-top
+          include ../../../../saas-theme/src/pug/components/pricing-plan.pug
+        // ##### END PRICING PLANN #####
+
+        // ##### FAQ #####
+        section#faq.space-top-short
+          include ../../../../saas-theme/src/pug/components/faq.pug
+        // ##### END FAQ #####
+
+        // ##### NEWS AND EVENT #####
+        section#news.space-top-short.space-bottom-short
+          include ../../../../saas-theme/src/pug/components/news-event.pug
+        // ##### END NEWS AND EVENT #####
+
+      // ##### fOOTER #####
+      #footer
+        include ../../../../saas-theme/src/pug/components/footer/footer-with-deco.pug
+      // ##### END fOOTER #####
+
+      // ##### PAGE NAV #####
+      .hidden-md-down
+        include ../../../../saas-theme/src/pug/components/page-nav.pug
+      // ##### END PAGE NAV #####
+
+      // ##### NOTIFICATION #####
+      .hidden-md-down
+        include ../../../../saas-theme/src/pug/components/notification.pug
+      // ##### END NOTIFICATION #####
+        
+

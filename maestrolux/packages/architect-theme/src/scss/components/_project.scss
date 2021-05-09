@@ -1,0 +1,121 @@
+#project {
+  .root {
+    position: relative;
+    &:before {
+      content: "";
+      border-bottom: 700px solid;
+      @include use-theme(border-bottom-color, $palette-primary-light, $palette-primary-dark);
+      @include border-left(1480px solid transparent);
+      position: absolute;
+      bottom: -540px;
+      @include right(0);
+      opacity: 0.5;
+      @include breakpoints-down(sm) {
+        display: none
+      }
+    }
+    @include breakpoints-down(xs) {
+      &:before {
+        bottom: -250px;
+      }
+    }
+  }
+  .parallax-wrap {
+    position: absolute;
+    @include left(20px);
+    height: 100%;
+    width: 500px;
+    z-index: 0;
+  }
+
+  .props {
+    > div {
+      width: 440px;
+      height: 2px;
+      @include breakpoints-down(md) {
+        width: 400px
+      }
+    }
+    &:focus {
+      outline: none
+    }
+  }
+
+  .floating-title {
+    @include text-align(left);
+    @include left(5.5%);
+    @include breakpoints-up(md) {
+      position: absolute;
+      top: $spacing15;
+      width: 360px;
+    }
+    @include breakpoints-up(sm) {
+      padding: spacing(0, 2);
+    }
+    @include breakpoints-down(md) {
+      @include left($spacing10);
+    }
+  }
+
+  .carousel {
+    position: relative;
+    z-index: 1;
+    @include breakpoints-up(md) {
+      margin-bottom: -20px;
+    }
+  }
+  .item {
+    padding: spacing(0, 1);
+    margin-bottom: $spacing5;
+    &:focus {
+      outline: none
+    }
+    > * {
+      margin: 0 auto
+    }
+  }
+  .link {
+    padding: 0;
+    span {
+      text-transform: none;
+      font-weight: $font-regular;
+    }
+  }
+  .nav {
+    position: absolute;
+    top: 50%;
+    margin-top: -45px;
+    width: 36px;
+    z-index: 3;
+    height: 36px;
+    padding: 0;
+    min-width: 0;
+    @include use-theme(background, rgba(255, 255, 255, 0.9), rgba(66, 66, 66, 0.9));
+    border: none;
+    box-shadow: none;
+    [dir="rtl"] & {
+      transform: scale(-2.5)
+    }
+    [dir="ltr"] & {
+      transform: scale(2.5)
+    }
+    &:hover {
+      @include palette-background-paper;
+    }
+    i {
+      font-size: 24px;
+      @include palette-text-primary;
+      line-height: 36px;
+    }
+    @include breakpoints-down(sm) {
+      display: none;
+    }
+  }
+
+  .prev {
+    @include left(0)
+  }
+  .next {
+    @include right(0)
+  }
+} 

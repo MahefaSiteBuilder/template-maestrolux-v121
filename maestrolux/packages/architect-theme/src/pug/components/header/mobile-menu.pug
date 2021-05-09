@@ -1,0 +1,7 @@
+#slide-menu.sidenav.mobile-nav
+  ul.collection
+    each item, index in menu.architect
+      li.collection-item(style="animation-duration: "+(Number(index + 1)) * 0.25 + 's')
+        a.sidenav-close.waves-effect.menu-list(href='#' + item.name) #{$t.architect_landing['header_'+item.name]}
+    li.collection-item(style="animation-duration: "+menu.architect.length * 0.25 + 's')
+        a.waves-effect.menu-list(href=link.architect.contact) #{$t.architect_landing.header_contact}

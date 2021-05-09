@@ -1,0 +1,197 @@
+@mixin title-base {
+  text-transform: capitalize;
+  font-weight: $font-bold;
+  margin-bottom: $spacing5;
+  position: relative;
+}
+
+.title-default {
+  padding: spacing(0, 2);
+  @include breakpoints-up(sm) {
+    padding: spacing(0, 4);
+  }
+}
+
+.title-primary {
+  font-size: 48px;
+  line-height: 62px;
+  @include breakpoints-down(md) {
+    font-size: 38px;
+    line-height: 50px
+  }
+  @include breakpoints-down(sm) {
+    text-align: center;
+    margin-bottom: $spacing4
+  }
+  @include breakpoints-down(xs) {
+    font-size: 32px;
+    line-height: 42px
+  }
+  @include title-base;
+}
+
+.title-secondary {
+  color: $palette-secondary-dark;
+  font-size: 48px;
+  line-height: 62px;
+  @include breakpoints-down(md) {
+    font-size: 38px;
+    line-height: 50px
+  }
+  @include breakpoints-down(xs) {
+    font-size: 32px;
+    line-height: 42px
+  }
+  @include title-base;
+}
+
+.title-deco {
+  position: relative;
+  display: inline-block;
+  h3 {
+    overflow: hidden;
+    color: $palette-common-white;
+    padding: $spacing4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 48px;
+    font-Weight: $font-bold;
+    @include breakpoints-up(md) {
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      background-color: $palette-primary-main;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: contain;
+      [dir="ltr"] & {
+        background-position: left center
+      }
+      [dir="rtl"] & {
+        background-position: right center
+      }
+      &.bg-img {
+        &:before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: #3B3B3B;
+          opacity: 0.38;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      span {
+        position: relative;
+      }
+    }
+    @include breakpoints-down(md) {
+      font-size: 38px;
+      line-height: 50px
+    }
+    @include breakpoints-down(sm) {
+      padding-bottom: $spacing2;
+      background: none !important;
+      .theme--dark & {
+        color: $palette-primary-light
+      }
+      .theme--light & {
+        color: $palette-primary-dark
+      }
+      width: auto;
+      text-align: center;
+    }
+    @include breakpoints-down(xs) {
+      font-size: 32px;
+      line-height: 42px
+    }
+  }
+  &:before {
+    content: "";
+    width: 400px;
+    height: 400px;
+    top: -50px;
+    left: -50px;
+    border-radius: 50%;
+    border: 1px solid;
+    @include use-theme(border-color, $palette-primary-light, $palette-primary-dark);
+    position: absolute;
+    @include breakpoints-down(sm) {
+      display: none;
+    }
+  }
+}
+
+.title-icon-deco {
+  @include breakpoints-up(lg) {
+    width: 350px
+  }
+  h3 {
+    .theme--dark & {
+      color: $palette-common-white
+    }
+    .theme--light & {
+      color: $palette-primary-dark
+    }
+    font-weight: $font-bold;
+    text-transform: capitalize;
+    width: 200px;
+    min-height: 120px;
+    font-size: 48px;
+    line-height: 62px;
+    position: relative;
+    @include breakpoints-down(md) {
+      font-size: 38px;
+      line-height: 50px;
+      width: 100%;
+      text-align: center;
+    }
+    @include breakpoints-down(xs) {
+      font-size: 32px;
+      line-height: 42px
+    }
+  }
+  .icon {
+    position: relative;
+    font-size: 80px;
+    color: transparent;
+    -webkit-text-stroke: 2px $palette-primary-main;
+    display: block;
+    margin: spacing(15, 0, 3);
+    @include text-align(left);
+    @include breakpoints-down(md) {
+      display: none
+    }
+  }
+  .capsul {
+    width: 900px;
+    height: 500px;
+    border-radius: 500px;
+    position: absolute;
+    opacity: 0.75;
+    top: 80px;
+    @include use-theme(background-image, linear-gradient(144deg, $palette-primary-light 0%, $palette-secondary-light 100%), linear-gradient(144deg, $palette-primary-dark 0%, $palette-secondary-dark 100%));
+    @include right(-300px);
+    [dir="rtl"] & {
+      transform: rotate(30deg);
+    }
+    [dir="ltr"] & {
+      transform: rotate(-30deg);
+    }
+  }
+  .circle {
+    width: 700px;
+    height: 700px;
+    top: 50px;
+    @include right(-40px);
+    border-radius: 50%;
+    border: 1px solid;
+    @include use-theme(border-color, $palette-primary-light, $palette-primary-dark);
+    position: absolute;
+  }
+}

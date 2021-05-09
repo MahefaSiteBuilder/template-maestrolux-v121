@@ -1,0 +1,39 @@
+.root
+  .hidden-md-down
+    |
+    |
+    button#btn_play.btn.btn-play.waves-effect.hide
+      |
+      |
+      i.material-icons.pause pause
+      |
+      |
+      i.material-icons.play play_arrow
+      |
+      |
+    |
+    |
+  .container.banner-wrap.fixed-width-md-down
+    .video
+      .overlay
+      |
+      |
+      img.show-md-down(src=imgAPI.architect[0] alt='cover')/
+      |
+      |
+      img#banner_cover(src=imgAPI.architect[0] alt='cover')/
+      |
+      |
+      if youtube.use
+        #youtube.show-lg-up
+    .parallax
+      include parallax/cross.pug
+    .block
+      .row.justify-content-end
+        .col-md-9
+          .paper-wrap
+            .card.paper
+              div
+                h4.use-text-title2 #{$t.architect_landing.banner_title}
+                p.subtitle.use-text-subtitle2 #{$t.architect_landing.banner_desc}
+                a.btn.btn-large.primary.button.waves-effect(href="#") #{$t.architect_landing.banner_btn}

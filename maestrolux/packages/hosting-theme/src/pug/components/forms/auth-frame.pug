@@ -1,0 +1,55 @@
+block variables
+  
+.page-wrap
+  .cloud-deco
+    include ../parallax/cloud.pug
+  .hidden-md-up
+    .logo.logo-header
+      |
+      |
+      a(href=link.hosting.home)
+        |
+        |
+        img(src=assets+"/images/cloud-logo.svg" alt="logo")
+        |
+        |
+        p.use-text-subtitle2 #{brand.hosting.projectName}
+        |
+        |
+      |
+      |
+  .container.max-lg.inner-wrap
+    .card.form-box.fragment-fadeUp
+      .hidden-sm-down
+        |
+        |
+        a.waves-effect.btn-icon.backtohome(href=link.hosting.home)
+          |
+          |
+          span
+            i.ion-ios-home-outline
+            i.ion-ios-arrow-thin-left
+          |
+          |
+        |
+        |
+      .auth-frame
+        .row
+          .col-md-5
+            .hidden-sm-down
+              .greeting
+                .logo
+                  img(src=assets+"/images/cloud-logo.svg" alt="logo")
+                  p.use-text-subtitle2 #{brand.hosting.projectName}
+                h4.use-text-title2.pb-2 #{title}
+                h6.use-text-subtitle2 #{subtitle}
+          .col-md-7
+            .form-wrap
+              .frm-deco
+                |
+                |
+                svg.cloud
+                  include ../svg/cloud_bottom_frm.pug
+                |
+                |
+              block auth_content

@@ -1,0 +1,52 @@
+extends ../layouts/app.pug
+
+block variables
+  - var pageTitle = " Home Page"
+block content
+  div
+    #home
+    .main-wrap
+      include ../components/header/header.pug
+      // ##### HEADER #####
+      +header(false)
+      // ##### END HEADER #####
+
+      main.container-wrap
+        // ##### BANNER #####
+        section#banner
+          include ../components/banner.pug
+        // ##### END BANNER #####
+        // ##### PROMOTIONS #####
+        section#promotions
+          include ../components/promotions.pug
+        // ##### END PROMOTIONS #####
+        // ##### FEATURE #####
+        section#feature.space-top-short-md-down
+          include ../components/feature/feature.pug
+        // ##### END FEATURE #####
+        // ##### BENEFIT #####
+        section#benefit.space-top-short
+          include ../components/benefit.pug
+        // ##### END BENEFIT #####
+        // ##### TESTIMONIALS #####
+        section#testimonials.space-top
+          include ../components/testimonials.pug
+        // ##### END TESTIMONIALS #####
+        // ##### FAQ #####
+        section#faq.space-top
+          include ../components/faq.pug
+        // ##### END FAQ #####
+      // ##### FOOTER #####
+      #footer
+        include ../components/footer/footer-with-counter.pug
+      // ##### END FOOTER #####
+    // ##### PAGE NAV #####
+    .hidden-md-down
+      include ../components/page-nav.pug
+    // ##### END PAGE NAV #####
+    // ##### NOTIFICATION #####
+    .hidden-md-down
+      include ../components/notification.pug
+    // ##### END NOTIFICATION #####
+  script(src=assets + "/js/vendors/particles/particles.min.js")
+  script(src=assets + "/js/vendors/particles/stats.min.js")

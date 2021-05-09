@@ -1,0 +1,71 @@
+.explore
+  -
+    var themeList = [
+      {
+        link: "/medical/en/index.html",
+        thumb: imgAPI.showcase[9],
+        name: "medical"
+      },
+      {
+        link: "/movie/en/index.html",
+        thumb: imgAPI.showcase[10],
+        name: "movie entertainment"
+      },
+      {
+        link: "/education/en/index.html",
+        thumb: imgAPI.showcase[11],
+        name: "education"
+      },
+      {
+        link: "/saas/en/index.html",
+        thumb: imgAPI.showcase[8],
+        name: "saas landing"
+      },
+      {
+        link: "/mobile-apps/en/index.html",
+        thumb: imgAPI.showcase[6],
+        name: "mobile apps"
+      },
+      {
+        link: "/agency/en/index.html",
+        thumb: imgAPI.showcase[1],
+        name: "agency"
+      },
+      {
+        link: "/profile/en/index.html",
+        thumb: imgAPI.showcase[7],
+        name: "portfolio profile"
+      },
+      {
+        link: "/crypto/en/index.html",
+        thumb: imgAPI.showcase[3],
+        name: "cryptocurrency"
+      },
+      {
+        link: "/fashion/en/index.html",
+        thumb: imgAPI.showcase[4],
+        name: "fashion"
+      },
+      {
+        link: "/hosting/en/index.html",
+        thumb: imgAPI.showcase[5],
+        name: "cloud hosting"
+      },
+      {
+        link: "/architect/en/index.html",
+        thumb: imgAPI.showcase[2],
+        name: "interior Architect"
+      },
+      {
+        link: "https://github.com/ilhammeidi/maestrolux-doc/blob/master/README.md",
+        thumb: imgAPI.showcase[12],
+        name: "documentation"
+      },
+    ]
+  ul
+    each item, index in themeList
+      li
+        a(href=item.link target="_blank")
+          figure
+            img(src=item.thumb alt=item.name)/
+          | #{item.name}

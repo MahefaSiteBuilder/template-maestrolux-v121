@@ -1,0 +1,195 @@
+#home {
+  .root {
+    @include use-theme(background, $palette-primary-main, $palette-primary-dark);
+    &:hover {
+      .btn-play {
+        opacity: 1
+      }
+    }
+    @include breakpoints-up(md) {
+      &:after {
+        content: "";
+        position: absolute;
+        @include right(0);
+        width: 75%;
+        height: 160px;
+        bottom: -55px;
+        @include use-theme(background, $palette-primary-main, $palette-primary-dark);
+        [dir="rtl"] & {
+          transform: skew(0, -10deg)
+        }
+        [dir="ltr"] & {
+          transform: skew(0, 10deg)
+        }
+        @include breakpoints-down(md) {
+          display: none
+        }
+      }
+    }
+  }
+
+  .container.banner-wrap {
+    position: relative;
+    @include breakpoints-down(sm) {
+      padding: 0
+    }
+  }
+
+  .parallax {
+    @include right(0);
+    .parallax-wrap {
+      z-index: 10;
+    }
+  }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.57);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+  }
+
+  .video {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+    iframe {
+      width: 100%;
+      margin-top: -30px
+    }
+    @include breakpoints-up(md) {
+      @include margin-left(-12%);
+      height: 650px;
+    }
+    @media only screen and (min-width: 1400px) {
+      @include margin-left(-16%)
+    }
+    background: $palette-common-black;
+    img {
+      min-height: 100%;
+      @include breakpoints-up(sm) {
+        width: 100%
+      }
+    }
+  }
+
+  .block {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 90;
+    top: 200px;
+    @include breakpoints-up(sm) {
+      top: auto;
+      bottom: $spacing15;
+      padding: spacing(0, 6);
+    }
+    @include breakpoints-up(md) {
+      padding: spacing(0, 8);
+    }
+    @include breakpoints-down(xs) {
+      top: 140px;
+    }
+  }
+
+  .paper-wrap {
+    @include breakpoints-up(sm) {
+      backdrop-filter: saturate(90%) blur(5px);
+    }
+    @include breakpoints-up(md) {
+      @include padding-left(80px);
+      @include bg-color-fade($palette-secondary-main, 0.3);
+    };
+  }
+
+  .paper.card {
+    position: relative;
+    max-height: 300px;
+    overflow: visible;
+    & > div {
+      padding: $spacing2;
+      position: relative;
+    }
+    @include breakpoints-up(md) {
+      backdrop-filter: saturate(90%) blur(5px);
+      .theme--light & {
+        @include bg-color-fade($light-background-paper, 0.85)
+      }
+      .theme--dark & {
+        @include bg-color-fade($dark-background-paper, 0.85)
+      }
+      & > div {
+        padding: $spacing6
+      }
+    }
+    @include breakpoints-down(md) {
+      & > div {
+        padding: $spacing3
+      }
+    }
+    @include breakpoints-down(sm) {
+      text-align: center
+    }
+    @include breakpoints-down(xs) {
+      background: none;
+      & > div {
+        padding: spacing(2, 0)
+      }
+    }
+    h4 {
+      margin-bottom: $spacing3;
+      @include breakpoints-down(xs) {
+        color: $palette-common-white
+      }
+    }
+  }
+
+  .subtitle {
+    @include palette-text-secondary;
+    margin-bottom: $spacing3;
+    @include breakpoints-down(xs) {
+      opacity: 0.87;
+      color: $palette-common-white !important
+    }
+  }
+  .button {
+    width: 190px;
+    position: absolute;
+    @include left(50%);
+    @include breakpoints-up(md) {
+      bottom: -20px;
+    }
+    [dir="ltr"] & {
+      transform: translateX(-50%)
+    }
+    [dir="rtl"] & {
+      transform: translateX(50%)
+    }
+  }
+  .btn-play {
+    position: absolute;
+    z-index: 20;
+    width: 80px;
+    height: 80px;
+    line-height: normal;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 0;
+    background: $palette-secondary-main;
+    opacity: 0.5;
+    backdrop-filter: saturate(90%) blur(5px);
+    @include left(0);
+    top: calc(100% - 80px);
+    box-shadow: none;
+    i {
+      @include margin-left(-6px);
+      font-size: 60px;
+      color: $palette-common-white
+    }
+  }
+
+}

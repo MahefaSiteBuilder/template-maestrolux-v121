@@ -1,0 +1,53 @@
+include mobile-menu.pug
+
+mixin header(invert)
+  header.app-bar.header#header
+    .container.fixed-width-md-up
+      .row
+        .col-md-2.col-sm-10.px-0.py-3
+          |
+          |
+          .logo(class=invert ? "invert" : "scrollnav")
+            button#mobile_menu.mobile-menu.btn-icon.waves-effect.hamburger.hamburger--spin.show-sm-down
+              |
+              |
+              span.hamburger-box
+                span.bar.hamburger-inner
+              |
+              |
+            |
+            |
+            a(href=invert ? link.architect.home : "#home")
+              |
+              |
+              img(src=assets + brand.architect.img alt="logo")/
+              span.hidden-sm-down #{brand.architect.projectName}
+              |
+              |
+            |
+            |
+          |
+          |
+        .col-md-10.col-sm-2.px-0
+          .header-content
+            nav.nav-menu(class=invert && "invert")
+              .scrollactive-nav.show-md-up(class= !invert && "scrollnav")
+                ul
+                  each item in menu.architect
+                    |
+                    |
+                    li
+                      a.btn.btn-flat.anchor-link.waves-effect(
+                        href=invert ? 'index.html#'+item.name : '#'+item.name
+                      ) #{$t.architect_landing['header_'+item.name]}
+                  |
+                  |
+                  li
+                    a.btn.btn-flat.anchor-link.waves-effect(
+                      href=link.architect.contact
+                    ) #{$t.architect_landing.header_contact}
+                |
+                |
+            nav
+              include ./settings
+              +settings(invert)

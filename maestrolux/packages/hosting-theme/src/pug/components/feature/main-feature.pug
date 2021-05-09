@@ -1,0 +1,32 @@
+-
+  var featureList = [
+    {
+      img: '/images/hosting/feature1.png',
+      title: 'titleitem1',
+      desc: 'descitem1'
+    },
+    {
+      img: '/images/hosting/feature2.png',
+      title: 'titleitem2',
+      desc: 'descitem2'
+    },
+    {
+      img: '/images/hosting/feature3.png',
+      title: 'titleitem3',
+      desc: 'descitem3'
+    }
+  ]
+
+include ../titles/title.pug
+
+.main-feature
+  .container
+    +title-main('center', $t.hosting_landing.mainfeature_headtitle, $t.hosting_landing.mainfeature_title)
+    .row.spacing6.grid
+      each item in featureList
+        .col-md-4.pa-6
+          .item
+            figure
+              img(src=assets + item.img alt=item.title)/
+            h6.use-text-subtitle #{$t.hosting_landing['mainfeature_' + item.title]}
+            p.use-text-paragraph #{$t.hosting_landing['mainfeature_' + item.desc]}

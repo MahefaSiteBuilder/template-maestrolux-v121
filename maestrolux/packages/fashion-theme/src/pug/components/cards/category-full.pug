@@ -1,0 +1,16 @@
+mixin category-full(img, title, total, background)
+  |
+  |
+  a.category.full.button-base.waves-effect(style="background-color: #" + background)
+    |
+    |
+    img(src=img alt=title)/
+    |
+    |
+    span.property
+      span.title-category.use-text-title2 #{title}
+      span.total.use-text-paragraph #{total} Items
+    |
+    |
+  |
+  |

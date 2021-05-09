@@ -1,0 +1,144 @@
+include titles/title
+include cards/pricing
+
+-
+  var feature = {
+    personal: [
+      {
+        type: 'plus',
+        text: 'Nam sollicitudin dignissim'
+      },
+      {
+        type: 'plus',
+        text: 'Donec commodo convallis'
+      },
+      {
+        type: 'minus',
+        text: 'Cras convallis lacus orci'
+      },
+      {
+        type: 'minus',
+        text: 'Curabitur egestas consequat'
+      },
+      {
+        type: 'minus',
+        text: 'Quisque ut metus sit amet'
+      },
+      {
+        type: 'minus',
+        text: 'Aliquam lobortis magna '
+      },
+      {
+        type: 'minus',
+        text: 'Suspendisse porttitor velit nisl'
+      }
+    ],
+    startup: [
+      {
+        type: 'plus',
+        text: 'Nam sollicitudin dignissim'
+      },
+      {
+        type: 'plus',
+        text: 'Donec commodo convallis'
+      },
+      {
+        type: 'minus',
+        text: 'Cras convallis lacus orci'
+      },
+      {
+        type: 'minus',
+        text: 'Curabitur egestas consequat'
+      },
+      {
+        type: 'minus',
+        text: 'Quisque ut metus sit amet'
+      },
+      {
+        type: 'minus',
+        text: 'Aliquam lobortis magna '
+      },
+      {
+        type: 'minus',
+        text: 'Suspendisse porttitor velit nisl'
+      }
+    ],
+    company: [
+      {
+        type: 'plus',
+        text: 'Nam sollicitudin dignissim'
+      },
+      {
+        type: 'plus',
+        text: 'Donec commodo convallis'
+      },
+      {
+        type: 'minus',
+        text: 'Cras convallis lacus orci'
+      },
+      {
+        type: 'minus',
+        text: 'Curabitur egestas consequat'
+      },
+      {
+        type: 'minus',
+        text: 'Quisque ut metus sit amet'
+      },
+      {
+        type: 'minus',
+        text: 'Aliquam lobortis magna '
+      },
+      {
+        type: 'minus',
+        text: 'Suspendisse porttitor velit nisl'
+      }
+    ],
+    bigshot: [
+      {
+        type: 'plus',
+        text: 'Nam sollicitudin dignissim'
+      },
+      {
+        type: 'plus',
+        text: 'Donec commodo convallis'
+      },
+      {
+        type: 'minus',
+        text: 'Cras convallis lacus orci'
+      },
+      {
+        type: 'minus',
+        text: 'Curabitur egestas consequat'
+      },
+      {
+        type: 'minus',
+        text: 'Quisque ut metus sit amet'
+      },
+      {
+        type: 'minus',
+        text: 'Aliquam lobortis magna '
+      },
+      {
+        type: 'minus',
+        text: 'Suspendisse porttitor velit nisl'
+      }
+    ]
+  }
+
+.root
+  .container.fixed-width-lg-up
+    +title-main("center", $t.hosting_landing.pricing_headtitle, $t.hosting_landing.pricing_title)
+    .pricing-wrap
+      section
+        .wow.fadeInUp(data-wow-offset="-10" data-wow-delay="0.4s" data-wow-duration="0.4s")
+          div
+            +pricing-card(3, feature.personal, "/images/hosting/home.png", "Personal", "Nam sollicitudin dignissim nunc")
+        .wow.fadeInUp(data-wow-offset="-10" data-wow-delay="0.6s" data-wow-duration="0.4s")
+          div
+            +pricing-card(8, feature.startup, "/images/hosting/office.png", "Startup", "Nam sollicitudin dignissim nunc", true)
+        .wow.fadeInUp(data-wow-offset="-10" data-wow-delay="0.8s" data-wow-duration="0.4s")
+          div
+            +pricing-card(18, feature.company, "/images/hosting/company.png", "Company", "Nam sollicitudin dignissim nunc")
+        .wow.fadeInUp(data-wow-offset="-10" data-wow-delay="1s" data-wow-duration="0.4s")
+          div
+            +pricing-card(13, feature.bigshot, "/images/hosting/world.png", "Big Shot", "Nam sollicitudin dignissim nunc")

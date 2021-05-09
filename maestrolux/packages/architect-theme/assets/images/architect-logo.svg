@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Architect</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Architect" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="architect-logo" transform="translate(6.000000, 19.000000)" fill-rule="nonzero">
+            <g id="Group">
+                <polygon id="Path" fill="#4CAF50" points="499.1 159.7 249.9 319.1 0.9 160.2 250.4 0.7"></polygon>
+                <g transform="translate(0.000000, 160.000000)" fill="#2E7D32" id="Path">
+                    <polygon points="250 263.8 0.6 84.9 0.9 0.3 250 160.5"></polygon>
+                    <polygon points="0.9 49.8 250 160.7 250 313.3 0.9 153.1"></polygon>
+                </g>
+                <g transform="translate(250.000000, 160.000000)" fill="#4CAF50" id="Path">
+                    <polygon points="249.4 49.8 0 228.7 0.3 313.3 249.4 153.1"></polygon>
+                    <polygon points="0.3 263.8 249.4 153 249.4 0.3 0.3 160.5"></polygon>
+                </g>
+            </g>
+            <path d="M155,96 L155,330.155957 C155,356.579492 176.41892,378 202.840497,378 C208.63403,378 214.379386,376.947588 219.796808,374.89401 L374.514836,316.245149 C398.891732,307.004615 411.162733,279.750839 401.922884,255.372137 C398.681161,246.819076 393.024586,239.39209 385.640875,233.994137 L306.593766,176.205775 L280.243245,212.255271 L359.290354,270.043632 C359.689473,270.335413 359.995234,270.736872 360.170462,271.1992 C360.669914,272.516967 360.006616,273.990144 358.688946,274.489633 L203.970918,333.138494 C203.609756,333.275399 203.226733,333.34556 202.840497,333.34556 C201.079059,333.34556 199.651131,331.917526 199.651131,330.155957 L199.651131,96 L155,96 Z" id="Path-4" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+.root
+  footer.container.px-0.max-lg
+    .row
+      .col-md-7.order-md-last
+        #contact
+          include contact.pug
+      .col-md-5.order-md-first
+        .logo
+          |
+          |
+          img(src=assets+brand.profile.img alt='logo')/
+          |
+          |
+          h3.use-text-title #{brand.profile.name}
+          h4.use-text-subtitle #{brand.profile.title}
+        .socmed
+          |
+          |
+          a.btn-icon.margin.waves-effect(href="#")
+            i.ion-social-facebook
+          |
+          |
+          a.btn-icon.margin.waves-effect(href="#")
+            i.ion-social-linkedin
+          |
+          |
+          a.btn-icon.margin.waves-effect(href="#")
+            i.ion-social-twitter
+          |
+          |
+          a.btn-icon.margin.waves-effect(href="#")
+            i.ion-social-instagram
+          |
+          |
+        .contact
+          p.use-text-paragraph #{$t.profile_landing.footer_contact}
+            br/
+            | +12 345 678 90
+          .divider
+          p.use-text-paragraph #{$t.profile_landing.footer_hello}
+            br/
+            | jenadoe.skype

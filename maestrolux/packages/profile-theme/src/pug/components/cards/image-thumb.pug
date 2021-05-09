@@ -1,0 +1,7 @@
+mixin image-thumb(img, title, link, size)
+  .card.img-thumb(class=size)
+    .figure
+      .img(style="background-image: url(" + img + ")")
+    .detail
+      h6.use-text-subtitle #{title}
+      a(href='#') #{link}

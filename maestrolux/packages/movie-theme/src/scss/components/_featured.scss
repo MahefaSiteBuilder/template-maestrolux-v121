@@ -1,0 +1,30 @@
+#featured {
+  .decoration {
+    position: absolute;
+    width: 1280px;
+    height: 960px;
+    top: 200px;
+    svg {
+      width: 1280px;
+      height: 100%;
+      @include use-theme(fill, $palette-primary-light, $palette-primary-dark);
+      opacity: 0.2;
+      @include breakpoints-up(lg) {
+        transform: scale(1.5, 1)
+      }
+      @include breakpoints-up(xl) {
+        display: none
+      }
+      @include breakpoints-down(xs) {
+        transform: scale(0.5);
+        transform-origin: center left
+      }
+    }
+  }
+  .root {
+    position: relative;
+    @include breakpoints-down(xs) {
+      text-align: center
+    }
+  }
+} 

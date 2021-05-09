@@ -1,0 +1,60 @@
+extends ../layouts/architect-wrap/app.pug
+
+block variables
+  - var pageTitle = " - Home Page"
+block content
+  div
+    .main-wrap
+      include ../../../../architect-theme/src/pug/components/header/header.pug
+      // ##### HEADER #####
+      +header(false)
+      // ##### END HEADER #####
+      main.container-wrap
+        // ##### VIDEO BANNER #####
+        section#home
+          include ../../../../architect-theme/src/pug/components/video-banner.pug
+        // ##### END VIDEO BANNER #####
+        // ##### SERVICES #####
+        section#services.space-top-short
+          include ../../../../architect-theme/src/pug/components/services.pug
+        // ##### END SERVICES #####
+        // ##### PROJECT #####
+        section#project.space-top-mobile
+          include ../../../../architect-theme/src/pug/components/project.pug
+        // ##### END PROJECT #####
+        // ##### FEATURED #####
+        section#featured.space-top-mobile
+          include ../../../../architect-theme/src/pug/components/featured.pug
+        // ##### END FEATURED #####
+        section
+          // ##### ABOUT #####
+          #about.space-top-tablet
+            include ../../../../architect-theme/src/pug/components/about.pug
+          // ##### END ABOUT #####
+          // ##### TEAM #####
+          #team.space-top-short
+            include ../../../../architect-theme/src/pug/components/team.pug
+          // ##### END TEAM #####
+          // ##### COUNTER #####
+          div
+            include ../../../../architect-theme/src/pug/components/counter.pug
+          // ##### END COUNTER #####
+        // ##### BLOG #####
+        section#blog.space-top-short
+          include ../../../../architect-theme/src/pug/components/blog.pug
+        // ##### END BLOG #####
+        // ##### SUBSCRIBE #####
+        section#subscribe.space-top-short
+          include ../../../../architect-theme/src/pug/components/subscribe-form.pug
+        // ##### END SUBSCRIBE #####
+        // ##### FOOTER #####
+        include ../../../../architect-theme/src/pug/components/footer.pug
+        // ##### END FOOTER #####
+      // ##### PAGE NAVE #####
+      .hidden-md-down
+        include ../../../../architect-theme/src/pug/components/page-nav.pug
+      // ##### END PAGE NAVE #####
+      // ##### NOTIFICATION #####
+      .hidden-md-down
+        include ../../../../architect-theme/src/pug/components/notification.pug
+      // ##### END NOTIFICATION #####

@@ -1,0 +1,23 @@
+include titles/title.pug
+include cards/category-small.pug
+include cards/category-big.pug
+
+.root
+  .container.fixed-width-lg-up
+    .row.spacing3
+      .col-md-6.pa-3.pt-10
+        +title-main("left", "Top", "Categories")
+      .col-md-3.col-sm-6.pa-3
+        +category-small(imgAPI.movie[9], "Academy Awards", 24, "E79A1C")
+      .col-md-3.col-sm-6.pa-3
+        +category-small(imgAPI.movie[10], "Animations", 24, "E91E63")
+    .row.spacing3
+      .col-md-6.py-0.px-3
+        +category-big(imgAPI.movie[11], "Actions", "24", "1A237E", "top-over")
+        .row.spacing3
+          .col-md-6.col-sm-6.py-3.px-0.ps-sm-0.pe-sm-3
+            +category-small(imgAPI.movie[12], "Romance Drama", 24, "14A8B9")
+          .col-md-6.col-sm-6.py-3.px-0.ps-sm-3.pe-sm-0
+            +category-small(imgAPI.movie[13], "Commedy", 24, "2AA845")
+      .col-md-6.py-0.px-3
+        +category-big(imgAPI.movie[14], "Super Heroes", 24, "ED3626", "bottom-over")

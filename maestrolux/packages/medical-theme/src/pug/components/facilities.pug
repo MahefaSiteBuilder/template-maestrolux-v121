@@ -1,0 +1,71 @@
+include ./titles/with-icon.pug
+include cards/default.pug
+-
+  var servicesList = [
+    {
+      title: "Lorem Ipsum",
+      desc: "Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus",
+      img: imgAPI.medical[3]
+    },
+    {
+      title: "Etiam rhoncus",
+      desc: "Proin quis pellentesque dui. Ut sed leo neque.",
+      img: imgAPI.medical[6]
+    },
+    {
+      title: "Duis fermentum",
+      desc: "Quisque consectetur lectus vel orci porttitor gravida ac eu erat.",
+      img: imgAPI.medical[5]
+    },
+    {
+      title: "Lorem Ipsum",
+      desc: "Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus.",
+      img: imgAPI.medical[4]
+    },
+    {
+      title: "Etiam rhoncus",
+      desc: "Proin quis pellentesque dui. Ut sed leo neque.",
+      img: imgAPI.medical[3]
+    },
+    {
+      title: "Duis fermentum",
+      desc: "Quisque consectetur lectus vel orci porttitor gravida ac eu erat.",
+      img: imgAPI.medical[2]
+    }
+  ]
+
+.root
+  .carousel-handle
+    .carousel-wrap
+      .carousel
+        .slick-carousel#services_carousel(data-length=servicesList.length)
+          .item.show-lg-up
+            .carousel-prop
+              div
+          .item.show-lg-up
+            .carousel-prop
+              div
+          each item in servicesList
+            .item
+              +card(item.img, item.title, item.desc, $t.medical_landing.services_button)
+          .item.show-lg-up
+            .carousel-prop
+              div
+          .item.show-lg-up
+            .carousel-prop
+              div
+  .floating-title
+    .container.fixed-width
+      .title
+        +title-icon($t.medical_landing.services_title, 'library_add')
+        nav.arrow
+          |
+          |
+          button#next_services.btn-floating.margin.waves-effect
+            i.material-icons arrow_back
+          |
+          |
+          button#prev_services.btn-floating.margin.waves-effect
+            i.material-icons arrow_forward
+          |
+          |

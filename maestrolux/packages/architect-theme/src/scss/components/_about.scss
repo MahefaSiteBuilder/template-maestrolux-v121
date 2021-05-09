@@ -1,0 +1,58 @@
+#about {
+  .root {
+    position: relative;
+    color: $palette-common-white;
+    padding: spacing(10, 0);
+    
+    [dir="rtl"] .theme--dark & {
+      background-image: linear-gradient(-90deg, $palette-secondary-dark 70%, $dark-background-default 70%)
+    }
+    [dir="ltr"] .theme--dark & {
+      background-image: linear-gradient(90deg, $palette-secondary-dark 70%, $dark-background-default 70%)
+    }
+    [dir="rtl"] .theme--light & {
+      background-image: linear-gradient(-90deg, $palette-secondary-main 70%, $light-background-paper 70%)
+    }
+    [dir="ltr"] .theme--light & {
+      background-image: linear-gradient(90deg, $palette-secondary-main 70%, $light-background-paper 70%)
+    }
+    @include breakpoints-down(sm) {
+      background: $palette-secondary-main !important;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    .illustration {
+      z-index: 10;
+      height: 415px;
+      position: absolute;
+      top: -120px;
+      @include right(-40px);
+      @include breakpoints-down(md) {
+        height: 315px;
+        top: -60px
+      }
+    }
+  }
+
+  .bg-deco {
+    position: absolute;
+    top: 20px;
+    @include right(-100px);
+    width: 600px;
+    height: 700px;
+    img {
+      transform: scale(1.8);
+      opacity: 0.1;
+      @include breakpoints-down(md) {
+        transform: scale(1.2)
+      }
+    }
+  }
+
+  .illus-wrap {
+    @include breakpoints-down(sm) {
+      display: none
+    }
+  }
+}

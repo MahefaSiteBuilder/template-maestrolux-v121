@@ -1,0 +1,60 @@
+#call-to-action {
+  .root {
+    z-index: 10;
+    position: relative;
+    p {
+      margin: 0
+    }
+  }
+
+  .button {
+    @include breakpoints-up(sm) {
+      padding: spacing(0, 4);
+      height: 64px;
+      line-height: 64px;
+      font-size: 18px
+    }
+    @include breakpoints-down(sm) {
+      margin: 0 auto
+    }
+  }
+
+  .paper {
+    padding: $spacing4;
+    border: 2px solid $palette-primary-main;
+    .row {
+      width: 100% 
+    }
+    @include breakpoints-down(sm) {
+      text-align: center
+    }
+    @include breakpoints-up(lg) {
+      padding: spacing(4, 10);
+      margin: spacing(0, 4);
+    }
+    @include breakpoints-down(sm) {
+      margin-bottom: $spacing5
+    }
+    @include breakpoints-down(xs) {
+      padding: spacing(4, 1);
+      text-align: center
+    }
+    h4 {
+      font-weight: $font-bold;
+      @include breakpoints-down(xs) {
+        font-size: 28px !important;
+        margin-bottom: $spacing2
+      }
+    }
+    p {
+      font-size: 24px;
+      @include breakpoints-down(sm) {
+        margin-bottom: $spacing5
+      }
+      @include breakpoints-down(xs) {
+        font-size: 18px;
+        margin-bottom: $spacing3
+      }
+    }
+  }
+}

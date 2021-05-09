@@ -1,0 +1,28 @@
+include footer.pug
+
+.footer-deco
+  |
+  |
+  svg.deco-top.back
+    include ../svg/deco-wave-top.pug
+  |
+  |
+  svg.deco-top.cover
+    include ../svg/deco-wave-top.pug
+  |
+  |
+  .decoration
+  .action
+    h4.use-text-subtitle #{$t.mobile_landing.footer_text}
+    .btn-area
+      |
+      |
+      a(href='/')
+        img(src=assets+'/images/mobile/app-store.png' alt='app store')/
+      |
+      |
+      a(href='/')
+        img(src=assets+'/images/mobile/play-store.png' alt='play store')/
+      |
+      |
+  +footer(false)

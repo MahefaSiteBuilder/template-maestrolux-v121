@@ -1,0 +1,89 @@
+include titles/title.pug
+include titles/title-secondary.pug
+
+.root
+  if youtube.use
+    #video_modal.modal.video-popup
+      .modal-content
+        |
+        |
+        h4 #{$t.mobile_landing.feature_video}
+        |
+        |
+        button.btn-icon.modal-close.waves-effect
+          i.material-icons close
+        .text-center
+          #video_iframe
+  +title-main("center")
+    | #{$t.mobile_landing.feature_title} 
+  #feature_parallax
+    .container.fixed-width
+      .item.first
+        .row
+          .col-md-6.py-0.order-md-last
+            .text
+              +title-secondary("left", $t.mobile_landing.feature_title1)
+              p.use-text-subtitle2 #{$t.mobile_landing.feature_desc1}
+          .col-md-6.py-0.order-md-first
+            .illustration-left
+              |
+              |
+              svg.deco-primary
+                include ./svg/deco-feature.pug
+              |
+              |
+              include ./parallax/small.pug
+              figure.screen
+                |
+                |
+                img(src=imgAPI.mobile[4] alt='illustration')/
+                |
+                |
+  .bg-color
+    .deco-bg-top
+    .container.fixed-width
+      .item
+        .row
+          .col-md-6
+            .text
+              +title-secondary("left", $t.mobile_landing.feature_title2)
+              p.use-text-subtitle2 #{$t.mobile_landing.feature_desc2}
+          .col-md-6
+            .illustration-right
+              |
+              |
+              svg.deco-secondary
+                include ./svg/deco-feature.pug
+              |
+              |
+              include ./parallax/small.pug
+              figure.screen
+                |
+                |
+                img(src=imgAPI.mobile[5] alt='illustration')/
+                |
+                |
+    .item.last
+      +title-secondary("center", $t.mobile_landing.feature_title3)
+      p.use-text-subtitle2.text-center #{$t.mobile_landing.feature_desc3}
+      .container.max-sm.pa-0
+        .row
+          .col-sm-12.py-0
+            .illustration-center
+              |
+              |
+              svg.deco-primary-big
+                include ./svg/deco-feature.pug
+              |
+              |
+              include ./parallax/medium.pug
+              .card.video
+                |
+                |
+                img(src=imgAPI.mobile[6] alt='screen')/
+                |
+                |
+                h6.title #{$t.mobile_landing.feature_watch}
+                .btn-icon.button.waves-effect.modal-trigger(data-target="video_modal")
+                  i.ion-play
+

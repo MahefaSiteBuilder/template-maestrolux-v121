@@ -1,0 +1,318 @@
+@mixin deco-circle {
+  width: 915px;
+  height: 915px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#banner {
+  // Media query class
+  .container.fixed {
+    @media (min-width: 960px) {
+      max-width: 960px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 1280px;
+    }
+  }
+  .hero-content {
+    position: relative;
+    > .container {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin: 0 auto;
+    }
+    @include breakpoints-up(lg) {
+      @include padding-left($spacing6);
+      margin-bottom: 0;
+    }
+    @include breakpoints-down(sm) {
+      margin-bottom: 0;
+      padding-bottom: $spacing12;
+    }
+  }
+
+  .banner-text {
+    position: relative;
+    z-index: 21;
+    padding: spacing(6, 0);
+    @include breakpoints-up(md) {
+      @include palette-text-primary;
+    }
+    @include breakpoints-down(md) {
+      padding: $spacing4;
+    }
+    @include breakpoints-down(sm) {
+      padding: $spacing4;
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: center;
+      color: $palette-common-white;
+    }
+  }
+
+  .title {
+    margin-top: $spacing12;
+    margin-bottom: $spacing3;
+    @include breakpoints-down(md) {
+      margin-top: $spacing15;
+    }
+  }
+
+  .text-helper {
+    display: inline-block;
+    @include breakpoints-up(lg) {
+      @include padding-right($spacing15);
+    }
+  }
+
+  .second-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .subtitle {
+    margin-bottom: $spacing3;
+    @include breakpoints-up(lg) {
+      @include padding-right($spacing8)
+    }
+    @include breakpoints-up(md) {
+      margin-bottom: $spacing5
+    }
+  }
+
+  .icon {
+    @include margin-left($spacing1);
+    line-height: 22px;
+    top: 6px;
+    position: relative;
+  }
+
+  .mobile-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    background: $palette-common-black;
+    img {
+      min-width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      @include breakpoints-down(xs) {
+        opacity: 0.4;
+      }
+    }
+  }
+  
+  .deco-banner {
+    @include breakpoints-up(md) {
+      opacity: 0.5;
+    }
+    .menu-bg {
+      top: -670px;
+      right: -50px;
+      @include deco-circle;
+      @include use-theme(background-color, $palette-primary-light, $palette-primary-dark);
+      @include breakpoints-down(sm) {
+        top: -750px;
+        background-image: url($imgAPI-medical13);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        &:after {
+          content: "";
+          position: absolute;
+          background: rgba(0, 0, 0, 0.6);
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .video-bg {
+      top: -280px;
+      right: -380px;
+      @include deco-circle;
+      opacity: 0.45;
+      @include use-theme(opacity, 0.45, 0.8);
+      @include use-theme(background-image, linear-gradient(95deg, $palette-primary-main 0%, $palette-secondary-main 110%), linear-gradient(95deg,  $palette-primary-dark 0%, $palette-secondary-dark 110%));
+      @include breakpoints-down(sm) {
+        display: none;
+      }
+    }
+  }
+  
+  .parallax-banner {
+    position: absolute;
+    top: 100px;
+    left: -40px;
+    width: 300px;
+    height: 400px;
+    z-index: 10;
+    transform: scale(0.4);
+    transform-origin: top left;
+  }
+  
+  .video-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border-top-left-radius: 0;
+    width: 450px;
+    height: 450px;
+    margin-top: $spacing8;
+    @include breakpoints-down(sm) {
+      display: none;
+    }
+  }
+
+  .video-figure {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  #youtube {
+    position: relative;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ytplayer-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+  }
+
+  .inner-figure {
+    background: $palette-primary-main;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    img {
+      display: block;
+      min-width: 100%;
+      height: 100%;
+      z-index: 2;
+      position: relative;
+    }
+    .video {
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      iframe {
+        top: 0px !important;
+        left: -150px !important;
+        height: 640px !important
+      }
+    }
+    &:hover {
+      .btn-play {
+        opacity: 1
+      }
+    }
+  }
+
+  .btn-play {
+    position: absolute;
+    top: 40%;
+    @include left(40%);
+    z-index: 200;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background: #FFF !important;
+    @include shadow8;
+    .material-icons {
+      font-size: 50px;
+      line-height: 80px;
+      color: $palette-primary-main;
+      &.play {
+        display: none
+      }
+    }
+  }
+  
+  .search {
+    position: relative;
+    margin-top: $spacing3;
+    font-size: 18px;
+    overflow: visible;
+    border-radius: 75px;
+    .input-field.filled {
+      background: none !important;
+      min-height: 0;
+      padding: 0 !important;
+    }
+    @include breakpoints-up(md) {
+      width: 700px;
+    }
+    @include breakpoints-down(xs) {
+      margin-top: $spacing4
+    }
+    @include breakpoints-up(xs) {
+      margin-top: $spacing4
+    }
+    .input-field.filled label.active, .input-field.full-width .label.active {
+      transform: translateY(-18px) scale(0.75);
+      transform-origin: top left;
+    }
+    .input-field {
+      margin: 0;
+      input {
+        border-radius: 75px;
+        box-sizing: border-box;
+        margin: 0;
+        height: 75px;
+        padding: $spacing2;
+        max-height: none;
+        border: none;
+        @include breakpoints-up(md) {
+          padding: spacing(4, 30, 3, 3)
+        }
+        &:focus {
+          @include use-theme(box-shadow, $palette-primary-light 0 0 0 0.4rem, $palette-primary-dark 0 0 0 0.4rem)
+        }
+      }
+    }
+    label {
+      top: 16px;
+      @include left($spacing3 !important);
+      &:not(.label-icon).active {
+        transform: translateY(-6px) scale(0.8)
+      }
+    }
+  }
+  
+  .action {
+    position: absolute;
+    @include right(0);
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: $spacing2;
+    .btn {
+      width: 100px;
+      height: 48px;
+      line-height: 48px;
+      align-items: center;
+      padding: 2px 28px;
+      box-sizing: content-box;
+      @include breakpoints-down(xs) {
+        padding: 2px;
+        width: 50px;
+        background: none; box-shadow: none;
+        color: $palette-primary-main;
+      }
+    }
+  }
+}

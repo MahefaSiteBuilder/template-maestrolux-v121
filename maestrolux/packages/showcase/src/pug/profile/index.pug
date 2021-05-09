@@ -1,0 +1,61 @@
+extends ../layouts/profile-wrap/app.pug
+
+block variables
+  - var pageTitle = " - Luxi Theme Profile"
+
+block content
+  div
+    #home
+    .main-wrap
+      include ../../../../profile-theme/src/pug/components/header.pug
+      // ##### HEADER #####
+      +header(false)
+      // ##### END HEADER #####
+      main.container-wrap
+        // ##### BANNER #####
+        section#banner_nav
+          include ../../../../profile-theme/src/pug/components/banner-nav.pug
+        // ##### END BANNER #####
+        section#about
+          // ##### ABOUT #####
+          include ../../../../profile-theme/src/pug/components/about.pug
+          // ##### END ABOUT #####
+          // ##### TIMELINE #####
+          include ../../../../profile-theme/src/pug/components/timeline.pug
+          // ##### END TIMELINE #####
+          // ##### COUNTER #####
+          include ../../../../profile-theme/src/pug/components/counter.pug
+          // ##### END COUNTER #####
+        .grey-bg#feature_parallax
+          .deco-wrap
+            include ../../../../profile-theme/src/pug/components/parallax-deco.pug
+            // ##### SERVICES #####
+            section#services
+              include ../../../../profile-theme/src/pug/components/services.pug
+            // ##### END SERVICES #####
+            // ##### GALLERY #####
+            section#my-work.space-top-short.space-bottom-short
+              include ../../../../profile-theme/src/pug/components/gallery.pug
+            // ##### END GALLERY #####
+          // ##### TESTIMONIAL #####
+          section#testimonials
+            include ../../../../profile-theme/src/pug/components/testimonials/testimonials.pug
+          // ##### END TESTIMONIAL #####
+          .deco-wrap.bottom
+            include ../../../../profile-theme/src/pug/components/parallax-deco.pug
+          // ##### BLOG #####
+          section#blog.space-top-short
+            include ../../../../profile-theme/src/pug/components/blog.pug
+          // ##### END BLOG #####
+          // ##### FOOTER #####
+          section#footer.space-top
+            include ../../../../profile-theme/src/pug/components/footer.pug
+          // ##### END FOOTER #####
+        // ##### PAGE NAV #####
+        .hidden-md-down
+          include ../../../../profile-theme/src/pug/components/page-nav.pug
+        // ##### END PAGE NAV #####
+        // ##### NOTIFICATION #####
+        .hidden-md-down
+          include ../../../../profile-theme/src/pug/components/notification.pug
+        // ##### END NOTIFICATION #####

@@ -1,0 +1,13 @@
+extends ../layouts/app.pug
+
+block variables
+  - var pageTitle = brand.showcase.name
+block content
+  div
+    .main-wrap
+    #banner
+      include ../components/banner.pug
+    #explore
+      include ../components/explore.pug
+    footer#footer
+      include ../components/footer.pug

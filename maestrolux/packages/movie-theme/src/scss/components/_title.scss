@@ -1,0 +1,94 @@
+@mixin align {
+  &.align-left {
+    @include text-align(left);
+    @include breakpoints-up(md) {
+      @include margin-right($spacing5);
+    }
+    @include breakpoints-down(sm) {
+      text-align: center !important;
+    }
+  }
+
+  &.align-right {
+    @include text-align(right);
+    @include breakpoints-up(md) {
+      @include margin-right($spacing5);
+    }
+    @include breakpoints-down(sm) {
+      text-align: center !important;
+    }
+  }
+
+  &.align-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.title-main {
+  @include align;
+  font-weight: $font-bold;
+  margin-bottom: $spacing3;
+  min-width: 200px;
+  font-size: 36px;
+  line-height: 56px;
+  @include breakpoints-up(md) {
+    display: inline-block;
+  }
+  h4 {
+    @include breakpoints-down(md) {
+      font-size: 32px;
+      line-height: 48px
+    }
+    @include breakpoints-down(xs) {
+      text-align: center;
+      font-size: 24px;
+      line-height: 36px
+    }
+  }
+  @include breakpoints-down(xs) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .primary-title {
+    display: inline-block;
+    font-weight: $font-bold;
+  }
+
+  .secondary-title {
+    line-height: 1;
+    font-weight: $font-bold;
+    @include use-theme(color, $palette-secondary-main, $palette-secondary-light);
+  }
+}
+
+.title-secondary {
+  @include align;
+  display: block;
+  position: relative;
+  margin-bottom: $spacing12;
+  text-transform: capitalize;
+  @include breakpoints-down(xs) {
+    margin-bottom: $spacing10
+  }
+  h3 {
+    @include palette-text-primary;
+    font-size: 36px;
+    line-height: 56px;
+    font-weight: $font-bold;
+    letter-spacing: 1px;
+    @include breakpoints-down(md) {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    @include breakpoints-down(xs) {
+      font-size: 28px;
+      line-height: 44px;
+    }
+  }
+  strong {
+    @include palette-text-primary
+  }
+}
+

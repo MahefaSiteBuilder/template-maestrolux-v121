@@ -1,0 +1,50 @@
+-
+  var blogContent = [
+    {
+      img: imgAPI.fashion[30],
+      title: 'Proin lacinia erat ac',
+      desc: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.'
+    },
+    {
+      img: imgAPI.fashion[31],
+      title: 'Proin lacinia erat ac',
+      desc: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.'
+    },
+    {
+      img: imgAPI.fashion[32],
+      title: 'Proin lacinia erat ac',
+      desc: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.'
+    },
+    {
+      img: imgAPI.fashion[33],
+      title: 'Proin lacinia erat ac',
+      desc: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.'
+    },
+    {
+      img: imgAPI.fashion[34],
+      title: 'Proin lacinia erat ac',
+      desc: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.'
+    }
+  ]
+
+.root
+  .text-slider
+    h3.title-main.use-text-title.text-center.text-sm-left #{$t.fashion_landing.blog_title}
+    .carousel
+      .slick-carousel.slider-blog-text#blog_text_carousel
+        each item in blogContent
+          .item
+            p.use-text-paragraph #{item.desc}
+            a.button.btn-flat #{$t.fashion_landing.read_more}
+    nav
+      button#prev_blog.btn-icon.nav-button.prev.waves-effect
+        i.material-icons arrow_back
+      button#next_blog.btn-icon.nav-button.next.waves-effect
+        i.material-icons arrow_forward
+  .img-slider
+    .slick-carousel.slider-blog-image#blog_img_carousel
+      each item in blogContent
+        .item
+          div.parallax(style="background-image: url("+item.img+"); height: 800px" data-enllax-ratio="0.1")
+
+

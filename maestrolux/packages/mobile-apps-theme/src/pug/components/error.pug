@@ -1,0 +1,27 @@
+mixin error(errCode, text)
+  .error-wrap
+    section.container.max-lg
+      .row
+        .col-md-5
+          .flex
+            .deco
+              .artwork
+                svg(width='218px', height='220px', viewbox='0 0 218 220', version='1.1')
+                  defs
+                    lineargradient#linearGradient-1(x1='133.772602%', y1='-75.1506777%', x2='21.5997463%', y2='63.260628%')
+                      stop(stop-color='#00BCD4', offset='0%')
+                      stop(stop-color='#673AB7', offset='100%')
+                  g#Page-1(stroke='none', stroke-width='0', fill='none')
+                    path#Path(d='M176.484827,177.458465 C132.792561,207.953068 56.006152,234.998281 25.7115142,210.452625 C-15.7311505,176.958554 -0.783796157,131.166659 26.4613814,56.0799491 C46.757789,0.239832833 59.6555061,-25.9055394 163.187181,34.8837009 C235.62436,77.3761797 231.125156,139.365208 176.484827,177.458465 Z', fill='url(#linearGradient-1)', fillrule='nonzero')
+              h3 #{errCode}
+        .col-md-7
+          .text
+            h4.display-1 #{text}
+            p #{$t.common["404_subtitle"]}
+            |
+            |
+            a.btn.secondary.waves-effect.btn-large.button(
+              href=link.mobile.home
+            ) #{$t.common.back}
+            |
+            |

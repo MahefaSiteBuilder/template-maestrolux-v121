@@ -1,0 +1,48 @@
+include ../titles/title.pug
+
+.more-feature
+  .chart-deco
+  .container
+    .item
+      .row.spacing6
+        .col-md-6.pa-6.order-md-last
+          .text
+            .wow.fadeInLeftShort(data-wow-delay="0.4s" data-wow-duration="0.3s")
+              div
+                +title-main("left", $t.hosting_landing.morefeature_headtitle1, $t.hosting_landing.morefeature_title1)
+                div.text-center.text-md-start
+                  p.use-text-subtitle2.text-center.text-md-start.mb-6
+                    | #{$t.hosting_landing.morefeature_desc1}
+                  a.btn.btn-large.primary.waves-effect(href="#")
+                    | #{$t.hosting_landing.learnmore}
+        .col-md-6.px-6.order-md-first
+          figure.illustration
+            img(src=assets+'/images/hosting/illustration1.png' alt='feature')/
+    hr.divider/
+    .item
+      .row.spacing6
+        .col-md-6.pa-6
+          .text.text-right
+            .wow.fadeInRightShort(data-wow-delay="0.4s" data-wow-duration="0.3s")
+              div
+                +title-main("right", $t.hosting_landing.morefeature_headtitle2, $t.hosting_landing.morefeature_title2)
+                div.text-center.text-md-end
+                  p.use-text-subtitle2.text-center.text-md-end.mb-6
+                    | #{$t.hosting_landing.morefeature_desc2}
+                  a.btn.btn-large.primary.waves-effect(href="#")
+                    | #{$t.hosting_landing.learnmore}
+        .col-md-6.pa-6
+          figure.illustration
+            img(src=assets + '/images/hosting/illustration2.png' alt='feature')/
+    hr.divider/
+    .item.last
+      .row
+        .col-md-12.pa-6
+          .text.text-center
+            +title-main("center", $t.hosting_landing.morefeature_headtitle3, $t.hosting_landing.morefeature_title3)
+            p.use-text-subtitle2.mb-6
+              | #{$t.hosting_landing.morefeature_desc3}
+            a.btn.btn-large.primary.waves-effect(href="#")
+              | #{$t.hosting_landing.learnmore}
+          figure.illustration
+            img(src=assets + '/images/hosting/illustration3.png' alt='feature')/

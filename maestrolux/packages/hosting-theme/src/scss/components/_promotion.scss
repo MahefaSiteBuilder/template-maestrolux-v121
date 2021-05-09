@@ -1,0 +1,211 @@
+$building-deco-light: '../images/hosting/building_deco_light.png';
+$building-deco-dark: '../images/hosting/building_deco_dark.png';
+
+#promotion {
+  .cloud-top, .cloud-top-cover {
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    top: -190px;
+    transform: scale(1.1);
+    @include left(0);
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .cloud-top svg {
+    @include use-theme(fill, #FFF, #000);
+  }
+
+  .cloud-top-cover svg {
+    @include use-theme(fill, #ccf6fd, #393939);
+  }
+
+  .root {
+    position: relative;
+    top: $spacing8 * -1;
+    height: 265px;
+    .anim-dots {
+      display: none;
+    }
+    @include use-theme(background, #ccf6fd, #393939);
+    @include breakpoints-up(sm) {
+      padding: spacing(0, 3)
+    }
+    @include breakpoints-down(xs) {
+      height: 200px;
+    }
+    > .container {
+      position: relative;
+      height: 300px;
+      @include breakpoints-down(xs) {
+        height: 200px;
+      }
+    }
+    &:before {
+      @include use-theme(background, #FFF, #000);
+    }
+    &:after {
+      @include use-theme(background-image, url($building-deco-light), url($building-deco-dark));
+      background-repeat: repeat-x;
+      background-position: bottom center;
+      content: "";
+      position: absolute;
+      @include left(0);
+      bottom: -40px;
+      width: 100%;
+      height: 150px;
+    }
+  }
+
+  .slider-wrap {
+    position: relative;
+    z-index: 1;
+    .anim-slider {
+      z-index: 1
+    }
+    > div {
+      height: $spacing5 * 7;
+      overflow: hidden;
+      > a {
+        z-index: 11;
+        background: none !important;
+        position: absolute;
+        transition: all 0.3s ease;
+        top: 40%;
+        @include breakpoints-down(sm) {
+          display: none
+        }
+        svg {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          @include left(0);
+          top: 0;
+          @include use-theme(fill, $light-text-secondary, $dark-text-secondary)
+        }
+      }
+    }
+  }
+
+  .promo-image {
+    @include breakpoints-down(xs) {
+      display: none
+    }
+  }
+
+  .item {
+    height: $spacing5 * 7;
+    z-index: 10;
+    @include breakpoints-up(sm) {
+      margin: spacing(-1, 2, 0)
+    }
+    @include breakpoints-down(xs) {
+      text-align: center
+    }
+    figure {
+      margin: 20px auto;
+      background: $palette-secondary-light;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      transform: scale(1);
+      img {
+        vertical-align: middle;
+        max-width: 200px;
+        max-height: 200px
+      }
+    }
+    .text {
+      padding: spacing(2, 8, 1, 2);
+      @include breakpoints-down(md) {
+        padding: $spacing1;
+      }
+    }
+    h2 {
+      margin-bottom: $spacing3;
+      a.btn-flat {
+        display: block;
+        line-height: 36px;
+        padding: 0;
+        text-transform: none;
+        color: $palette-secondary-main;
+        font-size: 28px;
+        font-family: 'Montserrat';
+        font-weight: $font-bold;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        @include breakpoints-down(xs) {
+          width: 100%;
+          text-align: center;
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+      @include breakpoints-down(xs) {
+        white-space: normal;
+        line-height: 32px;
+      }
+    }
+    p {
+      margin-bottom: $spacing2
+    }
+    .time {
+      span {
+        @include palette-text-secondary
+      }
+    }
+    &:before {
+      display: none
+    }
+  }
+
+  .anim-arrows {
+    top: 40%;
+    position: absolute;
+    width: 100%;
+    .container {
+      position: relative;
+    }  
+  }
+
+  .anim-arrows-prev, .anim-arrows-next {
+    position: absolute;
+    z-index: 1000;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    @include breakpoints-down(xs) {
+      display: none;
+    }
+    i {
+      @include palette-text-secondary;
+      font-size: 40px;
+    }
+  }
+
+  /* Position the "next button" to the right */
+  .anim-arrows-next {
+    right: 0;
+    &:hover {
+      right: -10px;
+    }
+  }
+
+  .anim-arrows-prev {
+    left: 0;
+    &:hover {
+      left: -10px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.counter-wrap
+  .container.max-md
+    h3.use-text-title
+      span.numscroller(
+        data-min="0"
+        data-max="2"
+        data-increment="1"
+      )
+      | &nbsp;
+      span.numscroller(
+        data-min="0"
+        data-max="234"
+        data-increment="5"
+      )
+      | &nbsp;
+      span.numscroller(
+        data-min="0"
+        data-max="567"
+        data-increment="5"
+      )
+    p.use-text-subtitle #{$t.crypto_landing.footer_counter}
+    .call-action
+      h4.use-text-subtitle.pb-2
+        | #{$t.crypto_landing.footer_waiting}
+      a.btn.btn-large.secondary.button.waves-effect(href=link.crypto.register)
+        | #{$t.crypto_landing.getstarted}
+

@@ -1,0 +1,76 @@
+-
+  var sliderData = [
+    {
+      image: imgAPI.crypto[0],
+      title: 'Sed imperdiet enim ligula',
+      desc: 'Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.',
+      date: '12 Jul - 10 Aug'
+    },
+    {
+      image: imgAPI.crypto[1],
+      title: 'Fusce placerat enim et odio',
+      desc: 'Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.',
+      date: '12 Jul - 10 Aug'
+    },
+    {
+      image: imgAPI.crypto[2],
+      title: 'Pellentesque ac bibendum tortor',
+      desc: 'Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.',
+      date: '12 Jul - 10 Aug'
+    },
+    {
+      image: imgAPI.crypto[3],
+      title: 'Pellentesque ac bibendum tortor',
+      desc: 'Sed imperdiet enim ligula vitae viverra. Vivamus sit amet interdum elit.',
+      date: '12 Jul - 10 Aug'
+    }
+  ]
+
+.root
+  .slider-wrap
+    .anim-slider
+      each item, index in sliderData
+        .slide.slider-content.anim-slide
+          section.inner.item(class=index % 2 ? "odd" : "even")
+            .row
+              .col-lg-4.hidden-md-down &nbsp;
+              .col-lg-7
+                .hidden-md-down
+                  .img-wrap
+                    .decoration
+                      |
+                      |
+                      svg
+                        use(xlink:href=assets+'/images/crypto/deco-promo.svg#main')
+                      |
+                      |
+                    figure.image
+                      |
+                      |
+                      img(src=item.image alt=item.title)/
+                      |
+                      |
+                .card.paper
+                  h2
+                    |
+                    |
+                    a.waves-effect(href="#") #{item.title}
+                    |
+                    |
+                  p #{item.desc}
+                  section.time
+                    h6.use-text-caption
+                      span
+                        | #{$t.crypto_landing.promo_periode} : #{item.date}
+
+      .anim-arrows
+        |
+        |
+        a.anim-arrows-prev(href='#')
+          i.material-icons.icon arrow_back
+        |
+        |
+        a.anim-arrows-next(href='#')
+          i.material-icons.icon arrow_forward
+        |
+        |

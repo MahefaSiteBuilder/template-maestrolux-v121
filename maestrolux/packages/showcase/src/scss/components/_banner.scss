@@ -1,0 +1,142 @@
+#banner {
+  .banner-wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+  }
+  .parallax {
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 1100px;
+    background-size: 100% auto;
+    position: relative;
+    margin-top: -100px;
+    @media (min-width: 1400px) {
+      margin-top: -240px;
+      height: 1200px;
+    }
+    @include breakpoints-down(md) {
+      height: 880px;
+    }
+    @include breakpoints-down(sm) {
+      background-size: 1840px auto;
+      background-position: left -400px !important;
+    }
+    @include breakpoints-down(xs) {
+      background-position: left -200px !important;
+      height: 1000px;
+    }
+    > div {
+      height: 100%;
+    }
+    img {
+      top: -200px;
+      width: 100%;
+      min-height: auto;
+    }
+  }
+  .properties {
+    position: absolute;
+    top: 80px;
+    z-index: 10;
+    padding: spacing(20, 6);
+    width: 60%;
+    h4 {
+      font-family: 'Open Sans', sans-serif !important;
+    }
+    @media (min-width: 1400px) {
+      margin-top: 160px;
+    }
+    @include breakpoints-down(sm) {
+      width: 100%;
+      text-align: center;
+    }
+    @include breakpoints-down(xs) {
+      padding: spacing(20, 2);
+      h4 {
+        font-size: 22px !important;
+        line-height: 34px;
+      }
+    }
+  }
+  .title-banner {
+    display: flex;
+    align-items: flex-end;
+    @include breakpoints-down(sm) {
+      justify-content: center;
+    }
+    @include breakpoints-down(xs) {
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-family: 'Open Sans', sans-serif !important;
+      font-weight: 700;
+      font-size: 4rem !important;
+      @include breakpoints-up(md) {
+        margin-left: $spacing2;
+      }
+      @include breakpoints-down(xs) {
+        font-size: 3rem !important;
+      }
+    }
+    img {
+      width: 90px;
+      top: -28px;
+      position: relative;
+      @include breakpoints-up(sm) {
+        margin-right: -90px;
+      }
+    }
+  }
+  .tech {
+    height: 56px;
+    margin-top: $spacing6;
+    margin-bottom: $spacing4;
+    @include breakpoints-down(xs) {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .btn-area {
+    display: flex;
+    margin-top: $spacing8;
+    @include breakpoints-down(md) {
+      justify-content: center;
+    }
+    @include breakpoints-down(xs) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn {
+      font-weight: 700;
+      border-radius: 48px;
+      font-size: 20px;
+      width: 250px;
+      padding: spacing(2);
+      @include breakpoints-up(sm) {
+        margin-right: $spacing4;
+      }
+      @include breakpoints-down(xs) {
+        margin-bottom: $spacing4;
+      }
+      &.prime {
+        background: #F6A51A !important;
+        color: #ffffff;
+        @include shadow2;
+        &:hover {
+          background: #fd7c71;
+        }
+      }
+      &.white {
+        background: #ffffff;
+        color: #A067FD;
+        @include shadow2;
+      }
+    }
+  }
+}

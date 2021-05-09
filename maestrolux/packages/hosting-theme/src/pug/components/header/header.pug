@@ -1,0 +1,80 @@
+include mobile-menu.pug
+include settings.pug
+
+mixin header(invert)
+  header.app-bar.header#header
+    .header-top
+      .container.fixed-width-md-up
+        .logo
+          |
+          |
+          button#mobile_menu.mobile-menu.btn-icon.waves-effect.hamburger.hamburger--spin.show-sm-down(
+            type="button"
+          )
+            |
+            |
+            span.hamburger-box
+              span.bar.hamburger-inner
+            |
+            |
+          |
+          |
+          a(href=invert ? link.hosting.home : "#banner")
+            |
+            |
+            img(
+              src=assets + brand.hosting.img
+              alt="logo"
+            )/
+            span #{brand.hosting.name}
+            |
+            |
+          |
+          |
+        .user-menu
+          .hidden-sm-down
+            |
+            |
+            i.material-icons.me-2 phone
+            | +12 345 678 90
+            hr.divider/
+            |
+            |
+            a.btn.btn-flat.waves-effect(href=link.hosting.login)
+              | #{$t.hosting_landing.header_login}
+            |
+            |
+            a.btn.secondary.button.waves-effect(href=link.hosting.register)
+              | #{$t.hosting_landing.header_register}
+            |
+            |
+          +settings(invert)
+    .hidden-sm-down
+      .navigation
+        .container.fixed-width
+          nav.nav-menu
+            |
+            |
+            a.btn-icon.waves-effect(href=invert ? link.hosting.home : "#banner")
+              i.material-icons.icon home
+            |
+            |
+            .scrollactive-nav(class= !invert && "scrollnav")
+              ul
+                li.d-none
+                  a(href="#banner")
+                each item in menu.hosting
+                  |
+                  |
+                  li
+                    a.btn.btn-flat.anchor-link.waves-effect(
+                      href=invert ? 'index.html#'+item.name : '#'+item.name
+                    ) #{$t.hosting_landing['header_'+item.name]}
+                |
+                |
+                li
+                  a.btn.btn-flat.anchor-link.waves-effect(
+                    href=link.hosting.contact
+                  ) #{$t.hosting_landing.header_contact}
+                |
+                |

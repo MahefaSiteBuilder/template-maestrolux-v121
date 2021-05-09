@@ -1,0 +1,66 @@
+.counter-root {
+  position: relative;
+  width: 100%;
+  padding: spacing(5, 0);
+  @include breakpoints-down(md) {
+    padding-top: $spacing5;
+    padding-bottom: 20px;
+  }
+  @include breakpoints-down(xs) {
+    padding-bottom: 0
+  }
+}
+
+.counter-wrap {
+  position: relative;
+  &:before {
+    content: "";
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    @include left(-30px);
+    top: -30px;
+    background: $palette-secondary-main;
+    opacity: 0.5;
+  }
+  &:after {
+    content: "";
+    width: 150px;
+    height: 180px;
+    position: absolute;
+    @include right(-120px);
+    top: 170px;
+    background: $palette-primary-main;
+    opacity: 0.5
+  }
+  .paper {
+    @include use-theme(background, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.9));
+    position: relative;
+    z-index: 20;
+    padding: spacing(15, 4);
+    @include breakpoints-down(sm) {
+      padding: spacing(3, 3)
+    }
+  }
+}
+
+.counter-item {
+  @include use-theme(color, $palette-secondary-main, $palette-secondary-light);
+  align-items: center;
+  display: flex;
+  @include breakpoints-between(sm, md) {
+    flex-direction: column;
+    text-align: center
+  }
+  @include breakpoints-down(xs) {
+    justify-content: center;
+  }
+  i {
+    color: $palette-primary-main;
+    font-size: 55px;
+    @include margin-right($spacing2);
+    @include breakpoints-between(sm, md) {
+      @include margin-right(0)
+    }
+  }
+}

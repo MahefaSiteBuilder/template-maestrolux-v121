@@ -1,0 +1,202 @@
+$building-deco: '../images/hosting/building_deco_light.png';
+
+#footer {
+  .link {
+    margin: spacing(1, 1.5);
+  }
+  .footer {
+    padding: $spacing3 0;
+    background: $palette-primary-dark;
+    p {
+      color: $palette-common-white;
+      @include breakpoints-down(xs) {
+        text-align: center
+      }
+    }
+    &-desc{
+      display: block;
+      font-size: 14px;
+      margin-bottom: $spacing2
+    }
+    &:after {
+      background: url($building-deco) repeat-x bottom center;
+      content: "";
+      position: absolute;
+      left: 0;
+      opacity: 0.1;
+      bottom: -20px;
+      width: 100%;
+      height: 150px
+    }
+  }
+
+  .footer-counter {
+    position: relative;
+    background: $palette-primary-dark;
+    &:before {
+      content: "";
+      background: $palette-primary-dark;
+      position: absolute;
+      left: -10%;
+      border-radius: 50%;
+      top: -80px;
+      width: 120%;
+      height: 350px;
+      @include breakpoints-down(xs) {
+        height: 120px;
+      }
+    }
+  }
+
+  .quick-links {
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        margin-bottom: $spacing1;
+        display: inline-block;
+        width: 30%;
+        @include margin-right(2%);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $palette-common-white;
+        @include breakpoints-down(xs) {
+          width: 47%
+        }
+        a {
+          text-transform: capitalize;
+          text-decoration: none !important;
+          font-size: 14px;
+          color: $palette-common-white;
+          &:hover {
+            color: $palette-primary-light
+          }
+        }
+      }
+    }
+  }
+
+  .blog-item {
+    display: flex;
+    align-items: center;
+    margin: spacing(2, 0);
+    padding: 0 !important;
+    height: auto !important;
+    white-space: normal;
+    @include text-align(left);
+    justify-content: flex-start;
+    .category {
+      margin-bottom: $spacing1;
+      display: block;
+      line-height: normal;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+      color: $palette-primary-light
+    }
+    .list-text {
+      flex: 1;
+      display: block;
+      color: $palette-primary-light
+    }
+    .figure {
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: $spacing1;
+      @include margin-right($spacing2);
+      width: 80px;
+      height: 56px;
+      img {
+        display: block;
+        min-height: 100%;
+        width: 100%;
+      }
+    }
+    .content {
+      font-size: 14px;
+      line-height: 21px;
+      text-transform: none;
+      margin-bottom: 0;
+      display: block;
+      font-weight: $font-regular;
+      @include text-align(left);
+      color: $palette-common-white
+    }
+  }
+
+  .title-nav {
+    color: $palette-primary-light;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: $spacing1;
+    font-weight: $font-bold
+  }
+  .logo {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: $spacing3;
+    @include breakpoints-down(xs) {
+      justify-content: center;
+      & + p {
+        text-align: center;
+      }
+    }
+    img {
+      width: 64px;
+      @include margin-right($spacing1)
+    }
+    h6 {
+      color: $palette-common-white;
+      font-weight: $font-medium;
+      font-size: 28px;
+      text-transform: lowercase
+    }
+  }
+  .socmed {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: $spacing4;
+    a.btn-icon {
+      border-radius: 50%;
+      margin: $spacing1;
+      color: $palette-primary-dark;
+      background: $palette-primary-main;
+      .icon {
+        color: $palette-common-white;
+      }
+    }
+    .icon {
+      font-size: 24px
+    }
+  }
+
+  .icon {
+    & + div {
+      background: none !important;
+      padding: spacing(1.5, 1.5, 1.5, 4);
+      width: calc(100% - 32px)
+    }
+  }
+
+  .select-lang {
+    display: inherit;
+    margin: $spacing2 0;
+    input {
+      box-shadow: 0 1.5px 12px 2px rgba(0, 0, 0, 0.06);
+      color: $palette-common-white;
+      border-color: $palette-primary-main;
+      height: 2.8rem;
+    }
+    .select-wrapper .caret {
+      fill: $palette-common-white;
+    }
+  }
+
+  .site-map-item {
+    @include breakpoints-down('md') {
+      padding-bottom: 0 !important;
+      padding-top: 0 !important
+    }
+  }
+}

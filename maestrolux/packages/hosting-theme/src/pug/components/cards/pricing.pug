@@ -1,0 +1,28 @@
+mixin pricing-card(price, featureList, img, title, desc, highlighted)
+  .card.pricing-card(class=highlighted && "highlighted")
+    .pricing-title
+      h6.title #{title}
+      img(src=assets + img alt="img")/
+      if price > 0
+        h5 $#{price}
+          span /mo
+      else
+        h5 Free
+      p.desc #{desc}
+    ul.feature
+      each item in featureList
+        li
+          if item.type === 'plus'
+            span.icon.success-icon
+              i.ion-ios-checkmark-outline
+          else
+            span.icon.error-icon
+              i.ion-ios-close-outline
+          | #{item.text}
+    .btn-area
+      |
+      |
+      a.btn.btn-large.button.waves-effect.block(href="#" class=highlighted ? "secondary" : "primary")
+        | #{$t.hosting_landing.getstarted}
+      |
+      |

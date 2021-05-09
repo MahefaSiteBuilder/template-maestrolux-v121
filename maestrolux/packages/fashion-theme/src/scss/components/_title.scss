@@ -1,0 +1,64 @@
+@mixin align {
+  &.align-left {
+    @include text-align(left);
+    @include breakpoints-up(sm) {
+      h4 {
+        @include padding-left($spacing2);
+      }
+      @include margin-right($spacing5);
+    }
+  }
+
+  &.align-right {
+    @include text-align(right);
+    @include breakpoints-up(sm) {
+      h4 {
+        @include padding-right($spacing2)
+      }
+      @include margin-right($spacing5);
+    }
+  }
+
+  &.align-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.title-main {
+  @include align;
+  font-weight: $font-bold;
+  margin-bottom: $spacing3;
+  display: inline-block;
+  min-width: 200px;
+  font-size: 36px;
+  line-height: 56px;
+  h4 {
+    @include breakpoints-down(md) {
+      font-size: 32px;
+      line-height: 48px
+    }
+    @include breakpoints-down(xs) {
+      text-align: center;
+      font-size: 24px;
+      line-height: 36px
+    }
+  }
+  @include breakpoints-down(xs) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .primary-title {
+    font-weight: $font-bold;
+    padding: 4px;
+  }
+
+  .secondary-title {
+    font-weight: $font-bold;
+    padding: 4px;
+    background: $palette-secondary-main;
+    color: $palette-common-white
+  }
+}
+

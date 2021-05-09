@@ -1,0 +1,20 @@
+-
+  var logos = [
+    "/images/logos/architect.png",
+    "/images/logos/cloud.png",
+    "/images/logos/coin.png",
+    "/images/logos/mobile.png",
+    "/images/logos/profile.png",
+    "/images/logos/mobile.png"
+  ]
+
+.container.fixed-width
+  h4.text-center.use-text-title2 #{$t.mobile_landing.company_title}
+  .wow.fadeInUpShort(data-wow-offset="-200" data-wow-delay="0.3s" data-wow-duration="0.5s")
+    .root
+      each logo, index in logos
+        |
+        |
+        img(src=assets+logo alt="logo" + index)/
+      |
+      |

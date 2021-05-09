@@ -1,0 +1,72 @@
+-
+  var testiContent = [
+    {
+      text: 'Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.',
+      img: imgAPI.fashion[26],
+      name: 'John Doe',
+      title: 'Chief Digital Officer'
+    },
+    {
+      text: 'Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.',
+      img: imgAPI.fashion[27],
+      name: 'Jean Doe',
+      title: 'Chief Digital Officer'
+    },
+    {
+      text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+      img: imgAPI.fashion[28],
+      name: 'Jena Doe',
+      title: 'Graphic Designer'
+    },
+    {
+      text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
+      img: imgAPI.fashion[29],
+      name: 'Jovelin Doe',
+      title: 'Senior Graphic Designer'
+    }
+  ]
+
+.root
+  .img-slider
+    .slick-carousel.slider-testi-image#testi_img_carousel
+      each item in testiContent
+        .item
+          div.parallax(style="background-image: url("+item.img+"); height: 800px" data-enllax-ratio="0.1")
+  .text-slider
+    |
+    |
+    i.material-icons.icon format_quote
+    |
+    |
+    nav
+      |
+      |
+      button#prev_testi.btn-icon.nav-button.prev.waves-effect
+        |
+        |
+        i.material-icons arrow_back
+        |
+        |
+      |
+      |
+      button#next_testi.btn-icon.nav-button.next.waves-effect
+        |
+        |
+        i.material-icons arrow_forward
+        |
+        |
+      |
+      |
+    div
+      h3.title-main.use-text-title #{$t.fashion_landing.testimonial_title}
+      .carousel
+        .slick-carousel.slider-testi-text#testi_text_carousel
+          each item in testiContent
+            .item
+              p.use-text-paragraph #{item.text}
+              .divider
+              h6.use-text-subtitle2 #{item.name}
+              p.use-text-paragraph #{item.title}
+
+
+

@@ -1,0 +1,111 @@
+@mixin overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 40px;
+  top: 0;
+  left: 0;
+  justify-content: center;
+};
+
+#trending {
+  .root > div {
+    position: relative;
+    @include breakpoints-up(sm) {
+      display: flex
+    }
+  }
+  .grid-25 {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    @include breakpoints-up(sm) {
+      width: 33%
+    }
+    @include breakpoints-up(lg) {
+      width: 25%
+    }
+    @include breakpoints-up(lg) {
+      height: 350px
+    }
+    &:hover {
+      img {
+        transform: translateX(0px) !important
+      }
+    }
+    img {
+      transition: all 0.3s;
+      min-height: 100%;
+      width: calc(100% + 20px);
+      [dir="rtl"] & {
+        transform: translateX(10px);
+      }
+      [dir="ltr"] & {
+        transform: translateX(-10px);
+      }
+    }
+    .overlay {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.64), transparent);
+      @include overlay;
+    }
+    h5 {
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 50px;
+      color: $palette-common-white;
+      font-weight: $font-regular
+    }
+  }
+  .grid-50 {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    @include breakpoints-up(sm) {
+      width: 33%
+    }
+    @include breakpoints-up(md) {
+      width: 50%
+    }
+    @include breakpoints-up(lg) {
+      height: 350px;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1)
+      }
+    }
+    img {
+      transition: all 0.3s;
+      height: 100%;
+      min-width: 100%
+    }
+    .overlay {
+      [dir="ltr"] & {
+        background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.64), transparent);
+      }
+      [dir="rtl"] & {
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.64), transparent);
+      }
+      align-items: flex-end;
+      justify-content: center;
+      flex-direction: column;
+      padding: $spacing5;
+      @include breakpoints-down(sm) {
+        align-items: center;
+      }
+      @include overlay
+    }
+    h5 {
+      text-transform: uppercase;
+      color: $palette-common-white;
+      font-weight: $font-regular
+    }
+    h3 {
+      text-transform: uppercase;
+      color: $palette-common-white;
+      font-weight: $font-bold;
+      text-decoration: underline
+    }
+  }
+}

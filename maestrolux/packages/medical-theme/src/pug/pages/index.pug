@@ -1,0 +1,76 @@
+extends ../layouts/app.pug
+
+block variables
+  - var pageTitle = " Home Page"
+block content
+  div
+    #home
+    .main-wrap
+      // ##### PARALLAX DOTS #####
+      div.parallax-dot-home
+        include ../components/parallax/dots.pug
+      // ##### END PARALLAX DOTS #####
+      
+      // ##### HEADER #####
+      include ../components/header/header.pug
+      +header(false)
+      // ##### END HEADER #####
+      
+      main.container-wrap
+        // ##### PARALLAX OVAL #####
+        include ../components/parallax/oval-top.pug
+        // ##### END PARALLAX OVAL #####
+        
+        // ##### BANNER #####
+        section#banner
+          include ../components/video-banner.pug
+        // ##### END BANNER #####
+        
+        // ##### ABOUT #####
+        section#about.space-top-short.is-md
+          include ../components/about.pug
+        // ##### END ABOUT #####
+        
+        // ##### FACILITIES #####
+        section#facility.space-top
+          include ../components/facilities.pug
+        // ##### END FACILITIES #####
+        
+        // ##### EXPERTISE #####
+        section#our-expertise.space-top.is-md
+          include ../components/expertise.pug
+        // ##### END EXPERTISE #####
+        
+        // ##### ASK DOCTORS #####
+        section#ask-doctors.space-top.is-xs
+          include ../components/ask-doctors.pug
+        // ##### END ASK DOCTORS #####
+        
+        // ##### TESTIMONIAL #####
+        section#testimonials.space-top-short
+          include ../components/testimonials.pug
+        // ##### END TESTIMONIAL #####
+        
+        // ##### CALL ACTION #####
+        section#call-to-action.space-top-short
+          include ../components/call-action.pug
+        // ##### END CALL ACTION #####
+        
+        // ##### CLINICS #####
+        section#clinics.space-top-short
+          include ../components/clinics.pug
+        // ##### END CLINICS #####
+      
+    // ##### PAGE NAV #####
+    .hidden-md-down
+      include ../components/page-nav.pug
+    // ##### END PAGE NAV #####
+    
+    // ##### NOTIFICATION #####
+    .hidden-md-down
+      include ../components/notification.pug
+    // ##### END NOTIFICATION #####
+    
+    // ##### FOOTER #####
+    include ../components/footer.pug
+    // ##### END FOOTER #####

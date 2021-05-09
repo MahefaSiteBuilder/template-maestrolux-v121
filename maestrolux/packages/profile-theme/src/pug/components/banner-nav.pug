@@ -1,0 +1,57 @@
+.root
+  .container.fixed-width-lg-up
+    .row
+      .col-lg-2.pa-0
+        #side_nav.hidden-md-down
+          include side-navigation.pug
+      .col-lg-10.pa-0
+        .banner
+          .cover
+            .figure
+              |
+              |
+              img(src=brand.profile.cover alt='cover')/
+              |
+              |
+              .overlay
+          .setting-icon
+            .menu-setting
+              .setting
+                |
+                |
+                button.btn-icon.waves-effect.dropdown-trigger(
+                  data-target="dropdown_config"
+                  type="button"
+                  data-align=doc_dir === "rtl" ? "right" : "left"
+                )
+                  |
+                  |
+                  i.icon.material-icons#setting_icon(
+                    class=invert && "invert"
+                  ) settings
+                  |
+                  |
+          .text
+            h4.use-text-title2 #{$t.profile_landing.banner_greeting},
+            h2.use-text-title #{$t.profile_landing.banner_me} Jena, UI Designer
+            .hidden-sm-down
+              h5.use-text-subtitle2 #{$t.profile_landing.banner_desc}
+              .socmed
+                |
+                |
+                a.btn-icon.margin.waves-effect(href="#")
+                  i.ion-social-facebook
+                |
+                |
+                a.btn-icon.margin.waves-effect(href="#")
+                  i.ion-social-twitter
+                |
+                |
+                a.btn-icon.margin.waves-effect(href="#")
+                  i.ion-social-instagram
+                |
+                |
+                a.btn-icon.margin.waves-effect(href="#")
+                  i.ion-social-linkedin
+                |
+                |

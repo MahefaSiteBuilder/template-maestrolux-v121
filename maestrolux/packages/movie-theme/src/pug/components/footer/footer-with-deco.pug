@@ -1,0 +1,29 @@
+include footer.pug
+
+.footer-deco
+  .decoration
+    |
+    |
+    svg.left-deco(width="1045px" height="1468px" viewBox="0 0 1045 1468" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+      include ../svg/deco-bg-left.pug
+    |
+    |
+    .line-deco
+      |
+      |
+      svg.right-deco-before(width="389px" height="1468px" viewBox="0 0 389 1468" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+        include ../svg/deco-bg-right.pug
+      |
+      |
+      svg.right-deco(width="389px" height="1468px" viewBox="0 0 389 1468" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+        include ../svg/deco-bg-right.pug
+      |
+      |
+  .action
+    h4.use-text-title2 #{$t.movie_landing.footer_waiting}
+    |
+    |
+    a.btn.secondary.btn-large.waves-effect(href="#") #{$t.movie_landing.getstarted}
+    |
+    |
+  +footer(false)

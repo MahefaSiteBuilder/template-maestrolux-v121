@@ -1,0 +1,57 @@
+include theme-list.pug
+.explore-wrap
+  include decoration.pug
+  .explore
+    include title.pug
+    +title-main("explore", "11 Landing Pages Demo", "center")
+    .container.max-lg
+      if youtube.use
+        ul.tabs.version-tab
+          li.tab.tab-label
+            a.react(href="#react")
+              i
+              | React.js
+          li.tab.tab-label
+            a.vue(href="#vue")
+              i
+              | Vue.js
+          li.tab.tab-label
+            a.html5.active(href="#html")
+              i
+              | HTML+Jquery
+        #react.tab-content
+          .container.max-lg
+            ul
+              each item, index in themeListReact
+                li.fadeInUp.animated(style="animation-delay:"+ index * 0.1 + "s")
+                  a(href=item.link target='_blank')
+                    figure
+                      img(src=item.thumb alt=item.name)/ #{item.name}
+                    | #{item.name}
+        #vue.tab-content
+          .container.max-lg
+            ul
+              each item, index in themeListVue
+                li.fadeInUp.animated(style="animation-delay:"+ index * 0.1 + "s")
+                  a(href=item.link target='_blank')
+                    figure
+                      img(src=item.thumb alt=item.name)/ #{item.name}
+                    | #{item.name}
+        #html.tab-content
+          .container.max-lg
+            ul
+              each item, index in themeListHTML
+                li.fadeInUp.animated(style="animation-delay:"+ index * 0.1 + "s")
+                  a(href=item.link target='_blank')
+                    figure
+                      img(src=item.thumb alt=item.name)/ #{item.name}
+                    | #{item.name}
+      else
+        .tab-content
+          ul
+            each item, index in themeListHTML
+              li.wow.fadeInUpShort(data-wow-offset="-50" data-wow-delay=(index * 0.1) + "s" data-wow-duration="0.3s")
+                a(href=item.link target='_blank')
+                  figure
+                    img(src=item.thumb alt=item.name)/ #{item.name}
+                  | #{item.name}

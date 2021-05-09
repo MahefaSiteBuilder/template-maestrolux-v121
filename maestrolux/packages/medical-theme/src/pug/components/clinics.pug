@@ -1,0 +1,45 @@
+-
+  var clinicData = [
+    {
+      name: 'Central Clinic',
+      phone: '+123 456 78 91',
+      email: 'hello@luxi.com',
+      address: 'Lorem ipsum street no.14 Block A'
+    },
+    {
+      name: 'Dental Clinic',
+      phone: '+123 456 78 91',
+      email: 'hello@luxi.com',
+      address: 'Lorem ipsum street Block C - Vestibullum Building'
+    },
+    {
+      name: 'Mother and Baby Care',
+      phone: '+123 456 78 91',
+      email: 'hello@luxi.com',
+      address: 'Lorem ipsum street no.14 Block A'
+    },
+    {
+      name: 'Orthopedic Clinic',
+      phone: '+123 456 78 91',
+      email: 'hello@luxi.com',
+      address: 'Lorem ipsum street Block C - Vestibullum Building'
+    }
+  ]
+
+include cards/address.pug
+.root
+  .parallax-bottom
+    include ../components/parallax/oval.pug
+  .container.fixed-width
+    .row.spacing6
+      .col-lg-1.pa-6.show-lg-up
+      .col-lg-5.col-md-6.pa-6
+        h4.title-primary.mt-10 #{$t.medical_landing.clinic_title}
+        .block
+          each item, index in clinicData
+            div
+              .wow.fadeInLeftShort(data-wow-offset="-50" data-wow-delay=(index* 0.2) + "s" data-duration="0.3s")
+                +address-card(item.name, item.phone, item.email, item.address)
+      .col-md-6.pa-6
+        .card.map
+          #map

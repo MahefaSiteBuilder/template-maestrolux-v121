@@ -1,0 +1,116 @@
+#banner {
+  .root {
+    display: block;
+    background: $palette-common-black;
+    height: 720px;
+    width: 200%;
+    @include margin-left(-50%);
+    border-radius: 0 0 50% 50%;
+    overflow: hidden;
+    position: relative;
+    @include breakpoints-down(xs) {
+      height: 640px
+    }
+  }
+
+  .video {
+    height: 100%;
+    width: 50%;
+    @include left(25%);
+    position: absolute;
+    img {
+      width: 100%;
+      min-height: 100%;
+      position: absolute;
+      top: 0;
+      z-index: 9;
+      @include left(0);
+      @include breakpoints-down(md) {
+        object-fit: cover;
+      }
+    }
+    iframe {
+      width: 100%;
+      top: -20px !important
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    background: $palette-common-black;
+    opacity: 0.5;
+    @include left(-50%);
+    width: 200%;
+    height: 100%;
+    z-index: 10;
+    border-radius: 0 0 50% 50%;  
+  }
+
+  .caption {
+    position: absolute;
+    width: 100%;
+    z-index: 90;
+    @include text-align(left);
+    color: $palette-common-white;
+    top: 55%;
+    @include breakpoints-down(xs) {
+      top: 30%
+    }
+    p {
+      margin: 0;
+    }
+    &:hover {
+      .btn-play {
+        opacity: 1
+      }
+    }
+  }
+
+  .btn-play {
+    position: absolute;
+    overflow: visible;
+    top: -120px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border: 3px solid #fff;
+    i {
+      position: relative;
+      color: $palette-common-white;
+      font-size: 64px;
+      width: 40px;
+      height: 40px;
+      top: -4px;
+      line-height: 84px;
+      &.ion-arrow-right-b {
+        left: 3px
+      }
+      &.play {
+        display: none;
+      }
+    }
+    span {
+      position: absolute;
+      color: $palette-common-white;
+      text-transform: uppercase;
+      font-weight: $font-bold;
+      font-size: 24px;
+      top: 20px;
+      transition: all 0.3s ease;
+      &:first-child {
+        @include left(-140%);
+        + span {
+          @include right(-155%);
+        }
+      }
+      &.hidden {
+        opacity: 0;
+        transform: scale(0.4);
+      }
+    }
+  }
+}

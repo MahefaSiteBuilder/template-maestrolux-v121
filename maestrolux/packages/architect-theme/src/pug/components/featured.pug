@@ -1,0 +1,86 @@
+include title.pug
+
+.root
+  if youtube.use
+    #video_modal.modal.video-popup
+      .modal-content
+        .headline
+          |
+          |
+          h4 #{$t.architect_landing.featured_video}
+          |
+          |
+        |
+        |
+        button.btn-icon.modal-close.waves-effect
+          i.material-icons close
+        .text-center
+          #video_iframe
+  .container.fixed-width
+    .row.spacing6
+      .col-lg-7.col-md-10.px-6
+        .video-carousel
+          .carousel
+            .slick-carousel#featured_carousel
+              .card.item
+                |
+                |
+                img(src=imgAPI.architect[4] alt='cover')/
+                |
+                |
+                button.btn.play-btn.waves-effect.modal-trigger(data-video="85V_u_R0zxM" data-target="video_modal")
+                  |
+                  |
+                  i.material-icons play_arrow
+                  |
+                  |
+                |
+                |
+              .card.item
+                |
+                |
+                img(src=imgAPI.architect[5] alt='cover')/
+                |
+                |
+                button.btn.play-btn.waves-effect.modal-trigger(data-video="ZGn8kSV9gAA" data-target="video_modal")
+                  |
+                  |
+                  i.material-icons play_arrow
+                  |
+                  |
+                |
+                |
+              .card.item
+                |
+                |
+                img(src=imgAPI.architect[6] alt='cover')/
+                |
+                |
+                button.btn.play-btn.waves-effect.modal-trigger(data-video="85V_u_R0zxM" data-target="video_modal")
+                  |
+                  |
+                  i.material-icons play_arrow
+                  |
+                  |
+                |
+                |
+              .card.item
+                |
+                |
+                img(src=imgAPI.architect[7] alt='cover')/
+                |
+                |
+                button.btn.play-btn.waves-effect.modal-trigger(data-video="ZGn8kSV9gAA" data-target="video_modal")
+                  |
+                  |
+                  i.material-icons play_arrow
+                  |
+                  |
+                |
+                |
+      .col-lg-5.col-md-10.px-6
+        .wow.fadeInLeftShort(data-wow-offset='-200' data-wow-delay='0.3s' data-wow-duration='0.6s')
+          div
+            +title-main($t.architect_landing.featured_title, $t.architect_landing.featured_subtitle)
+            p.use-text-paragraph #{$t.architect_landing.featured_desc1}
+            p.use-text-paragraph #{$t.architect_landing.featured_desc2}

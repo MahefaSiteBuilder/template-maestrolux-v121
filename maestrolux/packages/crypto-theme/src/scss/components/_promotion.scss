@@ -1,0 +1,278 @@
+$deco-bottom-light: '../images/crypto/deco-bottom-light.svg';
+$deco-bottom-dark: '../images/crypto/deco-bottom-dark.svg';
+
+#promotions {
+  .root {
+    position: relative;
+    @include use-theme(background-image, url($deco-bottom-light), url($deco-bottom-dark));
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 101%;
+    @include breakpoints-down(sm) {
+      padding: spacing(10, 3);
+    }
+    @include breakpoints-down(xs) {
+      padding: 0
+    }
+    .theme--light & {
+      @include bg-color-lighten($palette-primary-main, 0.84)
+    }
+    .theme--dark & {
+      background-color: $palette-primary-dark;
+      &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $dark-background-default;
+        opacity: 0.6;
+      }
+    }
+    > .container {
+      position: relative;
+      height: 300px;
+      @include breakpoints-down(xs) {
+        height: 200px;
+      }
+    }
+    .anim-dots {
+      display: none;
+    }
+  }
+
+  .slider-wrap {
+    position: relative;
+    z-index: 1;
+    .anim-slider {
+      z-index: 1
+    }
+    > div {
+      height: 500px;
+      overflow: hidden;
+      @include breakpoints-down(sm) {
+        height: 320px;
+      }
+      > a {
+        z-index: 11;
+        background: none !important;
+        position: absolute;
+        transition: all 0.3s ease;
+        top: 40%;
+        @include breakpoints-down(sm) {
+          display: none
+        }
+      }
+    }
+  }
+
+  .even {
+    h2 a {
+      color: $palette-secondary-main
+    }
+    .decoration {
+      svg {
+        fill: $palette-secondary-main
+      }
+    }
+  }
+
+  .odd {
+    h2 a {
+      color: $palette-primary-main
+    }
+    .decoration {
+      svg {
+        fill: $palette-primary-main
+      }
+    }
+  }
+  
+  .decoration {
+    position: absolute;
+    top: 0;
+    @include left(0);
+    opacity: 0.5;
+    z-index: 2;
+  }
+
+  .img-wrap {
+    z-index: 1;
+    position: relative;
+    top: -24px;
+    @include left(-400px)
+  }
+
+  .item {
+    margin: spacing(2, 0);
+    padding: spacing(0, 1);
+    max-height: 500px;
+    z-index: 10;
+    @include breakpoints-down(xs) {
+      margin-top: $spacing8
+    }
+    svg {
+      width: 450px;
+      height: 450px
+    }
+    section {
+      position: relative;
+      z-index: 10;
+      transform: translateX(0px);
+      transition: all 0.5s ease
+    }
+    figure {
+      margin: 0;
+      line-height: 450px;
+      width: 450px;
+      height: 450px;
+      text-align: center;
+      @include left(0);
+      top: 17px;
+      position: absolute;
+      transition: none !important;
+      img {
+        transition: none;
+        vertical-align: middle;
+        width: 350px;
+        height: 393px;
+        opacity: 1;
+      }
+    }
+    .paper {
+      position: relative;
+      padding-top: 9px;
+      padding-top: 9px;
+      border-radius: 24px;
+      [dir="rtl"] & {
+        padding: spacing(9, 16, 9, 6);
+      }
+      [dir="ltr"] & {
+        padding: spacing(9, 6, 9, 16);
+      }
+      @include breakpoints-up(lg) {
+        @include left(-80px);
+      }
+      @include breakpoints-up(md) {
+        margin-top: 60px;
+      }
+      @include breakpoints-down(md) {
+        width: calc(100% - 80px);
+      }
+      @include breakpoints-down(sm) {
+        padding: $spacing6 !important
+      }
+      @include breakpoints-down(xs) {
+        width: 100%;
+        padding: $spacing2 !important
+      }
+      button {
+        justify-content: flex-start;
+        @include breakpoints-down(sm) {
+          justify-content: center
+        }
+      }
+    }
+    h2 {
+      font-weight: $font-bold;
+      margin-bottom: $spacing1;
+      line-height: 42px;
+      a {
+        @include text-align(left);
+        font-size: 28px;
+        padding: 0;
+        max-width: 500px;
+        text-transform: none;
+        font-family: Montserrat;
+        font-weight: $font-bold;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        @include margin-left(-4px);
+        @include breakpoints-down(xs) {
+          text-align: center;
+        }
+        @include breakpoints-down(md) {
+          width: 100%;
+          font-size: 28px;
+          line-height: 36px;
+          text-align: center
+        }
+        @include breakpoints-down(xs) {
+          font-size: 20px;
+          line-height: 28px
+        }
+      }
+      @include breakpoints-down(xs) {
+        white-space: normal;
+        line-height: 32px
+      }
+    }
+    p {
+      @include breakpoints-down(xs) {
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+    .time {
+      h6 {
+        font-size: 14px;
+        @include palette-text-secondary;
+        @include breakpoints-down(xs) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .anim-arrows {
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    .container {
+      position: relative;
+    }  
+  }
+
+  .anim-arrows-prev, .anim-arrows-next {
+    @include palette-background-paper;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    @include palette-text-secondary;
+    transition: all 0.3s ease;
+    position: absolute;
+    z-index: 11;
+    @include shadow2;
+    @include breakpoints-down(xs) {
+      display: none
+    }
+    i {
+      font-size: 35px;
+      position: absolute;
+      @include left(3px);
+      top: 3px;
+      @include use-theme(fill, $light-text-secondary, $dark-text-secondary)
+    }
+  }
+
+  /* Position the "next button" to the right */
+  .anim-arrows-next {
+    top: 140px;
+    @include right(140px);
+    @include breakpoints-down(md) {
+      @include right(20px)
+    }
+  }
+
+  .anim-arrows-prev {
+    @include right(140px);
+    top: 200px;
+    @include breakpoints-down(md) {
+      @include right(20px)
+    }
+  }
+}

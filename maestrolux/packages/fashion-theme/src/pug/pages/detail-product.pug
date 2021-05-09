@@ -1,0 +1,37 @@
+extends ../layouts/app.pug
+
+block variables
+  - var pageTitle = " Detail Product"
+
+block content
+  #detail-product.main-wrap
+    include ../components/header/header.pug
+    +header(true)
+    main.container-wrap
+      .row.justify-content-center
+        .col-sm-5.col-md-5.pa-6
+          figure.figure
+            |
+            |
+            img(src=imgAPI.fashion[35] alt='product')/
+            |
+            |
+        .col-sm-7.col-md-5.px-6
+          h4.use-text-title2 Floral Plimsoll
+          p.use-text-caption.pb-2 #{$t.fashion_landing.detail_id}: 14210160762
+          h4.price.use-text-title2 $ 780.00
+          p.desc.text-paragraph Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
+          .size #{$t.fashion_landing.detail_size}
+            ul
+              li XS
+              li S
+              li M
+              li L
+              li XL
+          |
+          |
+          a.btn.primary.block.btn-large.button.waves-effect(href='#') #{$t.fashion_landing.detail_btn}
+          |
+          |
+    section.space-top
+      include ../components/footer.pug

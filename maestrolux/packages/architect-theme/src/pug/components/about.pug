@@ -1,0 +1,22 @@
+include title.pug
+
+.root
+  .bg-deco
+    |
+    |
+    img(src=imgAPI.architect[8] alt="3d home model")/
+    |
+    |
+  .container.fixed-width
+    .row.justify-content-center
+      .col-md-7.py-0
+        +title-main($t.architect_landing.about_title, "", true)
+        p.use-text-paragraph #{$t.architect_landing.about_desc}
+      .col-md-5.illus-wrap.py-0
+        .hidden-sm-down
+          div
+            |
+            |
+            img.illustration(src=imgAPI.architect[8] alt='3d home model')/
+            |
+            |

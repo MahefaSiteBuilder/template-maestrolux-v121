@@ -1,0 +1,150 @@
+.card.pricing-card {
+  display: block;
+  @include palette-background-paper;
+  border-radius: $spacing1;
+  box-shadow: none;
+  border: 3px solid;
+  @include palette-divider;
+  transition: border 0.3s ease;
+  @include breakpoints-down(sm) {
+    min-width: 300px
+  }
+  &:hover {
+    border-color: $palette-primary-main
+  }
+  &.highlighted {
+    border: 3px solid $palette-secondary-light;
+    overflow: hidden;
+    .desc {
+      color: rgba(0, 0, 0, 0.87)
+    }
+    .pricing-title {
+      background: $palette-secondary-light;
+      h5, h6, span {
+        color: $palette-secondary-dark !important
+      }
+    }
+    &:hover {
+      border-color: $palette-secondary-main
+    }
+  }
+  .desc {
+    text-align: center;
+    margin: spacing(2, 0);
+    font-size: 14px;
+  }
+
+  .pricing-title {
+    text-align: center;
+    padding: spacing(4, 1, 1);
+    font-weight: $font-medium;
+    border-radius: 0 !important;
+    h6 {
+      font-weight: $font-bold;
+      text-transform: uppercase
+    }
+    img {
+      height: 80px;
+      margin: $spacing3 auto
+    }
+    h5 {
+      font-weight: $font-bold;
+      font-size: 42px;
+      span {
+        @include palette-text-secondary;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .icon {
+    display: block;
+    position: relative;
+    @include margin-right($spacing1);
+    vertical-align: middle;
+    @include float(left);
+    height: 25px
+  }
+
+  .feature {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include breakpoints-down(xs) {
+      padding: $spacing3
+    }
+    li {
+      padding: $spacing1;
+    }
+    > li:nth-child(odd) {
+      @include palette-background-default;
+    }
+  }
+
+  .success-icon {
+    i {
+      color: #35c14d
+    }
+  }
+
+  .error-icon {
+    i {
+      color: #FF3B30
+    }
+  }
+
+  .btn-area {
+    padding: $spacing1;
+    @include breakpoints-up(lg) {
+      padding: $spacing3
+    }
+  }
+}
+
+
+.testimonial-card {
+  height: 260px;
+  @include palette-background-paper;
+  border-radius: $spacing1;
+  border: 3px solid;
+  @include palette-divider;
+  padding: spacing(4, 2);
+  @include breakpoints-up(sm) {
+    padding: $spacing8
+  }
+  position: relative;
+  .icon {
+    border-Radius: 50%;
+    background: $palette-primary-main;
+    width: 100px;
+    height: 100px;
+    top: -56px;
+    @include left(32px);
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    @include breakpoints-down(xs) {
+      display: none
+    }
+    i {
+      font-size: 100px;
+      vertical-align: middle;
+      color: $palette-common-white;
+    }
+  }
+  h6 {
+    font-weight: $font-medium
+  }
+  .text {
+    margin-bottom: $spacing4;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: $spacing9
+  }
+
+  .caption {
+    @include palette-text-secondary
+  }
+}

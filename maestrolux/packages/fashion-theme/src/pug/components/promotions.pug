@@ -1,0 +1,79 @@
+-
+  var sliderData = [
+    {
+      image: imgAPI.fashion[1]
+    },
+    {
+      image: imgAPI.fashion[2]
+    },
+    {
+      image: imgAPI.fashion[3]
+    },
+    {
+      image: imgAPI.fashion[4]
+    }
+  ]
+
+.root
+  .container
+    .slider-wrap
+      .anim-slider
+        each item, index in sliderData
+          .slide.slider-content.anim-slide
+            section.inner.item(class = index % 2 ? "even" : "odd")
+              .inner-bg
+                .row
+                  .col-md-4.pa-0
+                    .text
+                      .hidden-md-up
+                        .background
+                          figure
+                            |
+                            |
+                            img(src=item.image alt='promotion')/
+                            |
+                            |
+                      h2.use-text-title
+                        span.use-text-subtitle2 #{$t.fashion_landing.promo_caption}
+                        | SALE
+                      h4.use-text-subtitle #{$t.fashion_landing.promo_title}
+                      article.desc
+                        h6.use-text-paragraph #{$t.fashion_landing.promo_desc}
+                      |
+                      |
+                      a.btn-outlined.button(href="#") #{$t.fashion_landing.promo_btn}
+                        |
+                        |
+                        i.material-icons.icon-btn arrow_right
+                        |
+                        |
+                      |
+                      |
+                  .col-md-8.pa-0
+                    .hidden-sm-down
+                      .image
+                        figure
+                          |
+                          |
+                          img(src=item.image alt='promotion')/
+                          |
+                          |
+        .anim-arrows
+          |
+          |
+          a.anim-arrows-prev.prev(href='#')
+            |
+            |
+            i.material-icons.arrow-icon arrow_back
+            |
+            |
+          |
+          |
+          a.anim-arrows-next.next(href='#')
+            |
+            |
+            i.material-icons.arrow-icon arrow_forward
+            |
+            |
+          |
+          |

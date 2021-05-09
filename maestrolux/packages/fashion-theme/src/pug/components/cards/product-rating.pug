@@ -1,0 +1,33 @@
+mixin product-ratting(img, rating, text, price)
+  .product-ratting
+    |
+    |
+    a.btn-wrap.waves-effect(href=link.fashion.detail)
+      |
+      |
+      span.figure
+        img(src=img alt='text')/
+        span.figcaption Sale
+      |
+      |
+      span.ratting
+        - var n = 1
+        while n <= rating
+          |
+          |
+          i.material-icons.star-icon(title=n++) star
+          |
+          |
+        |
+        |
+      |
+      |
+      span.text #{text}
+      |
+      |
+      span.use-text-subtitle2
+        strong #{price}
+      |
+      |
+    |
+    |

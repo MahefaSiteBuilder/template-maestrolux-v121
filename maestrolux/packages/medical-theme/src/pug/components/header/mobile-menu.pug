@@ -1,0 +1,7 @@
+#slide-menu.sidenav.mobile-nav
+  ul.collection
+    each item, index in menu.medical
+      li.collection-item(style="animation-duration: "+(Number(index + 1)) * 0.25 + 's')
+        a.sidenav-close.waves-effect.menu-list(href='#' + item.name) #{$t.medical_landing['header_'+item.name]}
+    li.collection-item(style="animation-duration: "+menu.medical.length * 0.25 + 's')
+        a.waves-effect.menu-list(href=link.medical.contact) #{$t.medical_landing.header_contact}

@@ -1,0 +1,450 @@
+.form-page {
+  .page-wrap {
+    .cloud-deco {
+      position: absolute;
+      top: -20%;
+      @include left(0);
+      height: 100%;
+      width: 100%;
+      .parallax-wrap svg {
+        @include use-theme(fill, $light-background-paper, $dark-background-paper);
+      }
+      @include breakpoints-down(sm) {
+        display: none;
+      }
+    }
+    text-align: center;
+    background: repeat-x center 124%;
+    @include use-theme(background-color, $palette-primary-light, $palette-primary-dark);
+    @include use-theme(background-image, url(../images/hosting/cloud_bottom_light.svg), url(../images/hosting/cloud_bottom_dark.svg));
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    padding: spacing(11, 5);
+    &.contact {
+      background-position: center 125%
+    }
+    @include breakpoints-up(md) {
+      display: flex;
+    }
+    @include breakpoints-down(sm) {
+      padding: spacing(4, 0)
+    }
+    a {
+      @include use-theme(color, $palette-primary-dark, $palette-primary-light);
+      text-transform: none;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: $font-regular;
+      @include breakpoints-down(xs) {
+        font-size: 14px;
+      }
+      &.btn-link {
+        font-weight: $font-bold
+      }
+    }
+    .inner-wrap {
+      @include text-align(left)
+      &.container {
+        #main-wrap & {
+          width: 100%;
+        }
+      }
+      position: static;
+      @include text-align(left)
+    }
+    .form-wrap {
+      @include palette-background-paper;
+      position: relative;
+      padding: $spacing2;
+      min-height: 760px;
+      overflow: hidden;
+      .frm-deco {
+        @include left(58.333333%);
+        transform: translateX(-72%);
+        bottom: -55px
+      }
+      @include breakpoints-up(sm) {
+        padding: $spacing5
+      }
+      @include breakpoints-up(lg) {
+        padding: $spacing8
+      }
+      @include breakpoints-down(xs) {
+        padding: spacing(0, 3)
+      }
+    }
+    .full-form-wrap {
+      @include palette-background-paper;
+      padding: $spacing9 0;
+      overflow: hidden;
+      @include breakpoints-down(xs) {
+        padding-top: $spacing4
+      }
+    }
+    .form-box {
+      border-radius: 10px !important;
+      overflow: hidden;
+      background: transparent;
+      box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.05);
+      .theme--light & {
+        background: rgba(255, 255, 255, 0.7)
+      }
+      .theme--dark & {
+        background: rgba(66, 66, 66, 0.7)
+      }
+      @include breakpoints-down(xs) {
+        box-shadow: none
+      }
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: $spacing5;
+    &.logo-header {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 10
+    }
+    img {
+      width: 64px;
+      @include margin-right($spacing1);
+    }
+    p, span {
+      @include palette-text-secondary;
+      font-size: 24px;
+      font-weight: $font-medium;
+      padding-bottom: 4px;
+      text-transform: lowercase;
+      display: block;
+      padding-bottom: 0;
+      margin-bottom: 0
+    }
+  }
+  
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: $spacing5;
+    a {
+      margin-top: $spacing2
+    }
+    .button-link {
+      i {
+        [dir="rtl"] & {
+          transform: rotate(180deg)
+        }
+      }
+    }
+    @include breakpoints-down(sm) {
+      margin-top: $spacing2;
+      justify-content: center;
+      a {
+        display: none
+      }
+    }
+  }
+
+  .desc {
+    text-align: center;
+    padding: spacing(0, 10);
+    @include breakpoints-down(xs) {
+      padding: spacing(0, 2)
+    }
+  }
+
+  .input {
+    width: 100%;
+    @include left(4px)
+  }
+
+  .form {
+    @include text-align(left);
+    position: relative;
+    margin-top: $spacing5;
+    padding: spacing(0, 15, 10);
+    @include breakpoints-down(sm) {
+      padding: spacing(0, 4, 10)
+    }
+    @include breakpoints-down(xs) {
+      padding: spacing(2, 1);
+      margin-top: $spacing2
+    }
+  }
+
+  .form-helper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include breakpoints-down(xs) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .btn-area {
+    justify-content: space-between;
+    @include breakpoints-up(lg) {
+      margin-top: $spacing3;
+      display: flex;
+    }
+    @include breakpoints-down('md') {
+      button {
+        margin-top: $spacing4;
+        width: 100%
+      }
+    }
+    @include breakpoints-down(xs) {
+      margin-top: $spacing2;
+      margin-bottom: $spacing5;
+    }
+    button.v-btn.v-size--large {
+      margin-top: $spacing2;
+      min-height: 48px;
+      min-width: 180px;
+    }
+    span {
+      a.link {
+        text-decoration: none !important;
+        color: $palette-primary-main
+      }
+    }
+    &.flex {
+      display: flex;
+      justify-content: space-between;
+      @include breakpoints-down(sm) {
+        display: block
+      }
+    }
+  }
+
+  .right-icon {
+    @include margin-left($spacing1)
+  }
+
+  .check {
+    svg {
+      fill: $palette-secondary-main
+    }
+  }
+
+  .decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    @include left(0);
+    overflow: hidden;
+    clip: rect(0, auto, auto, 0);
+    svg {
+      fill: $palette-secondary-main;
+      opacity: 0.2;
+      position: fixed;
+      top: 0;
+    }
+  }
+
+  .left-deco {
+    left: -400px;
+    right: auto;
+    width: 1200px;
+    height: 1500px;
+    transform-origin: top left;
+    @include breakpoints-up(md) {
+      transform: scale(0.8)
+    }
+  }
+
+  .right-deco {
+    left: auto;
+    right: 0;
+    height: 1500px;
+    transform-origin: top right;
+    @include breakpoints-up(md) {
+      transform: scale(0.8)
+    }
+  }
+  
+  .auth-frame {
+    display: block;
+    position: relative;
+    .row > div {
+      padding: 0
+    }
+  }
+  
+  .greeting {
+    padding: spacing(15, 6);
+    height: 100%;
+    h6 {
+      font-weight: $font-medium
+    }
+  }
+
+  .socmed-side-login {
+    display: flex;
+    justify-content: space-around;
+    @include breakpoints-down(md) {
+      justify-content: center
+    }
+    @include breakpoints-down(xs) {
+      display: block
+    }
+    > * {
+      color: $palette-common-white;
+      width: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include breakpoints-down(md) {
+        margin: 0 4px;
+        width: 140px;
+      }
+      @include breakpoints-down(xs) {
+        margin-bottom: $spacing2;
+        width: 100%
+      }
+    }
+    i {
+      color: $palette-common-white;
+      @include margin-right($spacing1)
+    }
+  }
+
+  .blue-btn {
+    background: #28aae1 !important;
+    &:hover {
+      background: darken(#28aae1, 20%) !important
+    }
+  }
+  .navi-btn {
+    background: #3b579d !important;
+    &:hover {
+      background: darken(#3b579d, 20%) !important
+    }
+  }
+  .red-btn {
+    background: #dd493c !important;
+    &:hover {
+      background: darken(#dd493c, 20%) !important
+    }
+  }
+  .separator {
+    margin: 40px auto;
+    max-width: 300px;
+    min-width: 200px;
+    text-align: center;
+    position: relative;
+    p {
+      @include breakpoints-down(xs) {
+        font-size: 12px
+      }
+    }
+    &:before, &:after {
+      content: "";
+      border-top: 1px solid;
+      @include use-theme(border-top-color, $light-text-hint, $dark-text-hint);
+      top: 50%;
+      position: absolute;
+      width: 20%
+    }
+    &:before {
+      left: 0
+    }
+    &:after {
+      right: 0
+    }
+  }
+
+  .form-control-label {
+    margin-top: 0;
+    label {
+      margin-top: 6px;
+    }
+    @include breakpoints-up(sm) {
+      flex: 1;
+      @include margin-right($spacing10)
+    }
+    a {
+      position: relative;
+    }
+  }
+
+  .backtohome {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-top: 20px;
+    z-index: 4;
+    @include margin-left(20px);
+    @include breakpoints-down(sm) {
+      @include left(calc(50% - 40px));
+      top: 40px;
+      margin: 0
+    }
+    @include breakpoints-down('sm') {
+      display: none
+    }
+    span {
+      width: 100%;
+      height: 100%;
+      display: block;
+      line-height: 80px;
+    }
+    i {
+      line-height: 82px !important;
+      font-size: 36px;
+      @include palette-text-secondary
+    }
+    > i:first-child {
+      opacity: 1;
+      transition: opacity 0.3s ease
+    }
+    > span i:last-child {
+      position: absolute;
+      @include right(0);
+      opacity: 0;
+      transition: all 0.3s ease
+    }
+    &:hover {
+      > span i:first-child {
+        opacity: 0;
+      }
+      > span i:last-child {
+        @include right(27px);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.frm-deco {
+  bottom: -97px;
+  position: absolute;
+  @include left(50%);
+  transform: translateX(-50%);
+  width: 1280px;
+  svg {
+    width: 1280px;
+    height: 190px;
+    stroke: $palette-primary-main;
+    fill: none
+  }
+}
+
+.toast {
+  @include padding-right($spacing1);
+  border-radius: 4px;
+  width: auto;
+  .toast-action {
+    @include margin-right(0)
+  }
+  i.material-icons {
+    color: #FFF
+  }
+}

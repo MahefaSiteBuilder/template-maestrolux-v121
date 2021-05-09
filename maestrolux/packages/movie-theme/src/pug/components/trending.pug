@@ -1,0 +1,73 @@
+.root
+  .hidden-xs-down
+    .grid-25
+      |
+      |
+      img(src=imgAPI.movie[6] alt='trending')/
+      |
+      |
+      a.overlay.waves-effect(href="javascript:void(0)")
+        h5.headline #{$t.movie_landing.trending_rent}
+      |
+      |
+    .grid-50
+      |
+      |
+      img(src=imgAPI.movie[7] alt='trending')/
+      |
+      |
+      a.overlay.waves-effect(href="javascript:void(0)")
+        h3.display-2 
+          i.ion-coffee
+          | FREE
+          span Movies
+      |
+      |
+    .grid-25
+      |
+      |
+      img(src=imgAPI.movie[8] alt='trending')/
+      |
+      |
+      a.overlay.waves-effect(href="javascript:void(0)")
+        h5.headline #{$t.movie_landing.trending_episodes}
+      |
+      |
+  .hidden-sm-up
+    .slick-carousel#trending_carousel
+      .item
+        .grid-25
+          |
+          |
+          img(src=imgAPI.movie[6] alt='trending')/
+          |
+          |
+          a.overlay.waves-effect(href="javascript:void(0)")
+            h5.headline #{$t.movie_landing.trending_rent}
+          |
+          |
+      .item
+        .grid-50
+          |
+          |
+          img(src=imgAPI.movie[7] alt='trending')/
+          |
+          |
+          a.overlay.waves-effect(href="javascript:void(0)")
+            h3.display-2 
+              i.ion-coffee
+              | FREE
+              span Movies
+          |
+          |
+      .item
+        .grid-25
+          |
+          |
+          img(src=imgAPI.movie[8] alt='trending')/
+          |
+          |
+          a.overlay.waves-effect(href="javascript:void(0)")
+            h5.headline #{$t.movie_landing.trending_episodes}
+          |
+          |

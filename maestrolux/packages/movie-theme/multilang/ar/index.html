@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Alexstrap Movie - HTML5 Bootstrap Landing Page Template">
+  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"><!-- Favicon-->
+  <link rel="shortcut icon" href="../../assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="../../assets/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../../assets/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../../assets/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../../assets/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../../assets/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../../assets/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../../assets/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../../assets/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../../assets/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../../assets/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../../assets/favicons/ms-icon-144x144.png"><!-- PWA primary color-->
+  <meta name="theme-color" content="#303030">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><!-- Facebook-->
+  <meta property="author" content="luxi">
+  <meta property="og:site_name" content="alexstrap.ux-maestro.com">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website"><!-- Twitter-->
+  <meta property="twitter:site" content="luxi.ux-maestro.com">
+  <meta property="twitter:domain" content="luxi.ux-maestro.com">
+  <meta property="twitter:creator" content="luxi">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:image:src" content="../../assets/images/logo.png">
+  <meta property="og:url" content="alexstrap.ux-maestro.com/movie">
+  <meta property="og:title" content="Movie">
+  <meta property="og:description" content="Alexstrap Movie - HTML5 Bootstrap Landing Page Template">
+  <meta name="twitter:site" content="alexstrap.ux-maestro.com/movie">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="/images/movie-logo.png">
+  <meta property="og:image" content="/images/movie-logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <title>Movie - Home Page </title><!-- Styles-->
+  <!-- Put the 3rd/plugins css here-->
+  <link href="../../assets/css/vendors/normalize.css" rel="stylesheet">
+  <link href="../../assets/css/rtl-vendors/bootstrap-rtl.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/jquery.youtubebackground.css" rel="stylesheet">
+  <link href="../../assets/css/rtl-vendors/materialize-rtl.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/hamburger-menu.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/jquery.animateSlider.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/animate.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/animate-extends.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/slick-carousel/slick.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/slick-carousel/slick-theme.css" rel="stylesheet">
+  <link href="../../assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="../../assets/images/loading.gif" alt="loading"></div>
+  <div class="m-application theme--light transition-page" id="app">
+    <div class="loading"></div>
+    <div class="m-content passion passion-var" id="main-wrap">
+      <div>
+        <div id="home"></div>
+        <div class="main-wrap">
+          <div class="sidenav mobile-nav" id="slide-menu">
+            <div class="menu">
+              <ul class="collection">
+                <li class="collection-item" style="animation-duration: 0.25s"><a class="sidenav-close waves-effect menu-list" href="#promotions">الترقيات</a></li>
+                <li class="collection-item" style="animation-duration: 0.5s"><a class="sidenav-close waves-effect menu-list" href="#featured">مميزة</a></li>
+                <li class="collection-item" style="animation-duration: 0.75s"><a class="sidenav-close waves-effect menu-list" href="#top">أهم الفئات</a></li>
+                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect menu-list" href="#all">جميع الفئات</a></li>
+                <li class="collection-item" style="animation-duration: 1.25s"><a class="sidenav-close waves-effect menu-list" href="#pricing">التسعير</a></li>
+              </ul>
+              <hr class="divider-sidebar">
+              <ul class="collection">
+                <li class="collection-item" style="animation-duration: 1.25s"><a class="sidenav-close waves-effect menu-list" href="login.html">تسجيل الدخول</a></li>
+                <li class="collection-item" style="animation-duration: 1.25s"><a class="sidenav-close waves-effect menu-list" href="register.html">تسجيل</a></li>
+              </ul>
+            </div>
+          </div><!-- ##### HEADER #####-->
+          <header class="app-bar header" id="header">
+            <div class="container fixed-width-lg-up">
+              <div class="header-content">
+                <nav class="nav-logo nav-menu">
+                  <button class="mobile-menu btn-icon waves-effect hamburger hamburger--spin show-md-down" id="mobile_menu" type="button">
+                    <span class="hamburger-box"><span class="bar hamburger-inner"></span></span>
+                  </button>
+                  <div class="logo scrollnav">
+                    <a href="#banner"><img src="../../assets/images/movie-logo.png" alt="logo" /></a>
+                  </div>
+                  <div>
+                    <div class="scrollactive-nav show-lg-up scrollnav">
+                      <ul>
+                        <li class="d-none"><a href="#banner"></a></li>
+                        <li><a class="btn btn-flat anchor-link waves-effect" href="#promotions">الترقيات</a></li>
+                        <li><a class="btn btn-flat anchor-link waves-effect" href="#featured">مميزة</a></li>
+                        <li><a class="btn btn-flat anchor-link waves-effect" href="#top">أهم الفئات</a></li>
+                        <li><a class="btn btn-flat anchor-link waves-effect" href="#all">جميع الفئات</a></li>
+                        <li><a class="btn btn-flat anchor-link waves-effect" href="#pricing">التسعير</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+                <div class="hidden-md-down"><span class="divider"></span></div>
+                <nav class="nav-menu nav-auth">
+                  <div class="hidden-xs-down">
+                    <a class="btn btn-flat text-btn waves-effect" href="login.html">تسجيل الدخول</a>
+                    <a class="btn secondary light button waves-effect" href="register.html">تسجيل</a>
+                  </div>
+                  <div class="menu-setting">
+                    <div class="setting">
+                      <button class="btn-icon waves-effect btn-small m-2 dropdown-trigger" data-target="dropdown_config" type="button" data-align="right">
+                        <i class="icon material-icons" id="setting_icon">settings</i>
+                      </button>
+                      <div class="dropdown-content" id="dropdown_config">
+                        <ul class="collection with-header">
+                          <li class="collection-header">وضع السمة</li>
+                          <li class="collection-item no-hover pl-4">
+                            <div class="flex-menu">
+                              <div class="switch">
+                                <label>ضوء<input id="theme_switcher" type="checkbox"><span class="lever"></span>داكن</label>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="dropdown-divider"></div>
+                        <ul class="collection with-header lang-menu" id="lang_menu">
+                          <li class="collection-header">لغة</li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="ar" href="#">
+                              <div class="flag circle"><i class="ar"></i></div>
+                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿العربيّة</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="de" href="#">
+                              <div class="flag circle"><i class="de"></i></div>
+                              <span class="content lang-opt text-truncate">Deutsch</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="en" href="#">
+                              <div class="flag circle"><i class="en"></i></div>
+                              <span class="content lang-opt text-truncate">English</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="id" href="#">
+                              <div class="flag circle"><i class="id"></i></div>
+                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿Bahasa Indonesia</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="pt" href="#">
+                              <div class="flag circle"><i class="pt"></i></div>
+                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿Português</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="zh" href="#">
+                              <div class="flag circle"><i class="zh"></i></div>
+                              <span class="content lang-opt text-truncate">简体中文</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </header>
+          <!-- ##### END HEADER #####-->
+          <main class="container-wrap">
+            <!-- ##### BANNER #####-->
+            <section id="banner">
+              <div class="root">
+                <div class="video">
+                  <div class="overlay"></div>
+                  <img class="show-md-down" src="https://via.placeholder.com/1280x854/8d815b/FFFFFF" alt="cover" />
+                  <img id="banner_cover" src="https://via.placeholder.com/1280x854/8d815b/FFFFFF" alt="cover" />
+                  <div class="show-lg-up" id="youtube"></div>
+                  <div class="caption">
+                    <div class="container">
+                      <div class="hidden-sm-down">
+                        <button class="btn-icon btn-play waves-effect hide" id="btn_play">
+                          <span class="hidden">watch</span>
+                          <span class="hidden">trailer</span>
+                          <i class="ion-ios-pause-outline pause"></i>
+                          <i class="ion-arrow-right-b play"></i>
+                        </button>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p class="use-text-subtitle2">Vivamus sit amet interdum elit</p>
+                          <h2 class="use-text-title">Mancing Mania The Movie</h2>
+                          <p class="use-text-subtitle">على الهواء 01 . 11 . 20</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END BANNER #####-->
+            <!-- ##### PROMOTION #####-->
+            <section id="promotions">
+              <div class="root">
+                <div class="slider-wrap">
+                  <div class="anim-slider">
+                    <div class="slide slider-content anim-slide">
+                      <section class="inner item">
+                        <div class="inner-bg">
+                          <div class="background">
+                            <figure>
+                              <img src="https://via.placeholder.com/300x440/ffa4a4/757575" alt="promotion" />
+                            </figure>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-7 pa-0">
+                              <div class="text">
+                                <h4><span class="use-text-subtitle2">Vivamus sit amet</span>The Lorem Ipsum Dolor Sit</h4>
+                                <div class="property">
+                                  <div class="star">
+                                    <i class="material-icons star-icon" title="1">star</i>
+
+                                    <i class="material-icons star-icon" title="2">star</i>
+
+                                    <i class="material-icons star-icon" title="3">star</i>
+
+                                    <i class="material-icons star-icon" title="4">star</i>
+
+                                    <i class="material-icons star-icon" title="5">star</i>
+                                  </div>
+
+                                  5.0<span class="divider"></span>2h 15m
+                                </div>
+                                <article class="desc">
+                                  <h6 class="use-text-paragraph">Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci.</h6>
+                                </article>
+                                <div class="btn-area">
+                                  <a class="btn-flat secondary waves-effect" href="#">مشاهدة المقطع الدعائي</a>
+                                  <a class="btn primary waves-effect" href="#">مشاهدة فيلم كامل</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-5 pa-0">
+                              <div class="hidden-xs-down">
+                                <div class="image">
+                                  <figure>
+                                    <img src="https://via.placeholder.com/300x440/ffa4a4/757575" alt="promotion" />
+                                  </figure>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="slide slider-content anim-slide">
+                      <section class="inner item">
+                        <div class="inner-bg">
+                          <div class="background">
+                            <figure>
+                              <img src="https://via.placeholder.com/300x440/74b7fa/757575" alt="promotion" />
+                            </figure>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-7 pa-0">
+                              <div class="text">
+                                <h4><span class="use-text-subtitle2">Vivamus sit amet</span>The Lorem Ipsum Dolor Sit</h4>
+                                <div class="property">
+                                  <div class="star">
+                                    <i class="material-icons star-icon" title="1">star</i>
+
+                                    <i class="material-icons star-icon" title="2">star</i>
+
+                                    <i class="material-icons star-icon" title="3">star</i>
+
+                                    <i class="material-icons star-icon" title="4">star</i>
+
+                                    <i class="material-icons star-icon" title="5">star</i>
+                                  </div>
+
+                                  5.0<span class="divider"></span>2h 15m
+                                </div>
+                                <article class="desc">
+                                  <h6 class="use-text-paragraph">Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci.</h6>
+                                </article>
+                                <div class="btn-area">
+                                  <a class="btn-flat secondary waves-effect" href="#">مشاهدة المقطع الدعائي</a>
+                                  <a class="btn primary waves-effect" href="#">مشاهدة فيلم كامل</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-5 pa-0">
+                              <div class="hidden-xs-down">
+                                <div class="image">
+                                  <figure>
+                                    <img src="https://via.placeholder.com/300x440/74b7fa/757575" alt="promotion" />
+                                  </figure>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="slide slider-content anim-slide">
+                      <section class="inner item">
+                        <div class="inner-bg">
+                          <div class="background">
+                            <figure>
+                              <img src="https://via.placeholder.com/300x440/ffa4a4/757575" alt="promotion" />
+                            </figure>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-7 pa-0">
+                              <div class="text">
+                                <h4><span class="use-text-subtitle2">Vivamus sit amet</span>The Lorem Ipsum Dolor Sit</h4>
+                                <div class="property">
+                                  <div class="star">
+                                    <i class="material-icons star-icon" title="1">star</i>
+
+                                    <i class="material-icons star-icon" title="2">star</i>
+
+                                    <i class="material-icons star-icon" title="3">star</i>
+
+                                    <i class="material-icons star-icon" title="4">star</i>
+
+                                    <i class="material-icons star-icon" title="5">star</i>
+                                  </div>
+
+                                  5.0<span class="divider"></span>2h 15m
+                                </div>
+                                <article class="desc">
+                                  <h6 class="use-text-paragraph">Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci.</h6>
+                                </article>
+                                <div class="btn-area">
+                                  <a class="btn-flat secondary waves-effect" href="#">مشاهدة المقطع الدعائي</a>
+                                  <a class="btn primary waves-effect" href="#">مشاهدة فيلم كامل</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-5 pa-0">
+                              <div class="hidden-xs-down">
+                                <div class="image">
+                                  <figure>
+                                    <img src="https://via.placeholder.com/300x440/ffa4a4/757575" alt="promotion" />
+                                  </figure>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="slide slider-content anim-slide">
+                      <section class="inner item">
+                        <div class="inner-bg">
+                          <div class="background">
+                            <figure>
+                              <img src="https://via.placeholder.com/300x440/ffa4a4/757575" alt="promotion" />
+                            </figure>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-7 pa-0">
+                              <div class="text">
+                                <h4><span class="use-text-subtitle2">Vivamus sit amet</span>The Lorem Ipsum Dolor Sit</h4>
+                                <div class="property">
+                                  <div class="star">
+                                    <i class="material-icons star-icon" title="1">star</i>
+
+                                    <i class="material-icons star-icon" title="2">star</i>
+
+                                    <i class="material-icons star-icon" title="3">star</i>
+
+                                    <i class="material-icons star-icon" title="4">star</i>
+
+                                    <i class="material-icons star-icon" title="5">star</i>
+                                  </div>
+
+                                  5.0<span class="divider"></span>2h 15m
+                                </div>
+                                <article class="desc">
+                                  <h6 class="use-text-paragraph">Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci.</h6>
+                                </article>
+                                <div class="btn-area">
+                                  <a class="btn-flat secondary waves-effect" href="#">مشاهدة المقطع الدعائي</a>
+                                  <a class="btn primary waves-effect" href="#">مشاهدة فيلم كامل</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-5 pa-0">
+                              <div class="hidden-xs-down">
+                                <div class="image">
+                                  <figure>
+                                    <img src="https://via.placeholder.com/300x440/ffa4a4/757575" alt="promotion" />
+                                  </figure>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="anim-arrows">
+                      <a class="anim-arrows-prev prev" href="#">
+                        <i class="ion-ios-arrow-thin-left arrow-icon"></i>
+                      </a>
+                      <a class="anim-arrows-next next" href="#">
+                        <i class="ion-ios-arrow-thin-right arrow-icon"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END PROMOTION #####-->
+            <!-- ##### FEATURED #####-->
+            <section class="space-top" id="featured">
+              <div class="root">
+                <div class="decoration">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
+                    <g>
+                      <path d="M1280,925c-133.8-192.4-264-288.5-390.5-288.5c-189.8,0-387.2,389.8-606.5,268C136.8,823.2,42.5,750.6,0,686.5V81c114.5,99.3,229.7,148.9,345.8,148.9c174.1,0,228.2-332.1,454.9-198C951.8,121.3,1118.6,137.7,1301,81L1280,925z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="container fixed width-md-up">
+                  <div class="row spacing3">
+                    <div class="col-md-3 py-10">
+                      <div class="title-main align-left">
+                        <h4 class="primary-title">Featured</h4>
+                        <h4 class="secondary-title">Movies</h4>
+                      </div>
+                      <p class="use-text-paragrpah">شاهد وقم بتنزيل أفلام كاملة ومواسم وحلقات وعروض تليفزيونية عبر الإنترنت أو البث المباشر إلى التلفزيون الذكي ووحدة التحكم في الألعاب والكمبيوتر الشخصي و Mac والهاتف المحمول والكمبيوتر اللوحي والمزيد.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                      <div class="card movie-thumb">
+                        <a class="btn-wrap waves-effect" href="detail-movie.html">
+                          <span class="figure">
+<i class="ion-arrow-right-b play"></i>
+<img src="https://via.placeholder.com/300x440/74b7fa/757575" alt="Cras convallis lacus"/>
+<span class="figcaption">جديد</span>
+                          </span>
+                          <span class="text">Cras convallis lacus</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                      <div class="card movie-thumb">
+                        <a class="btn-wrap waves-effect" href="detail-movie.html">
+                          <span class="figure">
+<i class="ion-arrow-right-b play"></i>
+<img src="https://via.placeholder.com/300x440/ffa4a4/757575" alt="Cras convallis lacus"/>
+<span class="figcaption">جديد</span>
+                          </span>
+                          <span class="text">Cras convallis lacus</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                      <div class="card movie-thumb">
+                        <a class="btn-wrap waves-effect" href="detail-movie.html">
+                          <span class="figure">
+<i class="ion-arrow-right-b play"></i>
+<img src="https://via.placeholder.com/300x440/74b7fa/757575" alt="Cras convallis lacus"/>
+<span class="figcaption">جديد</span>
+                          </span>
+                          <span class="text">Cras convallis lacus</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END FEATURED #####-->
+            <!-- ##### TRENDING #####-->
+            <section class="space-top" id="trending">
+              <div class="root">
+                <div class="hidden-xs-down">
+                  <div class="grid-25">
+                    <img src="https://via.placeholder.com/320x370/ffa4a4/FFFFFF" alt="trending" />
+                    <a class="overlay waves-effect" href="javascript:void(0)">
+                      <h5 class="headline">إيجار مجاني 3 أيام</h5>
+                    </a>
+                  </div>
+                  <div class="grid-50">
+                    <img src="https://via.placeholder.com/700x360/ffd7a4/757575" alt="trending" />
+                    <a class="overlay waves-effect" href="javascript:void(0)">
+                      <h3 class="display-2"> <i class="ion-coffee"></i>FREE<span>Movies</span></h3>
+                    </a>
+                  </div>
+                  <div class="grid-25">
+                    <img src="https://via.placeholder.com/320x370/d0d4e6/757575" alt="trending" />
+                    <a class="overlay waves-effect" href="javascript:void(0)">
+                      <h5 class="headline">مجانًا حتى 5 حلقات</h5>
+                    </a>
+                  </div>
+                </div>
+                <div class="hidden-sm-up">
+                  <div class="slick-carousel" id="trending_carousel">
+                    <div class="item">
+                      <div class="grid-25">
+                        <img src="https://via.placeholder.com/320x370/ffa4a4/FFFFFF" alt="trending" />
+                        <a class="overlay waves-effect" href="javascript:void(0)">
+                          <h5 class="headline">إيجار مجاني 3 أيام</h5>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="grid-50">
+                        <img src="https://via.placeholder.com/700x360/ffd7a4/757575" alt="trending" />
+                        <a class="overlay waves-effect" href="javascript:void(0)">
+                          <h3 class="display-2"> <i class="ion-coffee"></i>FREE<span>Movies</span></h3>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="grid-25">
+                        <img src="https://via.placeholder.com/320x370/d0d4e6/757575" alt="trending" />
+                        <a class="overlay waves-effect" href="javascript:void(0)">
+                          <h5 class="headline">مجانًا حتى 5 حلقات</h5>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END TRENDING #####-->
+            <!-- ##### CATEGORIES #####-->
+            <section class="space-top" id="top">
+              <div class="root">
+                <div class="container fixed-width-lg-up">
+                  <div class="row spacing3">
+                    <div class="col-md-6 pa-3 pt-10">
+                      <div class="title-main align-left">
+                        <h4 class="primary-title">Top</h4>
+                        <h4 class="secondary-title">Categories</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 pa-3">
+                      <a class="category full button-base waves-effect" style="background-color: #E79A1C">
+                        <img src="https://i.ibb.co/jbmqN1J/bag.png" alt="Academy Awards" />
+                        <span class="property"><span class="title-category">Academy Awards</span><span class="total use-text-paragraph">24 Films</span></span>
+                      </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 pa-3">
+                      <a class="category full button-base waves-effect" style="background-color: #E91E63">
+                        <img src="https://i.ibb.co/jbmqN1J/bag.png" alt="Animations" />
+                        <span class="property"><span class="title-category">Animations</span><span class="total use-text-paragraph">24 Films</span></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row spacing3">
+                    <div class="col-md-6 py-0 px-3">
+                      <div class="category half-char" style="background-color: #1A237E">
+                        <img class="shadow" src="https://i.ibb.co/CH5gQ02/man.png" alt="Actions" />
+                        <img src="https://i.ibb.co/CH5gQ02/man.png" alt="Actions" />
+                        <span class="property">
+<span class="title-category use-text-title2">Actions</span><span class="total use-text-subtitle2">24 Films</span><span class="hidden-xs-down"><a class="btn btn-outlined white secondary-text button block waves-effect">Explore</a></span>
+                        </span>
+                      </div>
+                      <div class="row spacing3">
+                        <div class="col-md-6 col-sm-6 py-3 px-0 ps-sm-0 pe-sm-3">
+                          <a class="category full button-base waves-effect" style="background-color: #14A8B9">
+                            <img src="https://i.ibb.co/jbmqN1J/bag.png" alt="Romance Drama" />
+                            <span class="property"><span class="title-category">Romance Drama</span><span class="total use-text-paragraph">24 Films</span></span>
+                          </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 py-3 px-0 ps-sm-3 pe-sm-0">
+                          <a class="category full button-base waves-effect" style="background-color: #2AA845">
+                            <img src="https://i.ibb.co/jbmqN1J/bag.png" alt="Commedy" />
+                            <span class="property"><span class="title-category">Commedy</span><span class="total use-text-paragraph">24 Films</span></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 py-0 px-3">
+                      <div class="category full-char" style="background-color: #ED3626">
+                        <img class="shadow" src="https://i.ibb.co/7z9WN0t/woman.png" alt="Super Heroes" />
+                        <img src="https://i.ibb.co/7z9WN0t/woman.png" alt="Super Heroes" />
+                        <span class="property">
+<span class="title-category use-text-title2">Super Heroes</span><span class="total use-text-subtitle2">24 Films</span><span class="hidden-xs-down"><a class="btn btn-outlined white secondary-text button block waves-effect">Explore</a></span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END CATEGORIES #####-->
+            <!-- ##### ALL CATEGORIES #####-->
+            <section class="space-top-short" id="all">
+              <div class="root">
+                <div class="container">
+                  <div class="title-main align-center">
+                    <h4 class="primary-title">All</h4>
+                    <h4 class="secondary-title">Categories</h4>
+                  </div>
+                  <div class="carousel-wrap"><button class="btn nav prev waves-effect" id="prev_product"><i class="material-icons">arrow_back</i></button><button class="btn nav next waves-effect" id="next_product"><i class="material-icons">arrow_forward</i></button>
+                    <div class="slick-carousel" id="product_carousel">
+                      <div class="item">
+                        <a class="simple-thumb waves-effect" href="detail-movie.html">
+                          <span class="wrap"><span class="figure"><span><i class="ion-heart-broken"></i></span></span>
+                          <span class="text">Romantic</span></span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a class="simple-thumb waves-effect" href="detail-movie.html">
+                          <span class="wrap"><span class="figure"><span><i class="ion-planet"></i></span></span>
+                          <span class="text">sci-fi</span></span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a class="simple-thumb waves-effect" href="detail-movie.html">
+                          <span class="wrap"><span class="figure"><span><i class="ion-android-contact"></i></span></span>
+                          <span class="text">commedy</span></span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a class="simple-thumb waves-effect" href="detail-movie.html">
+                          <span class="wrap"><span class="figure"><span><i class="ion-ios-star"></i></span></span>
+                          <span class="text">super heroes</span></span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a class="simple-thumb waves-effect" href="detail-movie.html">
+                          <span class="wrap"><span class="figure"><span><i class="ion-ios-bolt"></i></span></span>
+                          <span class="text">actions</span></span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a class="simple-thumb waves-effect" href="detail-movie.html">
+                          <span class="wrap"><span class="figure"><span><i class="ion-ios-videocam"></i></span></span>
+                          <span class="text">hollywood</span></span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a class="simple-thumb waves-effect" href="detail-movie.html">
+                          <span class="wrap"><span class="figure"><span><i class="ion-heart-broken"></i></span></span>
+                          <span class="text">Romantic</span></span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a class="simple-thumb waves-effect" href="detail-movie.html">
+                          <span class="wrap"><span class="figure"><span><i class="ion-planet"></i></span></span>
+                          <span class="text">sci-fi</span></span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a class="simple-thumb waves-effect" href="detail-movie.html">
+                          <span class="wrap"><span class="figure"><span><i class="ion-android-contact"></i></span></span>
+                          <span class="text">commedy</span></span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a class="simple-thumb waves-effect" href="detail-movie.html">
+                          <span class="wrap"><span class="figure"><span><i class="ion-ios-star"></i></span></span>
+                          <span class="text">super heroes</span></span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a class="simple-thumb waves-effect" href="detail-movie.html">
+                          <span class="wrap"><span class="figure"><span><i class="ion-ios-bolt"></i></span></span>
+                          <span class="text">actions</span></span>
+                        </a>
+                      </div>
+                      <div class="item">
+                        <a class="simple-thumb waves-effect" href="detail-movie.html">
+                          <span class="wrap"><span class="figure"><span><i class="ion-ios-videocam"></i></span></span>
+                          <span class="text">hollywood</span></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END ALL CATEGORIES #####-->
+            <!-- ##### PRICING #####-->
+            <section class="space-top" id="pricing">
+              <div class="root">
+                <div class="decoration">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
+                    <g>
+                      <path d="M1280,925c-133.8-192.4-264-288.5-390.5-288.5c-189.8,0-387.2,389.8-606.5,268C136.8,823.2,42.5,750.6,0,686.5V81c114.5,99.3,229.7,148.9,345.8,148.9c174.1,0,228.2-332.1,454.9-198C951.8,121.3,1118.6,137.7,1301,81L1280,925z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="container fixed-width-lg-up">
+                  <div class="title-main align-center">
+                    <h4 class="primary-title">Flexible</h4>
+                    <h4 class="secondary-title">Pricing and Plan</h4>
+                  </div>
+                  <div class="pricing-wrap">
+                    <section>
+                      <div class="wow fadeInUpShort item" data-wow-offset="-10" data-wow-delay="0.4s" data-wow-duration="0.4s">
+                        <div class="card pricing-card basic">
+                          <div class="title-card">
+                            <p>Basic</p>
+                            <h4 class="display-1">Free</h4>
+                          </div>
+                          <ul>
+                            <li>Nam sollicitudin dignissim</li>
+                            <li>Cras convallis lacus</li>
+                            <li>Quisque ut metus</li>
+                          </ul>
+                          <div class="btn-area">
+                            <p class="desc">Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                            <a class="btn button btn-large waves-effect secondary" href="#">Choose Plan</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wow fadeInUpShort item" data-wow-offset="-10" data-wow-delay="0.6s" data-wow-duration="0.4s">
+                        <div class="card pricing-card value">
+                          <div class="title-card">
+                            <p>Best Value</p>
+                            <h4 class="display-1"><span>$</span>24</h4>
+                          </div>
+                          <ul>
+                            <li>Nam sollicitudin dignissim</li>
+                            <li>Cras convallis lacus</li>
+                            <li>Quisque ut metus</li>
+                            <li>Vivamus sit amet</li>
+                            <li>Cras convallis lacus orci</li>
+                          </ul>
+                          <div class="btn-area">
+                            <p class="desc">Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                            <a class="btn button btn-large waves-effect primary" href="#">Choose Plan</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wow fadeInUpShort item" data-wow-offset="-10" data-wow-delay="0.8s" data-wow-duration="0.4s">
+                        <div class="card pricing-card">
+                          <div class="title-card">
+                            <p>Pro</p>
+                            <h4 class="display-1"><span>$</span>54</h4>
+                          </div>
+                          <ul>
+                            <li>Nam sollicitudin dignissim</li>
+                            <li>Cras convallis lacus</li>
+                            <li>Nulla lobortis nunc</li>
+                            <li>Vitae scelerisque</li>
+                            <li>Duis sed augue</li>
+                          </ul>
+                          <div class="btn-area">
+                            <p class="desc">Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                            <a class="btn button btn-large waves-effect primary" href="#">Choose Plan</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="wow fadeInUpShort item" data-wow-offset="-10" data-wow-delay="1s" data-wow-duration="0.4s">
+                        <div class="card pricing-card">
+                          <div class="title-card">
+                            <p>Enterprise</p>
+                            <h4 class="display-1"><span>$</span>99</h4>
+                          </div>
+                          <ul>
+                            <li>Nam sollicitudin dignissim</li>
+                            <li>Pellentesque ac bibendum </li>
+                            <li>Vestibulum consequat</li>
+                            <li>Donec commodo</li>
+                            <li>Duis tristique metus</li>
+                          </ul>
+                          <div class="btn-area">
+                            <p class="desc">Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                            <a class="btn button btn-large waves-effect primary" href="#">Choose Plan</a>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END PRICING #####-->
+            <!-- ##### FAQ #####-->
+            <section class="space-top" id="faq">
+              <div class="root">
+                <div class="container fixed-width">
+                  <div class="row spacing6">
+                    <div class="col-md-6 pa-6">
+                      <div class="title-main align-left">
+                        <h4 class="primary-title">Frequently</h4>
+                        <h4 class="secondary-title">Answered Questions</h4>
+                      </div>
+                      <p class="text use-text-subtitle2 text-md-start text-center">هل لديك سؤال؟ تحقق من الأسئلة الشائعة للعثور على إجابتك.</p>
+                      <div class="hidden-sm-down">
+                        <div class="illustration">
+                          <img src="../../assets/images/movie/faq.png" alt="illustration" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 pa-6">
+                      <div class="accordion">
+                        <ul class="collapsible">
+                          <li class="accordion-content paper active">
+                            <div class="collapsible-header content">
+                              <p class="heading">Pellentesque ac bibendum tortor?</p><i class="material-icons right arrow">expand_more</i>
+                            </div>
+                            <div class="collapsible-body detail">
+                              <p>Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor.</p>
+                            </div>
+                          </li>
+                          <li class="accordion-content paper">
+                            <div class="collapsible-header content">
+                              <p class="heading">In mi nulla, fringilla vestibulum?</p><i class="material-icons right arrow">expand_more</i>
+                            </div>
+                            <div class="collapsible-body detail">
+                              <p>Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. </p>
+                            </div>
+                          </li>
+                          <li class="accordion-content paper">
+                            <div class="collapsible-header content">
+                              <p class="heading">Quisque lacinia purus ut libero?</p><i class="material-icons right arrow">expand_more</i>
+                            </div>
+                            <div class="collapsible-body detail">
+                              <p>Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. </p>
+                            </div>
+                          </li>
+                          <li class="accordion-content paper">
+                            <div class="collapsible-header content">
+                              <p class="heading">Quisque ut metus sit amet augue?</p><i class="material-icons right arrow">expand_more</i>
+                            </div>
+                            <div class="collapsible-body detail">
+                              <p>Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. </p>
+                            </div>
+                          </li>
+                          <li class="accordion-content paper">
+                            <div class="collapsible-header content">
+                              <p class="heading">Pellentesque ac bibendum tortor?</p><i class="material-icons right arrow">expand_more</i>
+                            </div>
+                            <div class="collapsible-body detail">
+                              <p>Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. </p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END FAQ #####-->
+            <!-- ##### NEWS EVENT #####-->
+            <section class="space-top-short" id="news">
+              <div class="root">
+                <div class="carousel">
+                  <div class="slick-carousel" id="news_carousel">
+                    <div>
+                      <div class="item">
+                        <div class="news-card">
+                          <figure>
+                            <img src="https://via.placeholder.com/967x725/ea6d6d/fff" alt="thumb" />
+                          </figure>
+                          <div class="desc">
+                            <div class="text">
+                              <p class="type caption">أخبار</p>
+                              <p>Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.</p>
+                            </div>
+                            <a class="btn btn-small btn-flat waves-effect">اقرأ المزيد</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="item">
+                        <div class="news-card">
+                          <figure>
+                            <img src="https://via.placeholder.com/1280x849/ea6db7/fff" alt="thumb" />
+                          </figure>
+                          <div class="desc">
+                            <div class="text">
+                              <p class="type caption">أخبار</p>
+                              <p>Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.</p>
+                            </div>
+                            <a class="btn btn-small btn-flat waves-effect">اقرأ المزيد</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="item">
+                        <div class="news-card">
+                          <figure>
+                            <img src="https://via.placeholder.com/967x725/bb6dea/fff" alt="thumb" />
+                          </figure>
+                          <div class="desc">
+                            <div class="text">
+                              <p class="type caption">حدث</p>
+                              <p>Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.</p>
+                            </div>
+                            <a class="btn btn-small btn-flat waves-effect">اقرأ المزيد</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="item">
+                        <div class="news-card">
+                          <figure>
+                            <img src="https://via.placeholder.com/1048x701/6d6fea/fff" alt="thumb" />
+                          </figure>
+                          <div class="desc">
+                            <div class="text">
+                              <p class="type caption">أخبار</p>
+                              <p>Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.</p>
+                            </div>
+                            <a class="btn btn-small btn-flat waves-effect">اقرأ المزيد</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="item">
+                        <div class="news-card">
+                          <figure>
+                            <img src="https://via.placeholder.com/1050x700/6dc0ea/fff" alt="thumb" />
+                          </figure>
+                          <div class="desc">
+                            <div class="text">
+                              <p class="type caption">حدث</p>
+                              <p>Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.</p>
+                            </div>
+                            <a class="btn btn-small btn-flat waves-effect">اقرأ المزيد</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="item">
+                        <div class="news-card">
+                          <figure>
+                            <img src="https://via.placeholder.com/970x725/6deaa6/fff" alt="thumb" />
+                          </figure>
+                          <div class="desc">
+                            <div class="text">
+                              <p class="type caption">أخبار</p>
+                              <p>Sed imperdiet enim ligula, vitae viverra justo porta vel. Duis eget felis bibendum, pretium mi sed, placerat ante.</p>
+                            </div>
+                            <a class="btn btn-small btn-flat waves-effect">اقرأ المزيد</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### NEWS EVENT #####-->
+          </main><!-- ##### fOOTER #####-->
+          <div id="footer">
+            <div class="footer-deco">
+              <div class="decoration">
+                <svg class="left-deco" width="1045px" height="1468px" viewBox="0 0 1045 1468" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g transform="translate(-1030.000000, 0.000000)">
+                    <g transform="translate(950.000000, 0.000000)">
+                      <path d="M0,0 L805.395445,0 C731.131815,0 740.666667,76.9414646 834,230.824394 C915.57424,365.319569 1045,513.536468 1045,652.024982 C1045,806.30828 951.877684,902.632061 904.5,1091.56209 C874.07902,1212.87314 909.795583,1338.35244 1011.64969,1468 L0,1468 L0,0 Z"></path>
+                    </g>
+                  </g>
+                </svg>
+                <div class="line-deco">
+                  <svg class="right-deco-before" width="389px" height="1468px" viewBox="0 0 389 1468" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g transform="translate(-2171.000000, 0.000000)">
+                      <g transform="translate(-950.000000, 0.000000)">
+                        <g transform="translate(950.000000, 0.000000)">
+                          <path d="M2329.58044,-732.909805 L3294.66463,-608.836163 C3018.10652,-208.944402 2934.07929,71.8618948 3042.58292,233.582726 C3136.98689,374.288498 3255.13325,471.945016 3255.13325,636.668858 C3255.13325,820.179655 3107.51302,903.798038 3059.64228,1128.51906 C3028.9047,1272.81133 3063.63816,1429.66837 3163.84265,1599.0902 L2141.66463,1599.0902 L2329.58044,-732.909805 Z" transform="translate(2718.164626, 433.090195) rotate(179.000000) translate(-2718.164626, -433.090195) "></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <svg class="right-deco" width="389px" height="1468px" viewBox="0 0 389 1468" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g transform="translate(-2171.000000, 0.000000)">
+                      <g transform="translate(-950.000000, 0.000000)">
+                        <g transform="translate(950.000000, 0.000000)">
+                          <path d="M2329.58044,-732.909805 L3294.66463,-608.836163 C3018.10652,-208.944402 2934.07929,71.8618948 3042.58292,233.582726 C3136.98689,374.288498 3255.13325,471.945016 3255.13325,636.668858 C3255.13325,820.179655 3107.51302,903.798038 3059.64228,1128.51906 C3028.9047,1272.81133 3063.63816,1429.66837 3163.84265,1599.0902 L2141.66463,1599.0902 L2329.58044,-732.909805 Z" transform="translate(2718.164626, 433.090195) rotate(179.000000) translate(-2718.164626, -433.090195) "></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div class="action">
+                <h4 class="use-text-title2">ماذا تنتظر؟</h4>
+                <a class="btn secondary btn-large waves-effect" href="#">الخطوات الأولى</a>
+              </div>
+              <footer class="footer">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-3 pa-4">
+                      <div class="logo">
+                        <img src="../../assets/images/movie-logo.png" alt="logo" />
+                        <h6 class="title">Movie</h6>
+                      </div>
+                      <p class="body-2 show-md-up text-center">&copy; Alexstrap Movie 2020</p>
+                    </div>
+                    <div class="col-md-6 py-0 ps-6 pe-0">
+                      <ul class="show-sm-down collapsible">
+                        <li class="accordion-content">
+                          <div class="collapsible-header">
+                            <h6 class="title mb-4">Company</h6>
+                            <i class="material-icons right arrow">expand_more</i>
+                          </div>
+                          <div class="collapsible-body">
+                            <ul>
+                              <li><a href="#team">Team</a></li>
+                              <li><a href="#history">History</a></li>
+                              <li><a href="#contact-us">Contact us</a></li>
+                              <li><a href="#locations">Locations</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion-content">
+                          <div class="collapsible-header">
+                            <h6 class="title mb-4">Resources</h6>
+                            <i class="material-icons right arrow">expand_more</i>
+                          </div>
+                          <div class="collapsible-body">
+                            <ul>
+                              <li><a href="#resource">Resource</a></li>
+                              <li><a href="#resource-name">Resource name</a></li>
+                              <li><a href="#another-resource">Another resource</a></li>
+                              <li><a href="#final-resource">Final resource</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="accordion-content">
+                          <div class="collapsible-header">
+                            <h6 class="title mb-4">Legal</h6>
+                            <i class="material-icons right arrow">expand_more</i>
+                          </div>
+                          <div class="collapsible-body">
+                            <ul>
+                              <li><a href="#privacy-policy">Privacy policy</a></li>
+                              <li><a href="#terms-of-use">Terms of use</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="row show-md-up justify-content-evenly">
+                        <div class="col-sm-3 pa-4 px-md-0 site-map-item">
+                          <h6 class="title-nav mb-4">Company</h6>
+                          <ul>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#history">History</a></li>
+                            <li><a href="#contact-us">Contact us</a></li>
+                            <li><a href="#locations">Locations</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-3 pa-4 px-md-0 site-map-item">
+                          <h6 class="title-nav mb-4">Resources</h6>
+                          <ul>
+                            <li><a href="#resource">Resource</a></li>
+                            <li><a href="#resource-name">Resource name</a></li>
+                            <li><a href="#another-resource">Another resource</a></li>
+                            <li><a href="#final-resource">Final resource</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-3 pa-4 px-md-0 site-map-item">
+                          <h6 class="title-nav mb-4">Legal</h6>
+                          <ul>
+                            <li><a href="#privacy-policy">Privacy policy</a></li>
+                            <li><a href="#terms-of-use">Terms of use</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 pe-4 ps-0">
+                      <div class="socmed">
+                        <a class="btn-icon waves-effect"><span class="ion-social-facebook icon"></span></a>
+                        <a class="btn-icon waves-effect"><span class="ion-social-twitter icon"></span></a>
+                        <a class="btn-icon waves-effect"><span class="ion-social-instagram icon"></span></a>
+                        <a class="btn-icon waves-effect"><span class="ion-social-linkedin icon"></span></a>
+                      </div>
+                      <div class="select-lang select-outlined">
+                        <select class="select" id="lang_select">
+                          <option value="ar" selected>󠁥󠁮󠁧󠁿العربيّة</option>
+                          <option value="de">Deutsch</option>
+                          <option value="en">English</option>
+                          <option value="id">󠁥󠁮󠁧󠁿Bahasa Indonesia</option>
+                          <option value="pt">󠁥󠁮󠁧󠁿Português</option>
+                          <option value="zh">简体中文</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="body-2 text-center show-sm-down">&copy; Alexstrap Movie 2020</p>
+                </div>
+              </footer>
+            </div>
+          </div><!-- ##### END fOOTER #####-->
+          <!-- ##### PAGE-NAV #####-->
+          <div class="hidden-sm-down">
+            <div class="page-nav" id="page_nav">
+              <nav class="section-nav">
+                <div class="scrollnav">
+                  <ul>
+                    <li style="top: 150px"><a class="tooltipped" href="#promotions" data-position="left" data-tooltip="الترقيات"></a></li>
+                    <li style="top: 120px"><a class="tooltipped" href="#featured" data-position="left" data-tooltip="مميزة"></a></li>
+                    <li style="top: 90px"><a class="tooltipped" href="#top" data-position="left" data-tooltip="أهم الفئات"></a></li>
+                    <li style="top: 60px"><a class="tooltipped" href="#all" data-position="left" data-tooltip="جميع الفئات"></a></li>
+                    <li style="top: 30px"><a class="tooltipped" href="#pricing" data-position="left" data-tooltip="التسعير"></a></li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="scrollnav">
+                <a class="btn-floating btn-large primary tooltipped waves-effect waves-light" href="#home" data-position="left" data-tooltip="To Top">
+                  <div class="icon material-icons">arrow_upward</div>
+                </a>
+              </div>
+            </div>
+          </div><!-- ##### END PAGE-NAV #####-->
+          <!-- ##### NOTIFICATION #####-->
+          <div class="hidden-sm-down">
+            <div class="alert full alert-dismissible fade show notification" role="alert">
+              <div class="wrapper">
+                <div class="content">
+                  <div class="action">هذا مثال لرسالة شائعة الاستخدام للحصول على معلومات مهمة للزوار أو المستخدمين. الرجاء النقر فوق الزر بجانب إغلاق هذه الرسالة.</div>
+                  <button class="btn btn-outlined waves-effect waves-light white" type="button" data-dismiss="alert" aria-label="Close">قبول</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- ##### END NOTIFICATION #####-->
+        </div>
+      </div>
+    </div>
+  </div><!-- Scripts-->
+  <!-- Put the 3rd/plugins javascript here-->
+  <script src="../../assets/js/vendors/jquery.min.js"></script>
+  <script src="../../assets/js/vendors/bootstrap.min.js"></script>
+  <script src="../../assets/js/vendors/enquire.min.js"></script>
+  <script src="../../assets/js/vendors/jquery.enllax.min.js"></script>
+  <script src="../../assets/js/vendors/jquery.form-validator.min.js"></script>
+  <script src="../../assets/js/vendors/jquery.touchSwipe.min.js"></script>
+  <script src="../../assets/js/vendors/jquery.youtubebackground.js"></script>
+  <script src="../../assets/js/vendors/pace.min.js"></script>
+  <script src="../../assets/js/vendors/slick.min.js"></script>
+  <script src="../../assets/js/vendors/wow.min.js"></script>
+  <script src="../../assets/js/vendors/jquery.navScroll.min.js"></script>
+  <script src="../../assets/js/vendors/parallax.min.js"></script><!-- This assets are not avalaible in npm.js or it has been costumized-->
+  <script src="../../assets/js/vendors/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="../../assets/js/vendors/materialize.js"></script>
+  <script src="../../assets/js/vendors/jquery.animateSlider.js"></script>
+  <script src="../../assets/js/scripts.js"></script>
+</body>
+
+</html>

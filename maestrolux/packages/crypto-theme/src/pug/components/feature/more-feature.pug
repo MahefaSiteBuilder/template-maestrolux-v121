@@ -1,0 +1,109 @@
+-
+  var coinData = [
+    {
+      name: 'BTC',
+      logo: '/images/crypto/btc.png',
+      progress: 75,
+      color: '#FBA630'
+    },
+    {
+      name: 'DASH',
+      logo: '/images/crypto/dash.png',
+      progress: 40,
+      color: '#21D3D7'
+    },
+    {
+      name: 'NAN',
+      logo: '/images/crypto/nan.png',
+      progress: 90,
+      color: '#548CCC'
+    },
+    {
+      name: 'MNR',
+      logo: '/images/crypto/mnr.png',
+      progress: 35,
+      color: '#FF6602'
+    },
+    {
+      name: 'IOT',
+      logo: '/images/crypto/iot.png',
+      progress: 80,
+      color: '#CE07D4'
+    }
+  ]
+
+include ../titles/title.pug
+
+.more-feature
+  .container.fixed-width-md-up
+    .item
+      .row.spacing6
+        .col-md-6.py-md-0.px-6
+          .text
+            |
+            |
+            span.ion-ios-locked-outline
+            |
+            |
+            +title-main("left", $t.crypto_landing.morefeature_title1)
+            p.use-text-subtitle2.text-center.text-lg-start #{$t.crypto_landing.morefeature_subtitle1}
+        .col-md-6.py-md-0.px-6
+          .wow.fadeInLeftShort(data-wow-delay="0.3s" data-wow-duration="0.3s")
+            figure.illustration
+              |
+              |
+              img(src=assets+'/images/crypto/illustration1.png' alt='feature')/
+              |
+              |
+    .item
+      .row.spacing6.align-items-center
+        .col-md-6.py-md-0.px-6.order-md-last
+          .text
+            |
+            |
+            span.ion-ios-analytics-outline
+            |
+            |
+            +title-main("left", $t.crypto_landing.morefeature_title2)
+            p.use-text-subtitle2.text-center.text-lg-start #{$t.crypto_landing.morefeature_subtitle2}
+        .col-md-6.py-md-0.px-6.order-md-first
+          .wow.fadeInRightShort(data-wow-delay="0.3s" data-wow-duration="0.3s")
+            figure.illustration
+              |
+              |
+              img(src=assets + '/images/crypto/illustration2.png' alt='feature')/
+              |
+              |
+    #statistic.item.zero
+      .row
+        .col-md-12.px-sm-6
+          .text.text-center.text-sm-center
+            |
+            |
+            span.ion-ios-bolt-outline
+            |
+            |
+            +title-main("center", $t.crypto_landing.morefeature_title3)
+            p.text-center.use-text-subtitle2 #{$t.crypto_landing.morefeature_subtitle3}
+          .container.max-md.pa-0
+            ul.progress-wrap
+              each item in coinData
+                li
+                  .coin
+                    .avatar-img.logo
+                      |
+                      |
+                      img(src=assets+item.logo alt=item.name)/
+                      |
+                      |
+                    h5.headline
+                      | #{item.name}
+                  .progress-item
+                    .unit
+                      h6.title
+                        span USD 5.000
+                      h6.title
+                        span USD 15.000
+                    .progress(style='color:'+item.color)
+                      .determinate.progress-linear(style='width:'+item.progress+'%; background-color:'+item.color)
+

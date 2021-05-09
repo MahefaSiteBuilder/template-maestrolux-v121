@@ -1,0 +1,60 @@
+extends ../layouts/app.pug
+
+block variables
+  - var pageTitle = " Home Page"
+block content
+  div
+    #home
+    .main-wrap
+      include ../components/header/header.pug
+      // ##### HEADER #####
+      +header(false)
+      // ##### END HEADER #####
+
+      main.container-wrap
+        // ##### BANNER #####
+        section#banner
+          include ../components/banner.pug
+        // ##### END BANNER #####
+        // ##### COUNTER #####
+        section#counter
+          include ../components/counter.pug
+        // ##### END COUNTER #####
+        // ##### FEATURE #####
+        section#feature.space-top-short
+          include ../components/feature.pug
+        // ##### END FEATURE #####
+        // ##### SHOWCASE #####
+        section#showcase
+          include ../components/showcase.pug
+        // ##### END SHOWCASE #####
+        // ##### TESTIMONIALS #####
+        section#testimonials
+          include ../components/testimonials.pug
+        // ##### END TESTIMONIALS #####
+        // ##### FAQ #####
+        section#faq.space-top-short
+          include ../components/faq.pug
+        // ##### END FAQ #####
+        // ##### COMPANY LOGO #####
+        section#logo_list.space-top-short
+          include ../components/company-logo.pug
+        // ##### END COMPANY LOGO #####
+        // ##### NEWS EVENT #####
+        section#news_event.space-top-short
+          include ../components/news-event.pug
+        // ##### END NEWS EVENT #####
+      // ##### FOOTER #####
+      include ../components/footer/footer-with-deco.pug
+      // ##### END FOOTER #####
+      // ##### PAGE NAV #####
+      .hidden-md-down
+        include ../components/page-nav.pug
+      // ##### END PAGE NAV #####
+      // ##### NOTIFICATION #####
+      .hidden-md-down
+        include ../components/notification.pug
+      // ##### END NOTIFICATION #####
+  script(src=assets + "/js/vendors/particles/particles-spray.js")
+        
+

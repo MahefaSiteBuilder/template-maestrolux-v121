@@ -1,0 +1,103 @@
+$cross-deco: '../images/architect/cross-deco-light.png';
+
+.general-card {
+  position: relative;
+  width: 270px;
+  height: 345px;
+  &.card {
+    overflow: visible;
+  }
+  figure {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      min-height: 100%
+    }
+  }
+  .desc {
+    width: 235px;
+    position: absolute;
+    bottom: $spacing3 * -1;
+    @include left(20px);
+    padding: 20px;
+    backdrop-filter: saturate(90%) blur(10px);
+    @include use-theme(background, rgba(255, 255, 255, 0.7), rgba(66, 66, 66, 0.7));
+    @include shadow8;
+    &.card {
+      overflow: visible;
+    }
+    h6 {
+      font-family: "Lato", sans-serif !important;
+      margin-bottom: $spacing2;
+      font-weight: $font-bold
+    }
+  }
+  .button {
+    bottom: -36px;
+    margin: 0 auto;
+    width: 120px;
+  }
+}
+
+.profile-card {
+  @include palette-text-secondary;
+  text-transform: capitalize;
+  margin: 0 auto $spacing5;
+  @include breakpoints-up(sm) {
+    width: 275px;
+    margin-bottom: $spacing10
+  }
+  h5 {
+    margin-top: $spacing2;
+    @include palette-text-primary;
+  }
+  .paper {
+    @include use-theme(background-image, url(../images/architect/bg-team.jpg), url(../images/architect/bg-team-dark.jpg));
+    background-repeat: repeat;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 270px;
+    &.card {
+      flex-direction: row;
+      @include breakpoints-up(sm) {
+        overflow: visible;
+      }
+    }
+    @include breakpoints-up(sm) {
+      width: 215px;
+    }
+    @include breakpoints-down(xs) {
+      overflow: hidden;
+      height: 180px;
+    }
+    img {
+      position: relative;
+      z-index: 10;
+      @include breakpoints-up(sm) {
+        height: 315px;
+        @include margin-left($spacing5)
+      }
+      @include breakpoints-down(xs) {
+        height: 100%;
+        margin: 0 auto;
+        top: $spacing1
+      }
+    }
+    &:after {
+      content: "";
+      width: 190px;
+      height: 215px;
+      background: url($cross-deco) repeat transparent 15px -15px;
+      position: absolute;
+      bottom: 0;
+      @include right($spacing10 * -1);
+      @include breakpoints-down(xs) {
+        display: none
+      }
+    }
+  }
+}

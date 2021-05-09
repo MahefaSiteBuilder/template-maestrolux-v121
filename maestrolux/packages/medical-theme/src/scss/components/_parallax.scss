@@ -1,0 +1,96 @@
+.parallax-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  z-index: 0;
+  @include breakpoints-down(md) {
+    display: none;
+  }
+
+  .inner-parallax {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    display: block;
+    .figure {
+      height: 800px;
+      width: 100%;
+      display: block;
+      position: absolute;
+    }
+    .figure > div {
+      height: 800px;
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  .parallax-oval {
+    border-radius: 50%;
+    left: -12%;
+    position: absolute;
+    @include breakpoints-up(xl) {
+      display: none
+    }
+  }
+
+  .parallax-primary {
+    @include use-theme(background-color, $palette-primary-light, $palette-primary-dark);
+    width: 700px;
+    height: 700px;
+    opacity: 0.2;
+  }
+
+  .banner {
+    .parallax-primary {
+      @include right(240px);
+      top: 110px;
+    }
+  }
+
+  .about {
+    top: 350px;
+    .parallax-primary {
+      top: 190px;
+    }
+  }
+
+  &.dots-wrap {
+    img {
+      opacity: 0.3;
+      width: 600px;
+      height: 600px;
+    }
+  }
+
+  .testi {
+    top: -400px;
+    @include left(50px)
+  }
+
+  .parallax-dot {
+    .theme--dark & {
+      fill: $dark-text-hint
+    } 
+    .theme--light & {
+      fill: $light-text-hint
+    } 
+    width: 845px;
+    height: 1099px;
+    opacity: 0.2;
+    top: 90px;
+    @include left(10px);
+    transform: scale(0.5);
+    position: absolute;
+    [dir="rtl"] & {
+      transform-origin: top right;
+    }
+    [dir="ltr"] & {
+      transform-origin: top left;
+    }
+  }
+}

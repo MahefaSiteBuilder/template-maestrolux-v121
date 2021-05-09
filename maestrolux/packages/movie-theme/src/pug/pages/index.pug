@@ -1,0 +1,73 @@
+extends ../layouts/app.pug
+
+block variables
+  - var pageTitle = " Home Page"
+block content
+  div
+    #home
+    .main-wrap
+      include ../components/header/header.pug
+      // ##### HEADER #####
+      +header(false)
+      // ##### END HEADER #####
+      
+      main.container-wrap
+        // ##### BANNER #####
+        section#banner
+          include ../components/video-banner.pug
+        // ##### END BANNER #####
+        
+        // ##### PROMOTION #####
+        section#promotions
+          include ../components/promotions.pug
+        // ##### END PROMOTION #####
+        
+        // ##### FEATURED #####
+        section#featured.space-top
+          include ../components/featured.pug
+        // ##### END FEATURED #####
+        
+        // ##### TRENDING #####
+        section#trending.space-top
+          include ../components/trending.pug
+        // ##### END TRENDING #####
+        
+        // ##### CATEGORIES #####
+        section#top.space-top
+          include ../components/categories.pug
+        // ##### END CATEGORIES #####
+        
+        // ##### ALL CATEGORIES #####
+        section#all.space-top-short
+          include ../components/all-categories.pug
+        // ##### END ALL CATEGORIES #####
+        
+        // ##### PRICING #####
+        section#pricing.space-top
+          include ../components/pricing-plan.pug
+        // ##### END PRICING #####
+        
+        // ##### FAQ #####
+        section#faq.space-top
+          include ../components/faq.pug
+        // ##### END FAQ #####
+        
+        // ##### NEWS EVENT #####
+        section#news.space-top-short
+          include ../components/news-event.pug
+        // ##### NEWS EVENT #####
+      
+      // ##### fOOTER #####
+      #footer
+        include ../components/footer/footer-with-deco.pug
+      // ##### END fOOTER #####
+      
+      // ##### PAGE-NAV #####
+      .hidden-sm-down
+        include ../components/page-nav.pug
+      // ##### END PAGE-NAV #####
+      
+      // ##### NOTIFICATION #####
+      .hidden-sm-down
+        include ../components/notification.pug
+      // ##### END NOTIFICATION #####

@@ -1,0 +1,126 @@
+$green-buble: '../images/medical/green_buble.png';
+$blue-buble: '../images/medical/blue_buble.png';
+$red-buble: '../images/medical/red_buble.png';
+
+#our-expertise {
+  .root {
+    position: relative;
+    @include breakpoints-down(sm) {
+      text-align: center;
+    }
+    @include breakpoints-down(xs) {
+      h4 {
+        margin-bottom: $spacing3
+      }
+    }
+  }
+
+  .background {
+    width: 560px;
+    height: 560px;
+    top: $spacing10 * 11;
+    @include left(20%);
+    position: absolute;
+    transform: scale(3);
+  }
+
+  .decoration {
+    width: 600px;
+    height: 600px;
+    top: -150px;
+    right: -150px;
+    border-radius: 50%;
+    border: 1px solid;
+    @include use-theme(border-color, $palette-primary-light, $palette-primary-dark);
+    position: absolute;
+  }
+
+  .desc {
+    line-height: 32px;
+    padding: spacing(0, 4);
+    @include breakpoints-up(sm) {
+      padding: spacing(3, 4);
+    }
+  }
+
+  .parallax-scene {
+    position: absolute;
+    top: 20px;
+    [dir="ltr"] & {
+      left: 50px;
+    }
+    [dir="rtl"] & {
+      left: -50px;
+    }
+    transform-origin: top;
+    width: 1200px;
+    span {
+      background-size: 100%;
+      display: block;
+      position: relative;
+    }
+    @include breakpoints-down(md) {
+      display: none
+    }
+  }
+
+  .icon-green {
+    top: -200px;
+    @include left(-80px);
+    width: 320px;
+    height: 600px;
+    background: url($green-buble) no-repeat
+  }
+
+  .icon-red {
+    width: 560px;
+    height: 560px;
+    @include left(-190px);
+    top: -100px;
+    background: url($red-buble) no-repeat
+  }
+
+  .icon-blue {
+    width: 560px;
+    height: 560px;
+    @include left(-250px);
+    top: -80px;
+    background: url($blue-buble) no-repeat
+  }
+
+  .running-tag {
+    position: relative;
+    height: 130px;
+    padding: spacing(0, 4);
+    .slick-active {
+      .tag-item {
+        background: $palette-primary-main;
+        color: $palette-common-white;
+        border-color: $palette-primary-main
+      }
+    }
+  }
+
+  .tag-item {
+    display: inline-block;
+    border-radius: 40px;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in;
+    border: 1px solid;
+    font-size: 14px;
+    @include palette-divider;
+    @include margin-right($spacing1);
+    margin-bottom: 17px;
+    padding: $spacing1 / 2;
+    @include breakpoints-up(md) {
+      padding: spacing(0.5, 4)
+    }
+  }
+
+  .tag-group {
+    display: block;
+    &:focus {
+      outline: none;
+    }
+  }
+}

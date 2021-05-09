@@ -1,0 +1,42 @@
+.root
+  .canvas-wrap
+    .overlay-banner
+      .deco-inner
+        #particles_backgrond.particle-background
+  .container.fixed-width
+    .banner-wrap
+      .row.spacing6.align-items-center
+        .col-md-8.pa-6
+          .text
+            h4.use-text-title2 #{$t.crypto_landing.banner_title}
+            p.use-text-subtitle2 #{$t.crypto_landing.banner_subtitle}
+          .btn-area
+            |
+            |
+            a.button.btn.secondary.btn-large.mq-xs-down.waves-effect(href="#" data-class="block") #{$t.crypto_landing.banner_getstarted}
+            |
+            |
+            a.btn.btn-outlined.btn-large.invert.mq-xs-down.waves-effect(href="#" data-class="block") #{$t.crypto_landing.banner_viewmarket}
+            |
+            |
+        .col-md-4.pa-6
+          figure.object-art
+            |
+            |
+            img(src=assets+'/images/crypto/banner-art.png' alt='illustration')/
+            |
+            |
+    .deco-bottom.back
+      |
+      |
+      svg
+        include svg/deco-banner.pug
+      |
+      |
+    .deco-bottom.cover
+      |
+      |
+      svg
+        include svg/deco-banner.pug
+      |
+      |

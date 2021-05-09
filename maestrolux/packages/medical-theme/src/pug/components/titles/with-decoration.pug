@@ -1,0 +1,9 @@
+mixin title-deco(text, bg='')
+  div
+    .title-deco
+      h3(style="background-image: url("+bg+")" class=bg ? 'bg-img' : '')
+        |
+        |
+        span #{text}
+        |
+        |

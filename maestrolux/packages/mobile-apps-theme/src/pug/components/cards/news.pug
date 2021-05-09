@@ -1,0 +1,18 @@
+mixin news-card(img, type, caption, text, lp)
+  .card-news(class=type + (lp ? " land2pot" : ""))
+    figure
+      |
+      |
+      img(src=img alt='thumb')/
+      |
+      |
+    .card.desc
+      .text
+        p.type.caption #{caption}
+        p #{text}
+      div
+        |
+        |
+        a.btn.btn-flat.waves-effect Read more
+        |
+        |

@@ -1,0 +1,61 @@
+extends ../layouts/fashion-wrap/app.pug
+
+block variables
+  - var pageTitle = " - Home Page"
+block content
+  div
+    #home
+    .main-wrap
+      include ../../../../fashion-theme/src/pug/components/header/header.pug
+      // ##### HEADER #####
+      +header(false)
+      // ##### END HEADER #####
+      main.container-wrap
+        // ##### BANNER #####
+        section#banner
+          include ../../../../fashion-theme/src/pug/components/video-banner.pug
+        // ##### END BANNER #####
+        // ##### PROMOTION #####
+        section#promotions
+          include ../../../../fashion-theme/src/pug/components/promotions.pug
+        // ##### END PROMOTION #####
+        // ##### NEW-PRODUCTS #####
+        section#all-new.space-top
+          include ../../../../fashion-theme/src/pug/components/new-products.pug
+        // ##### END NEW-PRODUCTS #####
+        // ##### TRENDING #####
+        section#trending.space-top
+          include ../../../../fashion-theme/src/pug/components/trending.pug
+        // ##### END TRENDING #####
+        // ##### CATEGORIES #####
+        section#categories.space-top
+          include ../../../../fashion-theme/src/pug/components/categories.pug
+        // ##### END CATEGORIES #####
+        // ##### FEATURED #####
+        section#featured.space-top-short
+          include ../../../../fashion-theme/src/pug/components/featured-products.pug
+        // ##### END FEATURED #####
+        // ##### TESTIMONIAL #####
+        section#testimonials.space-top
+          include ../../../../fashion-theme/src/pug/components/testimonials.pug
+        // ##### END TESTIMONIAL #####
+        // ##### BLOG #####
+        section#blog
+          include ../../../../fashion-theme/src/pug/components/blog.pug
+        // ##### END BLOG #####
+        // ##### FEATURE #####
+        section#feature.space-top-short
+          include ../../../../fashion-theme/src/pug/components/feature.pug
+        // ##### END FEATURE #####
+      // ##### FOOTER #####
+      section#footer.space-top
+        include ../../../../fashion-theme/src/pug/components/footer.pug
+      // ##### END FOOTER #####
+      // ##### PAGE-NAV #####
+      .hidden-sm-down
+        include ../../../../fashion-theme/src/pug/components/page-nav.pug
+      // ##### END PAGE-NAV #####
+      // ##### NOTIFICATION #####
+      .hidden-sm-down
+        include ../../../../fashion-theme/src/pug/components/notification.pug
+      // ##### END NOTIFICATION #####

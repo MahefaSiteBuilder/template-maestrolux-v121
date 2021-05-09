@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Alexstrap Fashion - HTML5 Bootstrap Landing Page Template">
+  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"><!-- Favicon-->
+  <link rel="shortcut icon" href="../../assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="../../assets/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../../assets/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../../assets/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../../assets/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../../assets/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../../assets/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../../assets/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../../assets/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../../assets/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../../assets/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../../assets/favicons/ms-icon-144x144.png"><!-- PWA primary color-->
+  <meta name="theme-color" content="#546E7A">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"><!-- Facebook-->
+  <meta property="author" content="luxi">
+  <meta property="og:site_name" content="alexstrap.ux-maestro.com">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website"><!-- Twitter-->
+  <meta property="twitter:site" content="luxi.ux-maestro.com">
+  <meta property="twitter:domain" content="luxi.ux-maestro.com">
+  <meta property="twitter:creator" content="luxi">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:image:src" content="../../assets/images/logo.png">
+  <meta property="og:url" content="alexstrap.ux-maestro.com/fashion">
+  <meta property="og:title" content="Fashion">
+  <meta property="og:description" content="Alexstrap Fashion - HTML5 Bootstrap Landing Page Template">
+  <meta name="twitter:site" content="alexstrap.ux-maestro.com/fashion">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="/images/fashion-logo.png">
+  <meta property="og:image" content="/images/fashion-logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <title>Fashion - Home Page </title><!-- Styles-->
+  <!-- Put the 3rd/plugins css here-->
+  <link href="../../assets/css/vendors/normalize.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/bootstrap.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/jquery.youtubebackground.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/materialize.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/hamburger-menu.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/jquery.animateSlider.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/animate.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/animate-extends.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/slick-carousel/slick.css" rel="stylesheet">
+  <link href="../../assets/css/vendors/slick-carousel/slick-theme.css" rel="stylesheet">
+  <link href="../../assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="../../assets/images/loading.gif" alt="loading"></div>
+  <div class="m-application theme--light transition-page" id="app">
+    <div class="loading"></div>
+    <div class="m-content grayscale grayscale-var" id="main-wrap">
+      <div>
+        <div id="home"></div>
+        <div class="main-wrap">
+          <div class="sidenav mobile-nav" id="slide-menu">
+            <ul class="collection">
+              <li class="collection-item" style="animation-duration: 0.25s"><a class="sidenav-close waves-effect menu-list" href="#all-new">tudo novo</a></li>
+              <li class="collection-item" style="animation-duration: 0.5s"><a class="sidenav-close waves-effect menu-list" href="#trending">tendências</a></li>
+              <li class="collection-item" style="animation-duration: 0.75s"><a class="sidenav-close waves-effect menu-list" href="#categories">categorias</a></li>
+              <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect menu-list" href="#featured">destaque</a></li>
+              <li class="collection-item" style="animation-duration: 1.25s"><a class="sidenav-close waves-effect menu-list" href="#testimonials">depoimentos</a></li>
+              <li class="collection-item" style="animation-duration: 1.5s"><a class="sidenav-close waves-effect menu-list" href="#blog">blogue</a></li>
+              <li class="collection-item" style="animation-duration: 1.5s"><a class="waves-effect menu-list"></a></li>
+            </ul>
+          </div><!-- ##### HEADER #####-->
+          <header class="app-bar header" id="header">
+            <div class="container fixed-width-md-up">
+              <div class="header-content">
+                <nav class="nav-menu"><button class="mobile-menu btn-icon waves-effect hamburger hamburger--spin show-sm-down" id="mobile_menu">
+                    <span class="hamburger-box"><span class="bar hamburger-inner"></span></span>
+                  </button>
+                  <div class="logo scrollnav">
+                    <a href="#banner"><img src="../../assets/images/fashion-logo.png" alt="logo"></a>
+                  </div>
+                  <div class="scrollactive-nav show-md-up scrollnav">
+                    <ul>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#all-new">tudo novo</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#trending">tendências</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#categories">categorias</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#featured">destaque</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#testimonials">depoimentos</a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href="#blog">blogue</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <nav>
+                  <div class="menu-setting">
+                    <div class="setting">
+                      <button class="btn-icon waves-effect btn-small m-2 dropdown-trigger" data-target="dropdown_config" type="button" data-align="left">
+                        <i class="icon material-icons" id="setting_icon">settings</i>
+                      </button>
+                      <div class="dropdown-content" id="dropdown_config">
+                        <ul class="collection with-header">
+                          <li class="collection-header">modo de tema</li>
+                          <li class="collection-item no-hover pl-4">
+                            <div class="flex-menu">
+                              <div class="switch">
+                                <label>luz<input id="theme_switcher" type="checkbox"><span class="lever"></span>escuro</label>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="dropdown-divider"></div>
+                        <ul class="collection with-header lang-menu" id="lang_menu">
+                          <li class="collection-header">língua</li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="ar" href="#">
+                              <div class="flag circle"><i class="ar"></i></div>
+                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿العربيّة</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="de" href="#">
+                              <div class="flag circle"><i class="de"></i></div>
+                              <span class="content lang-opt text-truncate">Deutsch</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="en" href="#">
+                              <div class="flag circle"><i class="en"></i></div>
+                              <span class="content lang-opt text-truncate">English</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="id" href="#">
+                              <div class="flag circle"><i class="id"></i></div>
+                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿Bahasa Indonesia</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="pt" href="#">
+                              <div class="flag circle"><i class="pt"></i></div>
+                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿Português</span>
+                            </a>
+                          </li>
+                          <li class="collection-item lang-list waves-effect avatar">
+                            <a data-lang="zh" href="#">
+                              <div class="flag circle"><i class="zh"></i></div>
+                              <span class="content lang-opt text-truncate">简体中文</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </header><!-- ##### END HEADER #####-->
+          <main class="container-wrap">
+            <!-- ##### BANNER #####-->
+            <section id="banner">
+              <div class="root">
+                <div class="video">
+                  <div class="overlay"></div>
+                  <img class="show-md-down" src="https://via.placeholder.com/1280x854/000000/FFFFFF" alt="cover" />
+                  <img id="banner_cover" src="https://via.placeholder.com/1280x854/000000/FFFFFF" alt="cover" />
+                  <div class="show-lg-up" id="youtube"></div>
+                  <div class="caption">
+                    <div class="container max-md">
+                      <div class="hidden-sm-down">
+                        <button class="btn-icon btn-play waves-effect hide" id="btn_play">
+                          <i class="ion-ios-pause-outline pause"></i>
+                          <i class="ion-ios-play-outline play"></i>
+                        </button>
+                      </div>
+                      <h6 class="use-text-subtitle">Inspire seu estilo. Todos com desconto de 20 USD</h6>
+                      <h2 class="use-text-title">#BEanICON</h2>
+                      <div class="scrollactive-nav scrollnav">
+                        <a class="btn-icon arrow anchor-link waves-effect" href="#promotions">
+                          <i class="material-icons">arrow_downward</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END BANNER #####-->
+            <!-- ##### PROMOTION #####-->
+            <section id="promotions">
+              <div class="root">
+                <div class="container">
+                  <div class="slider-wrap">
+                    <div class="anim-slider">
+                      <div class="slide slider-content anim-slide">
+                        <section class="inner item odd">
+                          <div class="inner-bg">
+                            <div class="row">
+                              <div class="col-md-4 pa-0">
+                                <div class="text">
+                                  <div class="hidden-md-up">
+                                    <div class="background">
+                                      <figure>
+                                        <img src="https://via.placeholder.com/700x522/9fa5ad/FFFFFF" alt="promotion" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                  <h2 class="use-text-title"><span class="use-text-subtitle2">FIM DE SEASSON</span>SALE</h2>
+                                  <h4 class="use-text-subtitle">Até 70% de desconto</h4>
+                                  <article class="desc">
+                                    <h6 class="use-text-paragraph">Pense em camisetas e jeans, shorts e óculos de sol de verão e outras necessidades diárias.</h6>
+                                  </article>
+                                  <a class="btn-outlined button" href="#">Ver detalhes
+                                    <i class="material-icons icon-btn">arrow_right</i>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-md-8 pa-0">
+                                <div class="hidden-sm-down">
+                                  <div class="image">
+                                    <figure>
+                                      <img src="https://via.placeholder.com/700x522/9fa5ad/FFFFFF" alt="promotion" />
+                                    </figure>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                      <div class="slide slider-content anim-slide">
+                        <section class="inner item even">
+                          <div class="inner-bg">
+                            <div class="row">
+                              <div class="col-md-4 pa-0">
+                                <div class="text">
+                                  <div class="hidden-md-up">
+                                    <div class="background">
+                                      <figure>
+                                        <img src="https://via.placeholder.com/700x522/ada29f/FFFFFF" alt="promotion" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                  <h2 class="use-text-title"><span class="use-text-subtitle2">FIM DE SEASSON</span>SALE</h2>
+                                  <h4 class="use-text-subtitle">Até 70% de desconto</h4>
+                                  <article class="desc">
+                                    <h6 class="use-text-paragraph">Pense em camisetas e jeans, shorts e óculos de sol de verão e outras necessidades diárias.</h6>
+                                  </article>
+                                  <a class="btn-outlined button" href="#">Ver detalhes
+                                    <i class="material-icons icon-btn">arrow_right</i>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-md-8 pa-0">
+                                <div class="hidden-sm-down">
+                                  <div class="image">
+                                    <figure>
+                                      <img src="https://via.placeholder.com/700x522/ada29f/FFFFFF" alt="promotion" />
+                                    </figure>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                      <div class="slide slider-content anim-slide">
+                        <section class="inner item odd">
+                          <div class="inner-bg">
+                            <div class="row">
+                              <div class="col-md-4 pa-0">
+                                <div class="text">
+                                  <div class="hidden-md-up">
+                                    <div class="background">
+                                      <figure>
+                                        <img src="https://via.placeholder.com/700x522/9fa5ad/FFFFFF" alt="promotion" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                  <h2 class="use-text-title"><span class="use-text-subtitle2">FIM DE SEASSON</span>SALE</h2>
+                                  <h4 class="use-text-subtitle">Até 70% de desconto</h4>
+                                  <article class="desc">
+                                    <h6 class="use-text-paragraph">Pense em camisetas e jeans, shorts e óculos de sol de verão e outras necessidades diárias.</h6>
+                                  </article>
+                                  <a class="btn-outlined button" href="#">Ver detalhes
+                                    <i class="material-icons icon-btn">arrow_right</i>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-md-8 pa-0">
+                                <div class="hidden-sm-down">
+                                  <div class="image">
+                                    <figure>
+                                      <img src="https://via.placeholder.com/700x522/9fa5ad/FFFFFF" alt="promotion" />
+                                    </figure>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                      <div class="slide slider-content anim-slide">
+                        <section class="inner item even">
+                          <div class="inner-bg">
+                            <div class="row">
+                              <div class="col-md-4 pa-0">
+                                <div class="text">
+                                  <div class="hidden-md-up">
+                                    <div class="background">
+                                      <figure>
+                                        <img src="https://via.placeholder.com/700x522/ada29f/FFFFFF" alt="promotion" />
+                                      </figure>
+                                    </div>
+                                  </div>
+                                  <h2 class="use-text-title"><span class="use-text-subtitle2">FIM DE SEASSON</span>SALE</h2>
+                                  <h4 class="use-text-subtitle">Até 70% de desconto</h4>
+                                  <article class="desc">
+                                    <h6 class="use-text-paragraph">Pense em camisetas e jeans, shorts e óculos de sol de verão e outras necessidades diárias.</h6>
+                                  </article>
+                                  <a class="btn-outlined button" href="#">Ver detalhes
+                                    <i class="material-icons icon-btn">arrow_right</i>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-md-8 pa-0">
+                                <div class="hidden-sm-down">
+                                  <div class="image">
+                                    <figure>
+                                      <img src="https://via.placeholder.com/700x522/ada29f/FFFFFF" alt="promotion" />
+                                    </figure>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                      <div class="anim-arrows">
+                        <a class="anim-arrows-prev prev" href="#">
+                          <i class="material-icons arrow-icon">arrow_back</i>
+                        </a>
+                        <a class="anim-arrows-next next" href="#">
+                          <i class="material-icons arrow-icon">arrow_forward</i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END PROMOTION #####-->
+            <!-- ##### NEW-PRODUCTS #####-->
+            <section class="space-top" id="all-new">
+              <div class="root">
+                <div class="container fixed0width-md-up">
+                  <div class="row spacing3">
+                    <div class="col-md-3">
+                      <div class="title-main align-left">
+                        <h4 class="primary-title display-1">New</h4>
+                        <h4 class="secondary-title display-1">Arrivals</h4>
+                      </div>
+                      <p class="use-text-paragrpah">Apresentando uma seleção de peças de vestuário e acessórios que foram cuidadosamente escolhidos por sua excelente qualidade e formas impecáveis.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                      <div class="product-ratting">
+                        <a class="btn-wrap waves-effect" href="detail-product.html">
+                          <span class="figure"><img src="https://via.placeholder.com/300x372/fdffa4/757575" alt="text"/><span class="figcaption">Sale</span></span>
+                          <span class="ratting">
+<i class="material-icons star-icon" title="1">star</i>
+
+<i class="material-icons star-icon" title="2">star</i>
+
+<i class="material-icons star-icon" title="3">star</i>
+
+<i class="material-icons star-icon" title="4">star</i>
+
+</span>
+                          <span class="text">It is a long established</span>
+                          <span class="use-text-subtitle2"><strong>$90.00</strong></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                      <div class="product-ratting">
+                        <a class="btn-wrap waves-effect" href="detail-product.html">
+                          <span class="figure"><img src="https://via.placeholder.com/300x372/fdffa4/757575" alt="text"/><span class="figcaption">Sale</span></span>
+                          <span class="ratting">
+<i class="material-icons star-icon" title="1">star</i>
+
+<i class="material-icons star-icon" title="2">star</i>
+
+<i class="material-icons star-icon" title="3">star</i>
+
+<i class="material-icons star-icon" title="4">star</i>
+
+<i class="material-icons star-icon" title="5">star</i>
+
+</span>
+                          <span class="text">It is a long established</span>
+                          <span class="use-text-subtitle2"><strong>$90.00</strong></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                      <div class="product-ratting">
+                        <a class="btn-wrap waves-effect" href="detail-product.html">
+                          <span class="figure"><img src="https://via.placeholder.com/300x372/fdffa4/757575" alt="text"/><span class="figcaption">Sale</span></span>
+                          <span class="ratting">
+<i class="material-icons star-icon" title="1">star</i>
+
+<i class="material-icons star-icon" title="2">star</i>
+
+<i class="material-icons star-icon" title="3">star</i>
+
+<i class="material-icons star-icon" title="4">star</i>
+
+<i class="material-icons star-icon" title="5">star</i>
+
+</span>
+                          <span class="text">It is a long established</span>
+                          <span class="use-text-subtitle2"><strong>$90.00</strong></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END NEW-PRODUCTS #####-->
+            <!-- ##### TRENDING #####-->
+            <section class="space-top" id="trending">
+              <div class="root">
+                <div class="hidden-xs-down">
+                  <div class="grid-25">
+                    <img src="https://via.placeholder.com/320x370/ffa4a4/FFFFFF" alt="trending" />
+                    <a class="overlay waves-effect" href="javascript:void(0)">
+                      <h5 class="headline">Autumn Show</h5>
+                    </a>
+                  </div>
+                  <div class="grid-50">
+                    <img src="https://via.placeholder.com/700x360/ffd7a4/757575" alt="trending" />
+                    <a class="overlay waves-effect" href="javascript:void(0)">
+                      <h5 class="headline">New Trending</h5>
+                      <h3 class="display-2">2020</h3>
+                    </a>
+                  </div>
+                  <div class="grid-25">
+                    <img src="https://via.placeholder.com/320x370/d0d4e6/757575" alt="trending" />
+                    <a class="overlay waves-effect" href="javascript:void(0)">
+                      <h5 class="headline">Man Collection</h5>
+                    </a>
+                  </div>
+                </div>
+                <div class="hidden-sm-up">
+                  <div class="slick-carousel" id="trending_carousel">
+                    <div class="item">
+                      <div class="grid-25">
+                        <img src="https://via.placeholder.com/320x370/ffa4a4/FFFFFF" alt="trending" />
+                        <a class="overlay waves-effect" href="javascript:void(0)">
+                          <h5 class="headline">Autumn Show</h5>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="grid-50">
+                        <img src="https://via.placeholder.com/700x360/ffd7a4/757575" alt="trending" />
+                        <a class="overlay waves-effect" href="javascript:void(0)">
+                          <h5 class="headline">New Trending</h5>
+                          <h3 class="display-2">2020</h3>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="grid-25">
+                        <img src="https://via.placeholder.com/320x370/d0d4e6/757575" alt="trending" />
+                        <a class="overlay waves-effect" href="javascript:void(0)">
+                          <h5 class="headline">Man Collection</h5>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END TRENDING #####-->
+            <!-- ##### CATEGORIES #####-->
+            <section class="space-top" id="categories">
+              <div class="root">
+                <div class="container fixed-width-lg-up">
+                  <div class="row spacing3">
+                    <div class="col-md-6 pa-3">
+                      <div class="title-main align-left">
+                        <h4 class="primary-title display-1">Top</h4>
+                        <h4 class="secondary-title display-1">Categories</h4>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 pa-3">
+                      <a class="category full button-base waves-effect" style="background-color: #eddacf">
+                        <img src="https://i.ibb.co/80Q0T7H/shoes.png" alt="Woman Shoes" />
+                        <span class="property"><span class="title-category use-text-title2">Woman Shoes</span><span class="total use-text-paragraph">24 Items</span></span>
+                      </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 pa-3">
+                      <a class="category full button-base waves-effect" style="background-color: #eddacf">
+                        <img src="https://i.ibb.co/80Q0T7H/shoes.png" alt="Woman bag" />
+                        <span class="property"><span class="title-category use-text-title2">Woman bag</span><span class="total use-text-paragraph">24 Items</span></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row spacing3">
+                    <div class="col-md-6 py-0 px-3">
+                      <div class="category top-over" style="background-color: #D9D8C9"><img src="https://i.ibb.co/CH5gQ02/man.png" alt="Men Casual" />
+                        <span class="property">
+<span class="title-category use-text-title2">Men Casual</span><span class="total use-text-paragraph">24 Items</span><span class="hidden-xs-down"><a class="btn btn-outlined secondary-text button block waves-effect">See Detail</a></span>
+                        </span></div>
+                      <div class="row spacing3">
+                        <div class="col-md-6 col-sm-6 py-3 px-0 ps-sm-0 pe-sm-3">
+                          <a class="category full button-base waves-effect" style="background-color: #e7ddd9">
+                            <img src="https://i.ibb.co/80Q0T7H/shoes.png" alt="Men Watch" />
+                            <span class="property"><span class="title-category use-text-title2">Men Watch</span><span class="total use-text-paragraph">24 Items</span></span>
+                          </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 py-3 px-0 ps-sm-3 pe-sm-0">
+                          <a class="category full button-base waves-effect" style="background-color: #f2dede">
+                            <img src="https://i.ibb.co/80Q0T7H/shoes.png" alt="Men Shoes" />
+                            <span class="property"><span class="title-category use-text-title2">Men Shoes</span><span class="total use-text-paragraph">24 Items</span></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 py-0 px-3">
+                      <div class="category bottom-over" style="background-color: #f3f7bc"><img src="https://i.ibb.co/7z9WN0t/woman.png" alt="Woman Sport" />
+                        <span class="property">
+<span class="title-category use-text-title2">Woman Sport</span><span class="total use-text-paragraph">24 Items</span><span class="hidden-xs-down"><a class="btn btn-outlined secondary-text button block waves-effect">See Detail</a></span>
+                        </span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END CATEGORIES #####-->
+            <!-- ##### FEATURED #####-->
+            <section class="space-top-short" id="featured">
+              <div class="root">
+                <div class="title-main align-center">
+                  <h4 class="primary-title display-1">Featured</h4>
+                  <h4 class="secondary-title display-1">Products</h4>
+                </div>
+                <div class="carousel-wrap"><button class="btn nav prev waves-effect" id="prev_product"><i class="material-icons">arrow_back</i></button><button class="btn nav next waves-effect" id="next_product"><i class="material-icons">arrow_forward</i></button>
+                  <div class="slick-carousel" id="product_carousel">
+                    <div class="item">
+                      <a class="simple-thumb waves-effect" href="detail-product.html">
+                        <span class="wrap"><span class="figure"><img src="https://i.ibb.co/931mPdz/bag.png" alt="title"/></span>
+                        <span class="text">Vivamus Sit Smet</span>
+                        <span class="price"><strong>$780.00</strong></span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="simple-thumb waves-effect" href="detail-product.html">
+                        <span class="wrap"><span class="figure"><img src="https://i.ibb.co/931mPdz/bag.png" alt="title"/></span>
+                        <span class="text">Vivamus Sit Smet</span>
+                        <span class="price"><strong>$780.00</strong></span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="simple-thumb waves-effect" href="detail-product.html">
+                        <span class="wrap"><span class="figure"><img src="https://i.ibb.co/931mPdz/bag.png" alt="title"/></span>
+                        <span class="text">Vivamus Sit Smet</span>
+                        <span class="price"><strong>$780.00</strong></span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="simple-thumb waves-effect" href="detail-product.html">
+                        <span class="wrap"><span class="figure"><img src="https://i.ibb.co/931mPdz/bag.png" alt="title"/></span>
+                        <span class="text">Vivamus Sit Smet</span>
+                        <span class="price"><strong>$780.00</strong></span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="simple-thumb waves-effect" href="detail-product.html">
+                        <span class="wrap"><span class="figure"><img src="https://i.ibb.co/931mPdz/bag.png" alt="title"/></span>
+                        <span class="text">Vivamus Sit Smet</span>
+                        <span class="price"><strong>$780.00</strong></span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="simple-thumb waves-effect" href="detail-product.html">
+                        <span class="wrap"><span class="figure"><img src="https://i.ibb.co/931mPdz/bag.png" alt="title"/></span>
+                        <span class="text">Vivamus Sit Smet</span>
+                        <span class="price"><strong>$780.00</strong></span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="simple-thumb waves-effect" href="detail-product.html">
+                        <span class="wrap"><span class="figure"><img src="https://i.ibb.co/931mPdz/bag.png" alt="title"/></span>
+                        <span class="text">Vivamus Sit Smet</span>
+                        <span class="price"><strong>$780.00</strong></span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="simple-thumb waves-effect" href="detail-product.html">
+                        <span class="wrap"><span class="figure"><img src="https://i.ibb.co/931mPdz/bag.png" alt="title"/></span>
+                        <span class="text">Vivamus Sit Smet</span>
+                        <span class="price"><strong>$780.00</strong></span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="simple-thumb waves-effect" href="detail-product.html">
+                        <span class="wrap"><span class="figure"><img src="https://i.ibb.co/931mPdz/bag.png" alt="title"/></span>
+                        <span class="text">Vivamus Sit Smet</span>
+                        <span class="price"><strong>$780.00</strong></span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="simple-thumb waves-effect" href="detail-product.html">
+                        <span class="wrap"><span class="figure"><img src="https://i.ibb.co/931mPdz/bag.png" alt="title"/></span>
+                        <span class="text">Vivamus Sit Smet</span>
+                        <span class="price"><strong>$780.00</strong></span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="simple-thumb waves-effect" href="detail-product.html">
+                        <span class="wrap"><span class="figure"><img src="https://i.ibb.co/931mPdz/bag.png" alt="title"/></span>
+                        <span class="text">Vivamus Sit Smet</span>
+                        <span class="price"><strong>$780.00</strong></span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a class="simple-thumb waves-effect" href="detail-product.html">
+                        <span class="wrap"><span class="figure"><img src="https://i.ibb.co/931mPdz/bag.png" alt="title"/></span>
+                        <span class="text">Vivamus Sit Smet</span>
+                        <span class="price"><strong>$780.00</strong></span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END FEATURED #####-->
+            <!-- ##### TESTIMONIAL #####-->
+            <section class="space-top" id="testimonials">
+              <div class="root">
+                <div class="img-slider">
+                  <div class="slick-carousel slider-testi-image" id="testi_img_carousel">
+                    <div class="item">
+                      <div class="parallax" style="background-image: url(https://via.placeholder.com/640x427/ffd7a4/757575); height: 800px" data-enllax-ratio="0.1"></div>
+                    </div>
+                    <div class="item">
+                      <div class="parallax" style="background-image: url(https://via.placeholder.com/640x427/f54209/FFFFFF); height: 800px" data-enllax-ratio="0.1"></div>
+                    </div>
+                    <div class="item">
+                      <div class="parallax" style="background-image: url(https://via.placeholder.com/640x427/bbe5ff/757575); height: 800px" data-enllax-ratio="0.1"></div>
+                    </div>
+                    <div class="item">
+                      <div class="parallax" style="background-image: url(https://via.placeholder.com/640x427/bbffbe/757575); height: 800px" data-enllax-ratio="0.1"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-slider">
+                  <i class="material-icons icon">format_quote</i>
+                  <nav>
+                    <button class="btn-icon nav-button prev waves-effect" id="prev_testi">
+                      <i class="material-icons">arrow_back</i>
+                    </button>
+                    <button class="btn-icon nav-button next waves-effect" id="next_testi">
+                      <i class="material-icons">arrow_forward</i>
+                    </button>
+                  </nav>
+                  <div>
+                    <h3 class="title-main use-text-title">Depoimentos</h3>
+                    <div class="carousel">
+                      <div class="slick-carousel slider-testi-text" id="testi_text_carousel">
+                        <div class="item">
+                          <p class="use-text-paragraph">Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.</p>
+                          <div class="divider"></div>
+                          <h6 class="use-text-subtitle2">John Doe</h6>
+                          <p class="use-text-paragraph">Chief Digital Officer</p>
+                        </div>
+                        <div class="item">
+                          <p class="use-text-paragraph">Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.</p>
+                          <div class="divider"></div>
+                          <h6 class="use-text-subtitle2">Jean Doe</h6>
+                          <p class="use-text-paragraph">Chief Digital Officer</p>
+                        </div>
+                        <div class="item">
+                          <p class="use-text-paragraph">Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.</p>
+                          <div class="divider"></div>
+                          <h6 class="use-text-subtitle2">Jena Doe</h6>
+                          <p class="use-text-paragraph">Graphic Designer</p>
+                        </div>
+                        <div class="item">
+                          <p class="use-text-paragraph">Sed imperdiet enim ligula, vitae viverra justo porta vel.</p>
+                          <div class="divider"></div>
+                          <h6 class="use-text-subtitle2">Jovelin Doe</h6>
+                          <p class="use-text-paragraph">Senior Graphic Designer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END TESTIMONIAL #####-->
+            <!-- ##### BLOG #####-->
+            <section id="blog">
+              <div class="root">
+                <div class="text-slider">
+                  <h3 class="title-main use-text-title text-center text-sm-left">Do nosso blog</h3>
+                  <div class="carousel">
+                    <div class="slick-carousel slider-blog-text" id="blog_text_carousel">
+                      <div class="item">
+                        <p class="use-text-paragraph">Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.</p><a class="button btn-flat">leia mais</a>
+                      </div>
+                      <div class="item">
+                        <p class="use-text-paragraph">Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.</p><a class="button btn-flat">leia mais</a>
+                      </div>
+                      <div class="item">
+                        <p class="use-text-paragraph">Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.</p><a class="button btn-flat">leia mais</a>
+                      </div>
+                      <div class="item">
+                        <p class="use-text-paragraph">Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.</p><a class="button btn-flat">leia mais</a>
+                      </div>
+                      <div class="item">
+                        <p class="use-text-paragraph">Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.</p><a class="button btn-flat">leia mais</a>
+                      </div>
+                    </div>
+                  </div>
+                  <nav><button class="btn-icon nav-button prev waves-effect" id="prev_blog"><i class="material-icons">arrow_back</i></button><button class="btn-icon nav-button next waves-effect" id="next_blog"><i class="material-icons">arrow_forward</i></button></nav>
+                </div>
+                <div class="img-slider">
+                  <div class="slick-carousel slider-blog-image" id="blog_img_carousel">
+                    <div class="item">
+                      <div class="parallax" style="background-image: url(https://via.placeholder.com/640x427/f8bbff/757575); height: 800px" data-enllax-ratio="0.1"></div>
+                    </div>
+                    <div class="item">
+                      <div class="parallax" style="background-image: url(https://via.placeholder.com/640x427/ac59b5/FFFFFF); height: 800px" data-enllax-ratio="0.1"></div>
+                    </div>
+                    <div class="item">
+                      <div class="parallax" style="background-image: url(https://via.placeholder.com/640x427/35282d/757575); height: 800px" data-enllax-ratio="0.1"></div>
+                    </div>
+                    <div class="item">
+                      <div class="parallax" style="background-image: url(https://via.placeholder.com/640x427/2d803f/FFFFFF); height: 800px" data-enllax-ratio="0.1"></div>
+                    </div>
+                    <div class="item">
+                      <div class="parallax" style="background-image: url(https://via.placeholder.com/640x427/1d3350/FFFFFF); height: 800px" data-enllax-ratio="0.1"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END BLOG #####-->
+            <!-- ##### FEATURE #####-->
+            <section class="space-top-short" id="feature">
+              <div class="root">
+                <div class="container fixed-width">
+                  <div class="row spacing8">
+                    <div class="col-md-4 py-1 px-8">
+                      <i class="icon ion-ios-world"></i>
+                      <div class="divider"></div>
+                      <h5 class="use-text-subtitle">Envio para todo o mundo</h5>
+                      <p class="use-text-paragraph">Serviço de entrega acessível a mais de 210 países e territórios em todo o mundo.</p>
+                    </div>
+                    <div class="col-md-4 py-1 px-8">
+                      <i class="icon ion-ribbon-b"></i>
+                      <div class="divider"></div>
+                      <h5 class="use-text-subtitle">Suporte à qualidade</h5>
+                      <p class="use-text-paragraph">100% produtos originais e garantidos e produtos de alta qualidade</p>
+                    </div>
+                    <div class="col-md-4 py-1 px-8">
+                      <i class="icon ion-android-sync"></i>
+                      <div class="divider"></div>
+                      <h5 class="use-text-subtitle">Troca de retorno</h5>
+                      <p class="use-text-paragraph">Seja qual for o motivo, aproveite os serviços gratuitos de devolução por 30 dias</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END FEATURE #####-->
+          </main><!-- ##### FOOTER #####-->
+          <section class="space-top" id="footer">
+            <footer class="footer">
+              <div class="root">
+                <div class="container max-lg">
+                  <div class="logo">
+                    <img src="../../assets/images/fashion-logo.png" alt="logo" />
+                  </div>
+                  <div class="subscribe">
+                    <h5 class="use-text-subtitle">Inscrever-se na Newsletter</h5>
+                    <div class="form">
+                      <form>
+                        <div class="input-field">
+                          <input class="full-width" type="text" placeholder="Digite seu email aqui">
+                        </div>
+                        <button class="btn-flat button waves-effect">subscrever</button>
+                      </form>
+                    </div>
+                  </div>
+                  <nav>
+                    <ul>
+                      <li><a href="#all-new">tudo novo</a></li>
+                      <li><a href="#trending">tendências</a></li>
+                      <li><a href="#categories">categorias</a></li>
+                      <li><a href="#featured">destaque</a></li>
+                      <li><a href="#testimonials">depoimentos</a></li>
+                      <li><a href="#blog">blogue</a></li>
+                    </ul>
+                  </nav>
+                  <div class="socmed">
+                    <a class="btn icon waves-effect waves-light" href="#"><i class="ion-social-twitter"></i></a>
+                    <a class="btn icon waves-effect waves-light" href="#"><i class="ion-social-facebook"></i></a>
+                    <a class="btn icon waves-effect waves-light" href="#"><i class="ion-social-instagram"></i></a>
+                  </div>
+                </div>
+                <div class="copyright">
+                  <p class="body-2 text-center">&copy; Alexstrap Fashion 2020</p>
+                </div>
+              </div>
+            </footer>
+          </section><!-- ##### END FOOTER #####-->
+          <!-- ##### PAGE-NAV #####-->
+          <div class="hidden-sm-down">
+            <div class="page-nav" id="page_nav">
+              <nav class="section-nav">
+                <div class="scrollnav">
+                  <ul>
+                    <li style="top: 180px"><a class="tooltipped" href="#all-new" data-position="left" data-tooltip="tudo novo"></a></li>
+                    <li style="top: 150px"><a class="tooltipped" href="#trending" data-position="left" data-tooltip="tendências"></a></li>
+                    <li style="top: 120px"><a class="tooltipped" href="#categories" data-position="left" data-tooltip="categorias"></a></li>
+                    <li style="top: 90px"><a class="tooltipped" href="#featured" data-position="left" data-tooltip="destaque"></a></li>
+                    <li style="top: 60px"><a class="tooltipped" href="#testimonials" data-position="left" data-tooltip="depoimentos"></a></li>
+                    <li style="top: 30px"><a class="tooltipped" href="#blog" data-position="left" data-tooltip="blogue"></a></li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="scrollnav">
+                <a class="btn-floating btn-large primary tooltipped waves-effect waves-light" href="#home" data-position="left" data-tooltip="To Top">
+                  <div class="icon material-icons">arrow_upward</div>
+                </a>
+              </div>
+            </div>
+          </div><!-- ##### END PAGE-NAV #####-->
+          <!-- ##### NOTIFICATION #####-->
+          <div class="hidden-sm-down">
+            <div class="alert full alert-dismissible fade show notification" role="alert">
+              <div class="wrapper">
+                <div class="content">
+                  <div class="action">Este é um exemplo de mensagem comumente usada para informações importantes para visitantes ou usuários. Clique no botão ao lado para fechar esta mensagem.</div>
+                  <button class="btn-outlined waves-effect waves-light white" type="button" data-dismiss="alert" aria-label="Close">aceitar</button>
+                </div>
+              </div>
+            </div>
+          </div><!-- ##### END NOTIFICATION #####-->
+        </div>
+      </div>
+    </div>
+  </div><!-- Scripts-->
+  <!-- Put the 3rd/plugins javascript here-->
+  <script src="../../assets/js/vendors/jquery.min.js"></script>
+  <script src="../../assets/js/vendors/bootstrap.min.js"></script>
+  <script src="../../assets/js/vendors/enquire.min.js"></script>
+  <script src="../../assets/js/vendors/jquery.enllax.min.js"></script>
+  <script src="../../assets/js/vendors/jquery.form-validator.min.js"></script>
+  <script src="../../assets/js/vendors/jquery.touchSwipe.min.js"></script>
+  <script src="../../assets/js/vendors/jquery.youtubebackground.js"></script>
+  <script src="../../assets/js/vendors/pace.min.js"></script>
+  <script src="../../assets/js/vendors/slick.min.js"></script>
+  <script src="../../assets/js/vendors/wow.min.js"></script>
+  <script src="../../assets/js/vendors/jquery.navScroll.min.js"></script>
+  <script src="../../assets/js/vendors/parallax.min.js"></script><!-- This assets are not avalaible in npm.js or it has been costumized-->
+  <script src="../../assets/js/vendors/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="../../assets/js/vendors/materialize.js"></script>
+  <script src="../../assets/js/vendors/jquery.animateSlider.js"></script>
+  <script src="../../assets/js/scripts.js"></script>
+</body>
+
+</html>

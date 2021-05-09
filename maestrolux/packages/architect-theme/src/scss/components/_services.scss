@@ -1,0 +1,57 @@
+#services {
+  .root {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    h5 {
+      font-weight: $font-bold;
+      @include use-theme(color, $palette-secondary-dark, $palette-secondary-light);
+      margin-bottom: $spacing3;
+      @include breakpoints-down(xs) {
+        margin-bottom: $spacing2;
+        font-size: 1.2rem
+      }
+    }
+    p {
+      @include palette-text-secondary;
+      margin-bottom: 0
+    }
+  }
+
+  .figure {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+    transform: scale(0.8);
+    @include breakpoints-down(xs) {
+      transform: scale(0.5);
+      margin: -36px auto -24px;
+    }
+    svg {
+      width: 180px;
+      height: 180px
+    }
+  }
+
+  .outline {
+    stroke: $palette-secondary-main
+  }
+
+  .fill {
+    fill: $palette-primary-main;
+    position: absolute;
+    top: 0;
+    @include left(0);
+  }
+
+  .grid {
+    text-align: center;
+    > div {
+      @include breakpoints-down(xs) {
+        padding: $spacing4 !important
+      }
+    }
+  }
+}
